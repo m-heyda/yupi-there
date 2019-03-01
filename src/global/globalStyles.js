@@ -1,11 +1,7 @@
-import reset from 'styled-reset';
-
 import { createGlobalStyle } from 'styled-components';
 import { colors, variables } from './helpers';
 
-export const GlobalStyles = createGlobalStyle`
-  ${reset};
-  
+export const GlobalStyles = createGlobalStyle` 
   html,
   body {
     font-family: ${variables.fontFamilies.primaryFont};
