@@ -1,16 +1,20 @@
 import React from 'react';
+import cn from 'classnames';
 import MenuItem from './MenuItem';
+import Button from '../Button';
 import { MainMenu, MainMenuItem } from './Navigation.style';
 
-const Menu = (props) => {
+const Menu = ({ isActive }) => {
+  const menuClasses = cn({'isActive': isActive});
+
   return (
-    <MainMenu>
+    <MainMenu className={menuClasses}>
       <MenuItem link='#' label='Oferta' hasSubmenu />
       <MenuItem link='#' label='O nas' />
       <MenuItem link='#' label='Blog' />
 
       <MainMenuItem>
-        Button
+        <Button />
       </MainMenuItem>
     </MainMenu>
   );

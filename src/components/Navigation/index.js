@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Menu from './Menu';
 import MenuTrigger from './MenuTrigger';
 import { Navbar, NavWrapper, LogoWrapper } from './Navigation.style';
@@ -25,14 +24,8 @@ class Navigation extends Component {
     return (
       <Navbar>
         <NavWrapper>
-          <LogoWrapper>
-            <Link to='/'>
-              Yupi-There
-            </Link>
-          </LogoWrapper>
-
+          <LogoWrapper>Yupi-There</LogoWrapper>
           <Menu isActive={isMenuOpen} />
-
           <MenuTrigger
             isActive={isMenuOpen}
             onClick={this.triggerMenu}

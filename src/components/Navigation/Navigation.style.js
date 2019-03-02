@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {  variables, colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
-const { globalSize, transitions } = variables;
+const { globalSize, transitions, fontSize } = variables;
 
 export const animateTopLine = keyframes`
   0% {
@@ -42,6 +42,8 @@ export const Navbar = styled.nav`
   align-items: center;
   width: 100%;
   height: ${rem(globalSize.navigationHeight)};
+  background: ${colors.white};
+  z-index: 20;
 `;
 
 export const NavWrapper = styled.div`
@@ -55,16 +57,71 @@ export const NavWrapper = styled.div`
 export const LogoWrapper = styled.div`
   flex: 0 0 auto;
   align-self: center;
+  font-size: ${fontSize.menu};
+  color: ${colors.darkBlue};
 `;
 
 export const MainMenu = styled.ul`
-  display: none; // @todo
+  position: absolute;
+  top: ${rem(globalSize.navigationHeight)};
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: ${rem('32px')} 0;
+  height: auto;
+  background: ${colors.white};
+  box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, .2)};
+  overflow: hidden;
+  transform-origin: 0 0;
+  transform: scaleY(0);
+  transition: transform .4s ${transitions.spring};
+  
+  &.isActive {
+    transform: scaleY(1);
+  }
 `;
 
-export const MainMenuItem = styled.li``;
-export const MenuLink = styled(Link)``;
-export const SubMenuWrapper = styled.ul``;
-export const SubMenuItem = styled.li``;
+export const MainMenuItem = styled.li`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  
+  &:last-child {
+    margin: ${rem(globalSize.gutter)} 0 0;
+    padding: 0 ${rem(globalSize.gutter)};
+  }
+`;
+
+export const MenuLink = styled(Link)`
+  flex: 0 0 100%;
+  color: ${colors.blueGrey};
+  font-size: ${fontSize.menu};
+  text-decoration: none;
+  background: ${colors.white};
+  padding: ${rem('12px')} ${rem(globalSize.gutter)};
+  border-bottom: 1px solid ${rgba(colors.blueGrey, .2)};
+`;
+
+export const SubMenuWrapper = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 0 0 100%;
+  margin: 0;
+  padding: ${rem(globalSize.gutter)} ${rem(globalSize.gutter)} ${rem('6px')};
+  background: ${colors.titanWhite};
+`;
+
+export const SubMenuItem = styled.li`
+  flex: 1 1 calc(55% - ${globalSize.gutter});
+  margin: 0 0 ${rem('14px')};
+`;
+
+export const SubMenuLink = styled(Link)`
+  color: ${colors.blueGrey};
+  text-decoration: none;
+`;
 
 export const BurgerIcon = styled.span`
   position: relative;
@@ -100,10 +157,11 @@ export const BurgerWrapper = styled.button`
   align-self: center;
   width: ${rem(globalSize.buttonHeight)};
   height: ${rem(globalSize.buttonHeight)};
+  cursor: pointer;
   
   &:focus {
     outline: 0;
-    box-shadow: inset 0 0 7px 1px ${rgba(colors.cadetBlue, .25)};
+    box-shadow: none;
   }
   
   &.isActive {
