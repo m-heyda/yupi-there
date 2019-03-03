@@ -13,7 +13,8 @@ const Hero = () => {
         Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
       </p>
       <div>
-        buttons
+        <Button>Skontaktuj się</Button>
+        <Button secondary>Learn more</Button>
       </div>
     </HeroHeader>
   );

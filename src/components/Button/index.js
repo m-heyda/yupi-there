@@ -4,7 +4,7 @@ import { rem, rgba } from 'polished';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { globalSize, fontSize } = variables;
+const { globalSize, fontSize, fontFamily } = variables;
 const { media } = utils;
 
 const Button = ({
@@ -27,7 +27,8 @@ const Button = ({
     height: ${rem(globalSize.inputHeight)};
     color: ${props => (props.isSecondary ? colors.lightGreen : colors.white)};
     font-size: ${rem(fontSize.menu)};
-    font-weight: 500;
+    font-weight: ${props => (props.isSecondary ? 500 : 600)};
+    font-family: inherit;
     background: ${props =>
       props.isSecondary ? 'transparent' : colors.lightGreen};
     border: 2px solid
