@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { GlobalStyles } from './global/globalStyles';
 import '@babel/polyfill';
+import Navigation from './components/Navigation';
 import Homepage from './views/Homepage';
 
 class App extends Component {
@@ -12,6 +13,8 @@ class App extends Component {
 
         <Router>
           <React.Fragment>
+            <Navigation />
+
             <Route path='/' exact component={Homepage} />
           </React.Fragment>
         </Router>
