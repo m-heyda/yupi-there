@@ -1,7 +1,7 @@
-import styled, { keyframes}  from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { rem, rgba } from 'polished';
 import { Link } from 'react-router-dom';
-import {  variables, colors } from '../../global/helpers';
+import { variables, colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
 const { globalSize, transitions, fontSize } = variables;
@@ -48,7 +48,7 @@ export const Navbar = styled.nav`
 
 export const NavWrapper = styled.div`
   ${containerStyles};
-  
+
   display: flex;
   justify-content: space-between;
   height: ${rem(globalSize.buttonHeight)};
@@ -70,12 +70,12 @@ export const MainMenu = styled.ul`
   padding: ${rem('32px')} 0;
   height: auto;
   background: ${colors.white};
-  box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, .2)};
+  box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
   overflow: hidden;
   transform-origin: 0 0;
   transform: scaleY(0);
-  transition: transform .4s ${transitions.spring};
-  
+  transition: transform 0.4s ${transitions.spring};
+
   &.isActive {
     transform: scaleY(1);
   }
@@ -86,7 +86,7 @@ export const MainMenuItem = styled.li`
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
-  
+
   &:last-child {
     margin: ${rem(globalSize.gutter)} 0 0;
     padding: 0 ${rem(globalSize.gutter)};
@@ -100,7 +100,7 @@ export const MenuLink = styled(Link)`
   text-decoration: none;
   background: ${colors.white};
   padding: ${rem('12px')} ${rem(globalSize.gutter)};
-  border-bottom: 1px solid ${rgba(colors.blueGrey, .2)};
+  border-bottom: 1px solid ${rgba(colors.blueGrey, 0.2)};
 `;
 
 export const SubMenuWrapper = styled.ul`
@@ -126,7 +126,7 @@ export const SubMenuLink = styled(Link)`
 export const BurgerIcon = styled.span`
   position: relative;
   display: block;
-  
+
   &:before,
   &:after {
     content: '';
@@ -134,13 +134,13 @@ export const BurgerIcon = styled.span`
     width: ${rem('22px')};
     height: 2px;
     background: ${colors.darkBlue};
-    transition: transform .5s ${transitions.spring};
+    transition: transform 0.5s ${transitions.spring};
   }
-  
+
   &:before {
     transform: translateY(-3px);
   }
-  
+
   &:after {
     transform: translateY(3px);
   }
@@ -158,20 +158,20 @@ export const BurgerWrapper = styled.button`
   width: ${rem(globalSize.buttonHeight)};
   height: ${rem(globalSize.buttonHeight)};
   cursor: pointer;
-  
+
   &:focus {
     outline: 0;
     box-shadow: none;
   }
-  
+
   &.isActive {
     ${BurgerIcon} {
       &:before {
-        animation: ${animateTopLine} .5s ${transitions.spring} forwards;
+        animation: ${animateTopLine} 0.5s ${transitions.spring} forwards;
       }
-  
+
       &:after {
-        animation: ${animateBottomLine} .5s ${transitions.spring} forwards;
+        animation: ${animateBottomLine} 0.5s ${transitions.spring} forwards;
       }
     }
   }

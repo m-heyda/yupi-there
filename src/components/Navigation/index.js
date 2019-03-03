@@ -9,13 +9,13 @@ class Navigation extends Component {
 
     this.state = {
       isMenuOpen: false,
-    }
+    };
   }
 
   triggerMenu = () => {
     this.setState({
       isMenuOpen: !this.state.isMenuOpen,
-    })
+    });
   };
 
   render() {
@@ -26,10 +26,7 @@ class Navigation extends Component {
         <NavWrapper>
           <LogoWrapper>Yupi-There</LogoWrapper>
           <Menu isActive={isMenuOpen} />
-          <MenuTrigger
-            isActive={isMenuOpen}
-            onClick={this.triggerMenu}
-          />
+          <MenuTrigger isActive={isMenuOpen} onClick={this.triggerMenu} />
         </NavWrapper>
       </Navbar>
     );

@@ -2,37 +2,41 @@ import React from 'react';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import cn from 'classnames';
 
-const Button = ({
+const Typography = ({
   component: Component,
-  secondary,
+  headingVariant,
   onClick,
   children,
   ...props
 }) => {
-  const buttonClasses = cn('button', { 'is-secondary': secondary });
+  const typographyClasses = cn('heading', {
+    'hero': headingVariant === 'hero',
+    'heading': headingVariant === 'heading',
+    'static-heading': headingVariant === 'staticHeading'
+  });
 
   return (
     <Component
-      className={buttonClasses}
+      className={typographyClasses}
       onClick={e => {
         onClick(e);
       }}
       {...props}
     >
-      <span className='button-inner-text'>{children}</span>
+      {children}
     </Component>
   );
 };
 
-Button.defaultProps = {
-  component: 'button',
+Typography.defaultProps = {
+  component: 'h5',
 };
 
-Button.propTypes = {
+Typography.propTypes = {
   onClick: func,
   component: oneOfType([string, func]).isRequired,
   children: any.isRequired,
-  secondary: bool,
+  headingVariant: string,
 };
 
-export default Button;
+export default Typography;
