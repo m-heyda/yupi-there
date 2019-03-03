@@ -10,9 +10,11 @@ const Hero = () => {
       <Typography component='h1' headingVariant='hero'>
         Współpracuj z najlepszym zespołem ekspertów
       </Typography>
-      <Paragraph>
+
+      <Paragraph >
         Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
       </Paragraph>
+
       <div>
         <Button>Skontaktuj się</Button>
         <Button secondary>Learn more</Button>
