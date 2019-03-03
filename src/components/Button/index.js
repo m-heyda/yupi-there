@@ -4,7 +4,7 @@ import { rem, rgba } from 'polished';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { globalSize, fontSize, fontFamily } = variables;
+const { globalSize, fontSize } = variables;
 const { media } = utils;
 
 const Button = ({

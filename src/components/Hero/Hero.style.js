@@ -18,8 +18,9 @@ export const ButtonWrapper = styled.div`
   max-width: ${rem('200px')};
   margin: 0 auto;
   
-  &:first-child {
-    background: red;
-    margin: 0 0 ${rem(marginSize.small)};
+  & > button {
+    &:first-child {
+      margin: 0 auto 120px;
+    }
   }
 `;
