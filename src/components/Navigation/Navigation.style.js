@@ -45,7 +45,7 @@ export const Navbar = styled.nav`
   height: ${rem(globalSize.navigationHeight)};
   background: ${colors.white};
   z-index: 20;
-  
+
   ${media.greaterThan('landscape')`
     height: ${rem('80px')};
   `}
@@ -86,7 +86,7 @@ export const MainMenu = styled.ul`
     transform: scaleY(1);
     pointer-events: all;
   }
-  
+
   ${media.greaterThan('landscape')`
     position: relative;
     top: 0;
@@ -112,7 +112,7 @@ export const SubMenuWrapper = styled.ul`
   margin: 0;
   padding: ${rem(globalSize.gutter)} ${rem(globalSize.gutter)} ${rem('6px')};
   background: ${colors.titanWhite};
-  
+
   ${media.greaterThan('landscape')`
     position: absolute;
     top: ${rem('36px')};
@@ -134,7 +134,8 @@ export const SubMenuWrapper = styled.ul`
 export const SubMenuItem = styled.li`
   flex: 1 1 calc(55% - ${globalSize.gutter});
   margin: 0 0 ${rem('14px')};
-  
+  font-size: ${fontSize.small};
+
   ${media.greaterThan('landscape')`
     flex: 0 0 100%;
     padding: ${rem('4px')};
@@ -158,7 +159,7 @@ export const MainMenuItem = styled.li`
     margin: ${rem(globalSize.gutter)} 0 0;
     padding: 0 ${rem(globalSize.gutter)};
   }
-  
+
   ${media.greaterThan('landscape')`
     position: relative;
     display: inline-flex;
@@ -180,7 +181,7 @@ export const MainMenuItem = styled.li`
       position: absolute;
       top: 50%;
       right: 0;
-      display: ${props => props.hasSubmenu ? 'block' : 'none'};
+      display: ${props => (props.hasSubmenu ? 'block' : 'none')};
       content: '';
       transform: translateY(-50%);  
       width: 0;
@@ -208,7 +209,7 @@ export const MenuLink = styled(Link)`
   background: ${colors.white};
   padding: ${rem('12px')} ${rem(globalSize.gutter)};
   border-bottom: 1px solid ${rgba(colors.blueGrey, 0.2)};
-  
+
   ${media.greaterThan('landscape')`
     background: transparent;
     padding: 0;
@@ -268,7 +269,7 @@ export const BurgerWrapper = styled.button`
       }
     }
   }
-  
+
   ${media.greaterThan('landscape')`
     display: none;
   `}
