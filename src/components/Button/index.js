@@ -15,7 +15,9 @@ const Button = ({
     <Component
       className={buttonClasses}
       onClick={e => {
-        onClick(e);
+        if (onClick) {
+          onClick(e);
+        }
       }}
       {...props}
     >
