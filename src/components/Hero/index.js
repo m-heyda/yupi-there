@@ -1,5 +1,5 @@
 import React from 'react';
-import {HeroHeader} from "./Hero.style";
+import { HeroHeader, ButtonWrapper } from "./Hero.style";
 import Typography from '../Typography';
 import { Paragraph } from '../../global/commonStyles';
 import Button from '../Button';
@@ -15,10 +15,10 @@ const Hero = () => {
         Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
       </Paragraph>
 
-      <div>
+      <ButtonWrapper>
         <Button>Skontaktuj się</Button>
         <Button secondary>Learn more</Button>
-      </div>
+      </ButtonWrapper>
     </HeroHeader>
   );
 };

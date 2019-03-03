@@ -11,3 +11,8 @@ export const HeroHeader = styled.header`
   
     padding: ${rem(globalSize.paddingSmall)} ${rem(globalSize.gutter)} 0;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
