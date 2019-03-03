@@ -134,6 +134,7 @@ export const SubMenuWrapper = styled.ul`
 export const SubMenuItem = styled.li`
   flex: 1 1 calc(55% - ${globalSize.gutter});
   margin: 0 0 ${rem('14px')};
+  font-size: ${fontSize.small};
   
   ${media.greaterThan('landscape')`
     flex: 0 0 100%;

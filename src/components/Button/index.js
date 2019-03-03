@@ -34,6 +34,7 @@ const Button = ({
       ${props => (props.isSecondary ? colors.lightGreen : 'transparent')};
     border-radius: ${rem('24px')};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
+    cursor: pointer;
 
     ${media.greaterThan('landscape')`
       width: auto;
