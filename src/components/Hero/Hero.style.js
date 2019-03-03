@@ -1,10 +1,10 @@
 import { string, func, oneOfType, oneOf, any } from 'prop-types';
-import styled, { keyframes, css } from 'styled-components';
-import { rem, rgba } from 'polished';
+import styled from 'styled-components';
+import { rem } from 'polished';
 import { variables, utils } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
-const { fontSize, fontFamily, marginSize, globalSize, breakpoints } = variables;
+const { marginSize, globalSize, breakpoints } = variables;
 const { media } = utils;
 
 export const HeroHeader = styled.header`

@@ -1,10 +1,10 @@
 import React from 'react';
 import { string, func, oneOfType, oneOf, any } from 'prop-types';
-import styled, { keyframes, css } from 'styled-components';
-import { rem, rgba } from 'polished';
+import styled, { css } from 'styled-components';
+import { rem } from 'polished';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { fontSize, fontFamily, marginSize, globalSize, breakpoints } = variables;
+const { fontSize, fontFamily, marginSize, breakpoints } = variables;
 const { media } = utils;
 
 const Typography = ({
