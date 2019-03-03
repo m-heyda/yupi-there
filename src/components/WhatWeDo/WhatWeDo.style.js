@@ -19,13 +19,13 @@ export const Wrapper = styled.section`
 export const TilesWrapper = styled.ul`
   margin: 0;
   padding: 0;
-  
+
   ${media.greaterThan('tablet')`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   `}
-  
+
   ${media.greaterThan('landscape')`
     margin: 0 0 ${rem('32px')};
   `}
@@ -38,7 +38,7 @@ export const Tile = styled.li`
   width: 100%;
   z-index: 1;
   user-select: none;
-  
+
   &:before {
     content: '';
     display: block;
@@ -51,18 +51,18 @@ export const Tile = styled.li`
     box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
     border-radius: ${rem('6px')};
     z-index: -1;
-    
+
     ${media.greaterThan('landscape')`
       opacity: 0;
       transform: scale(0.9);
       transition: transform .3s ${transitions.spring}, opacity .2s ease-in;
     `}
   }
-  
+
   ${media.greaterThan('tablet')`
     flex: 0 0 calc(50% - ${rem('16px')});
   `}
-  
+
   ${media.greaterThan('landscape')`
     flex: 0 0 calc(33% - ${rem('8px')});
     
@@ -78,7 +78,7 @@ export const Tile = styled.li`
 export const TileContent = styled.div`
   position: relative;
   z-index: 2;
-  
+
   ${media.greaterThan('tablet')`
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ export const TileIcon = styled.div`
   margin: 0 auto ${rem('16px')};
   width: 100%;
   max-width: ${rem('120px')};
-  
+
   & > svg {
     display: block;
     width: 100%;

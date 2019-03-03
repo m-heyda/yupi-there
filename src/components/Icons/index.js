@@ -1,14 +1,7 @@
 import React from 'react';
 import { string, oneOfType, array, object, number } from 'prop-types';
 
-const SvgIcon = ({
-  className,
-  viewBox,
-  width,
-  height,
-  children,
-  ...props
-}) => {
+const SvgIcon = ({ className, viewBox, width, height, children, ...props }) => {
   return (
     <svg
       className={className}

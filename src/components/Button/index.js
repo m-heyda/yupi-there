@@ -8,11 +8,11 @@ const { globalSize, fontSize } = variables;
 const { media } = utils;
 
 const linkButton = css`
-    color: ${colors.lightGreen};
-    font-weight: 400;
-    background: transparent;
-    border: 2px solid transparent;
-    box-shadow: none;
+  color: ${colors.lightGreen};
+  font-weight: 400;
+  background: transparent;
+  border: 2px solid transparent;
+  box-shadow: none;
 `;
 
 const Button = ({
@@ -48,9 +48,9 @@ const Button = ({
     border-radius: ${rem('24px')};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
-    
+
     ${({ isLink }) => isLink && linkButton}
-    
+
     & > svg {
       margin: 0 0 0 ${rem('8px')};
       width: ${rem('21px')};

@@ -10,8 +10,14 @@ import RightArrow from '../Icons/RightArrow';
 import Button from '../../components/Button';
 import { Paragraph } from '../../global/commonStyles';
 import { variables } from '../../global/helpers';
-import { Wrapper, Container, TilesWrapper, Tile, TileContent, TileIcon } from './WhatWeDo.style';
-
+import {
+  Wrapper,
+  Container,
+  TilesWrapper,
+  Tile,
+  TileContent,
+  TileIcon,
+} from './WhatWeDo.style';
 
 const { fontSize } = variables;
 
