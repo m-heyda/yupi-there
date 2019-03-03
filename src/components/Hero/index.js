@@ -6,8 +6,9 @@ const Hero = () => {
     <Typography
       component='h1'
       headingVariant='hero'
-      style={{marginTop: '50px'}}>
-      hello śwjat
+    >
+      Współpracuj z najlepszym
+      zespołem ekspertów
     </Typography>
   )
 };
