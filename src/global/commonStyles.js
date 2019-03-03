@@ -14,3 +14,7 @@ export const containerStyles = css`
 export const Container = styled.div`
   ${containerStyles};
 `;
+
+export const Paragraph = styled.p`
+  
+`;
