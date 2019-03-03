@@ -22,7 +22,7 @@ const Typography = ({
   const isHero = css`
     max-width: ${rem('560px')};
     ${mobileHeading}
-    
+
     ${media.greaterThan(breakpoints.landscape)`
       font-size: ${fontSize.heroHeading};
       line-height: 1.27;
@@ -46,9 +46,10 @@ const Typography = ({
     text-align: center;
     line-height: 1.29;
     
-    ${({headingVariant}) => headingVariant === 'hero' && isHero}
-    ${({headingVariant}) => headingVariant === 'heading' && isHeading}
-    ${({headingVariant}) => headingVariant === 'staticHeading' && isStaticHeading}
+    ${({ headingVariant }) => headingVariant === 'hero' && isHero}
+    ${({ headingVariant }) => headingVariant === 'heading' && isHeading}
+    ${({ headingVariant }) =>
+      headingVariant === 'staticHeading' && isStaticHeading}
   `;
 
   return (
