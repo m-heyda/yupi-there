@@ -7,7 +7,7 @@ class Homepage extends Component {
   render() {
     return (
       <React.Fragment>
-        <SeoBase>
+        <SeoBase title='Homepage' description='Homepage description'>
           <Hero />
           <WhatWeDo />
         </SeoBase>
