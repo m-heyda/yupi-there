@@ -17,13 +17,13 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  margin: 0 auto ${props => props.margin ? rem(props.margin) : rem('12px')};
+  margin: 0 auto ${props => (props.margin ? rem(props.margin) : rem('12px'))};
   width: 100%;
-  max-width: ${props => props.maxWidth ? rem(props.maxWidth) : '100%'};
-  font-size: ${rem(fontSize.small)};
+  max-width: ${props => (props.maxWidth ? rem(props.maxWidth) : '100%')};
+  font-size: ${props => (props.size ? rem(props.size) : rem(fontSize.small))};
   color: ${props => props.color};
   text-align: ${props => props.align || 'center'};
-  
+
   ${media.greaterThan('landscape')`
     font-size: ${rem(fontSize.regular)};
   `}

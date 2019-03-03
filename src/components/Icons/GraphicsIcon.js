@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const GraphicsIcon = props => (
-  <svg width={120} height={90} {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <path
       fill='#d7e6f2'
       stroke='#19243b'
@@ -97,7 +98,7 @@ const GraphicsIcon = props => (
       d='M66.8 37.5s-9.3 7.3-6.3 8.6c3 1.3 14.8-11.2 18-8.6s-16.3 14-12 17.3C70.8 58.1 89 42.7 89 42.7'
     />
     <path fill='none' d='M0 0h120v90H0z' />
-  </svg>
+  </SvgIcon>
 );
 
 export default GraphicsIcon;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rem, rgba } from 'polished';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import { variables, colors, utils } from '../../global/helpers';
@@ -7,17 +7,30 @@ import { variables, colors, utils } from '../../global/helpers';
 const { globalSize, fontSize } = variables;
 const { media } = utils;
 
+const linkButton = css`
+    color: ${colors.lightGreen};
+    font-weight: 400;
+    background: transparent;
+    border: 2px solid transparent;
+    box-shadow: none;
+`;
+
 const Button = ({
   component: Component,
   secondary,
   fluid,
+  link,
+  withIcon,
+  centered,
   onClick,
   children,
   className,
   ...props
 }) => {
+  const ButtonIcon = withIcon;
+
   const YupiButton = styled(Component)`
-    display: inline-flex;
+    display: ${props => (props.isCentered ? 'flex' : 'inline-flex')};
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -35,6 +48,14 @@ const Button = ({
     border-radius: ${rem('24px')};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
+    
+    ${({ isLink }) => isLink && linkButton}
+    
+    & > svg {
+      margin: 0 0 0 ${rem('8px')};
+      width: ${rem('21px')};
+      height: ${rem('21px')};
+    }
 
     ${media.greaterThan('landscape')`
       width: auto;
@@ -49,6 +70,8 @@ const Button = ({
     <YupiButton
       isFluid={fluid}
       isSecondary={secondary}
+      isLink={link}
+      isCentered={centered}
       className={className}
       onClick={e => {
         if (onClick) {
@@ -58,6 +81,7 @@ const Button = ({
       {...props}
     >
       <InnerButton>{children}</InnerButton>
+      {withIcon && <ButtonIcon />}
     </YupiButton>
   );
 };
@@ -71,6 +95,9 @@ Button.propTypes = {
   component: oneOfType([string, func]).isRequired,
   children: any.isRequired,
   secondary: bool,
+  link: bool,
+  centered: bool,
+  withIcon: any,
 };
 
 export default Button;

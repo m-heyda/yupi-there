@@ -11,11 +11,9 @@ const SeoBase = ({ children, title, description }) => {
         <meta name='description' content={description} />
       </Helmet>
 
-      <Wrapper>
-        {children}
-      </Wrapper>
+      <Wrapper>{children}</Wrapper>
     </React.Fragment>
-  )
+  );
 };
 
 SeoBase.propTypes = {

@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const CampaignIcon = props => (
-  <svg viewBox='0 0 120 90' {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <path
       d='M92.7 40.3v12a6 6 0 0 1-6 6h-48a6 6 0 0 1-6-6v-28a6 6 0 0 1 6-6h48a6 6 0 0 1 6 6v3.6m0 6.5v2.8'
       fill='none'
@@ -78,7 +79,7 @@ const CampaignIcon = props => (
       strokeLinejoin='round'
     />
     <path d='M0 0h120v90H0z' fill='none' />
-  </svg>
+  </SvgIcon>
 );
 
 export default CampaignIcon;

@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const AnalysisIcon = props => (
-  <svg width={120} height={90} {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <path
       fill='none'
       stroke='#19243b'
@@ -137,7 +138,7 @@ const AnalysisIcon = props => (
       d='M55 50.8h10v3H55zM28 29h8m33 0h4m3 0h4m9 0h4m-10 0h3'
     />
     <path fill='none' d='M0 0h120v90H0z' />
-  </svg>
+  </SvgIcon>
 );
 
 export default AnalysisIcon;

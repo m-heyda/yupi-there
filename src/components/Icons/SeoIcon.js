@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const SeoIcon = props => (
-  <svg width={120} height={90} overflow='scroll' {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <circle
       fill='#d7e6f2'
       stroke='#19243b'
@@ -127,7 +128,7 @@ const SeoIcon = props => (
       d='M63.7 65.2H37.1m16.9-3H37.1'
     />
     <path fill='none' d='M0 0h120v90H0z' />
-  </svg>
+  </SvgIcon>
 );
 
 export default SeoIcon;

@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const ContentIcon = props => (
-  <svg width={120} height={90} {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <path
       fill='#d7e6f2'
       stroke='#19243b'
@@ -59,7 +60,7 @@ const ContentIcon = props => (
       d='M26.5 67.2l6.4 7.3c.3.5.5 1.2.5 1.9 0 1.9-1.5 3.4-3.4 3.4-1 0-1.9-.4-2.5-1.1L20 69.9c-.3-.4-.5-.9-.5-1.4 0-1.3 1.1-2.4 2.4-2.4.7 0 1.4.3 1.8.8l6.2 7.4c.2.2.3.5.3.8 0 .7-.6 1.3-1.3 1.3-.4 0-.8-.2-1.1-.5l-5.3-6.4'
     />
     <path fill='none' d='M0 0h120v90H0z' />
-  </svg>
+  </SvgIcon>
 );
 
 export default ContentIcon;

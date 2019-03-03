@@ -7,8 +7,8 @@ const { globalSize } = variables;
 
 export const HeroHeader = styled.header`
   ${containerStyles};
-  
-    padding: ${rem(globalSize.paddingSmall)} ${rem(globalSize.gutter)} 0;
+
+  padding: ${rem(globalSize.paddingSmall)} ${rem(globalSize.gutter)} 0;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -16,7 +16,7 @@ export const ButtonWrapper = styled.div`
   flex-direction: column;
   max-width: ${rem('200px')};
   margin: 0 auto;
-  
+
   & > button {
     &:first-child {
       margin: 0 auto 120px;

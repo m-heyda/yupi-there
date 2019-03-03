@@ -1,7 +1,8 @@
 import React from 'react';
+import SvgIcon from './';
 
 const ConsultingIcon = props => (
-  <svg width={120} height={90} {...props}>
+  <SvgIcon width={120} height={90} {...props}>
     <path
       fill='none'
       stroke='#19243b'
@@ -130,7 +131,7 @@ const ConsultingIcon = props => (
       d='M74 74.8H46c-.6 0-1-.4-1-1v-1c0-.6.4-1 1-1h28c.6 0 1 .4 1 1v1c0 .6-.4 1-1 1z'
     />
     <path fill='none' d='M0 0h120v90H0z' />
-  </svg>
+  </SvgIcon>
 );
 
 export default ConsultingIcon;
