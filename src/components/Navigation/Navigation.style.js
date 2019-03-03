@@ -82,7 +82,7 @@ export const MainMenu = styled.ul`
     transform: scaleY(1);
     pointer-events: all;
   }
-  
+
   ${media.greaterThan('landscape')`
     position: relative;
     top: 0;
@@ -109,7 +109,7 @@ export const MainMenuItem = styled.li`
     margin: ${rem(globalSize.gutter)} 0 0;
     padding: 0 ${rem(globalSize.gutter)};
   }
-  
+
   ${media.greaterThan('landscape')`
     display: block;
     padding: 0;
@@ -139,7 +139,7 @@ export const SubMenuWrapper = styled.ul`
   margin: 0;
   padding: ${rem(globalSize.gutter)} ${rem(globalSize.gutter)} ${rem('6px')};
   background: ${colors.titanWhite};
-  
+
   ${media.greaterThan('landscape')`
     position: absolute;
     top: 0;
@@ -214,7 +214,7 @@ export const BurgerWrapper = styled.button`
       }
     }
   }
-  
+
   ${media.greaterThan('landscape')`
     display: none;
   `}

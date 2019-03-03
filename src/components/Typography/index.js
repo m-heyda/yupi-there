@@ -1,7 +1,6 @@
 import React from 'react';
 import { string, func, oneOfType, any } from 'prop-types';
-import cn from 'classnames';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import { rem, rgba } from 'polished';
 import { variables, colors } from '../../global/helpers';
 
@@ -14,25 +13,36 @@ const Typography = ({
   children,
   ...props
 }) => {
-  const typographyClasses = cn('heading', {
-    'hero': headingVariant === 'hero',
-    'heading': headingVariant === 'heading',
-    'static-heading': headingVariant === 'staticHeading'
-  });
+  const isHero = css`
+    font-size: ${fontSize.mediumHeading};
+    margin: 0 0 ${marginSize.regular};
+  `;
+
+  const isHeading = css`
+    font-size: ${fontSize.mediumHeading};
+    margin: 0 0 ${marginSize.regular};
+  `;
+
+  const isStaticHeading = css`
+    font-size: ${fontSize.smallHeading};
+    margin: 0 0 ${marginSize.small};
+  `;
 
   const YupiTypography = styled(Component)`
-    margin: 0 0 ${rem(marginSize.small)};
     font-family: ${fontFamily.secondaryFont};
-    font-size: ${rem(fontSize.mediumHeading)};
     font-weight: 600;
     color: ${colors.darkBlue};
     text-align: center;
     line-height: 1.29;
+    
+    ${({headingVariant}) => headingVariant === 'hero' && isHero}
+    ${({headingVariant}) => headingVariant === 'heading' && isHeading}
+    ${({headingVariant}) => headingVariant === 'staticHeading' && isStaticHeading}
   `;
 
   return (
     <YupiTypography
-      className={typographyClasses}
+      headingVariant={headingVariant}
       onClick={e => {
         onClick(e);
       }}
