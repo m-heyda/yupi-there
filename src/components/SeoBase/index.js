@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { any, string } from 'prop-types';
+import { Wrapper } from './SeoBase.style';
 
 const SeoBase = ({ children, title, description }) => {
   return (
@@ -10,7 +11,9 @@ const SeoBase = ({ children, title, description }) => {
         <meta name='description' content={description} />
       </Helmet>
 
-      {children}
+      <Wrapper>
+        {children}
+      </Wrapper>
     </React.Fragment>
   )
 };

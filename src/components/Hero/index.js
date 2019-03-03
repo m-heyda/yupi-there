@@ -1,6 +1,7 @@
 import React from 'react';
 import {HeroHeader} from "./Hero.style";
 import Typography from '../Typography';
+import { Paragraph } from '../../global/commonStyles';
 import Button from '../Button';
 
 const Hero = () => {
@@ -9,9 +10,9 @@ const Hero = () => {
       <Typography component='h1' headingVariant='hero'>
         Współpracuj z najlepszym zespołem ekspertów
       </Typography>
-      <p>
+      <Paragraph>
         Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
-      </p>
+      </Paragraph>
       <div>
         buttons
       </div>

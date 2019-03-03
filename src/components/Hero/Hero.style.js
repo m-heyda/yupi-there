@@ -7,6 +7,7 @@ import { containerStyles } from '../../global/commonStyles';
 const { fontSize, fontFamily, marginSize, globalSize } = variables;
 
 export const HeroHeader = styled.header`
-  ${containerStyles}
+  ${containerStyles};
   
+    padding: ${rem(globalSize.paddingSmall)} ${rem(globalSize.gutter)} 0;
 `;
