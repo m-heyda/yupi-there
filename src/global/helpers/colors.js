@@ -6,7 +6,8 @@ export default {
   cadetBlue: '#99a4bd',
   athensGray: '#e7ebee',
   mischka: '#dee0e7',
+  titanWhite: '#fafaff',
   white: '#fff',
-  greenHace: '#0aad56',
+  greenHaze: '#0aad56',
   lightGreen: '#00d664',
 };

@@ -1,11 +1,11 @@
 import { css } from 'styled-components';
 import { breakpoints } from './variables';
 
-function getBreakpointValue(breakpointValue, unit = 'px') {
+function getBreakpointValue(breakpointValue) {
   if (breakpoints[breakpointValue]) {
-    return breakpoints[breakpointValue] + unit;
+    return breakpoints[breakpointValue];
   } else if (parseInt(breakpointValue)) {
-    return breakpointValue + unit;
+    return breakpointValue;
   } else {
     console.warn('Not a valid breakpoint');
     return '0';
