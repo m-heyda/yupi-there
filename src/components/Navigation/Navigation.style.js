@@ -45,6 +45,10 @@ export const Navbar = styled.nav`
   height: ${rem(globalSize.navigationHeight)};
   background: ${colors.white};
   z-index: 20;
+  
+  ${media.greaterThan('landscape')`
+    height: ${rem('80px')};
+  `}
 `;
 
 export const NavWrapper = styled.div`
@@ -52,7 +56,7 @@ export const NavWrapper = styled.div`
 
   display: flex;
   justify-content: space-between;
-  height: ${rem(globalSize.buttonHeight)};
+  height: ${rem(globalSize.inputHeight)};
 `;
 
 export const LogoWrapper = styled.div`
@@ -89,6 +93,7 @@ export const MainMenu = styled.ul`
     left: 0;
     display: flex;
     align-items: center;
+    flex: 0 0;
     margin: 0 0 0 auto;
     padding: 0;
     background: transparent;
@@ -97,38 +102,6 @@ export const MainMenu = styled.ul`
     transform: scaleY(1);
     pointer-events: all;
   `}
-`;
-
-export const MainMenuItem = styled.li`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-
-  &:last-child {
-    margin: ${rem(globalSize.gutter)} 0 0;
-    padding: 0 ${rem(globalSize.gutter)};
-  }
-  
-  ${media.greaterThan('landscape')`
-    display: block;
-    padding: 0;
-    
-    &:last-child {
-      margin: 0;
-      padding: 0;
-    }
-  `}
-`;
-
-export const MenuLink = styled(Link)`
-  flex: 0 0 100%;
-  color: ${colors.blueGrey};
-  font-size: ${fontSize.menu};
-  text-decoration: none;
-  background: ${colors.white};
-  padding: ${rem('12px')} ${rem(globalSize.gutter)};
-  border-bottom: 1px solid ${rgba(colors.blueGrey, 0.2)};
 `;
 
 export const SubMenuWrapper = styled.ul`
@@ -142,24 +115,105 @@ export const SubMenuWrapper = styled.ul`
   
   ${media.greaterThan('landscape')`
     position: absolute;
-    top: 0;
+    top: ${rem('36px')};
     left: 0;
-    display: block;
-    width: 300px;
+    width: ${rem('200px')};
     height: auto;
-    padding: 0;
+    max-height: 0;
+    padding: ${rem('24px')};
     background: ${colors.white};
+    border-radius: ${rem('32px')};
+    box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
+    pointer-events: none;
+    visibility: hidden;
+    transition: max-height .3s ${transitions.spring};
+    overflow: hidden;
   `}
 `;
 
 export const SubMenuItem = styled.li`
   flex: 1 1 calc(55% - ${globalSize.gutter});
   margin: 0 0 ${rem('14px')};
+  
+  ${media.greaterThan('landscape')`
+    flex: 0 0 100%;
+    padding: ${rem('4px')};
+    margin: 0;
+  `}
 `;
 
 export const SubMenuLink = styled(Link)`
   color: ${colors.blueGrey};
   text-decoration: none;
+`;
+
+export const MainMenuItem = styled.li`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  &:last-child {
+    margin: ${rem(globalSize.gutter)} 0 0;
+    padding: 0 ${rem(globalSize.gutter)};
+  }
+  
+  ${media.greaterThan('landscape')`
+    position: relative;
+    display: inline-flex;
+    align-self: center;
+    padding: 0 ${rem('24px')};
+    height: 100%;
+    white-space: nowrap;
+    
+    &:not(:last-child) {
+      margin: 0 ${rem('32px')} 0 0;
+    }
+    
+    &:last-child {
+      margin: 0;
+      padding: 0;
+    }
+    
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: ${props => props.hasSubmenu ? 'block' : 'none'};
+      content: '';
+      transform: translateY(-50%);  
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid ${colors.blueGrey}; 
+    }
+    
+    &:hover {
+      ${SubMenuWrapper} {
+        max-height: ${rem('200px')};
+        pointer-events: all;
+        visibility: visible;
+      }
+    }
+  `}
+`;
+
+export const MenuLink = styled(Link)`
+  flex: 0 0 100%;
+  color: ${colors.blueGrey};
+  font-size: ${fontSize.menu};
+  text-decoration: none;
+  background: ${colors.white};
+  padding: ${rem('12px')} ${rem(globalSize.gutter)};
+  border-bottom: 1px solid ${rgba(colors.blueGrey, 0.2)};
+  
+  ${media.greaterThan('landscape')`
+    background: transparent;
+    padding: 0;
+    border-bottom: 0;
+  `}
 `;
 
 export const BurgerIcon = styled.span`
