@@ -14,7 +14,7 @@ const Menu = ({ isActive }) => {
       <MenuItem link='#' label='Blog' />
 
       <MainMenuItem>
-        <Button>
+        <Button fluid>
           Skontaktuj się
         </Button>
       </MainMenuItem>
