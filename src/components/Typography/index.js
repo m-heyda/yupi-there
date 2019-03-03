@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, func, oneOfType, any } from 'prop-types';
+import { string, func, oneOfType, oneOf, any } from 'prop-types';
 import styled, { keyframes, css } from 'styled-components';
 import { rem, rgba } from 'polished';
 import { variables, colors } from '../../global/helpers';
@@ -13,14 +13,17 @@ const Typography = ({
   children,
   ...props
 }) => {
-  const isHero = css`
+  const mobileHeading = css`
     font-size: ${fontSize.mediumHeading};
     margin: 0 0 ${marginSize.regular};
   `;
 
+  const isHero = css`
+    ${mobileHeading}
+  `;
+
   const isHeading = css`
-    font-size: ${fontSize.mediumHeading};
-    margin: 0 0 ${marginSize.regular};
+    ${mobileHeading}
   `;
 
   const isStaticHeading = css`
@@ -61,7 +64,7 @@ Typography.propTypes = {
   onClick: func,
   component: oneOfType([string, func]).isRequired,
   children: any.isRequired,
-  headingVariant: string,
+  headingVariant: oneOf(['hero', 'heading', 'staticHeading']).isRequired,
 };
 
 export default Typography;

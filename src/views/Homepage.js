@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
-import { Container } from '../global/commonStyles';
+import SeoBase from '../components/SeoBase';
 
 class Homepage extends Component {
   render() {
     return (
       <React.Fragment>
         <Navigation />
-        <Container>
+        <SeoBase>
           <Hero />
-        </Container>
+        </SeoBase>
       </React.Fragment>
     );
   }
