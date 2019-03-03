@@ -5,7 +5,7 @@ import { MainMenuItem, MenuLink } from './Navigation.style';
 
 const MenuItem = ({ link, label, hasSubmenu }) => {
   return (
-    <MainMenuItem>
+    <MainMenuItem hasSubmenu={hasSubmenu}>
       <MenuLink to={link}>{label}</MenuLink>
 
       {hasSubmenu && <SubMenu />}
