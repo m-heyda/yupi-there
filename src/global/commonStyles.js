@@ -14,3 +14,8 @@ export const containerStyles = css`
 export const Container = styled.div`
   ${containerStyles};
 `;
+
+export const Paragraph = styled.p`
+  color: ${props => props.color};
+  
+`;
