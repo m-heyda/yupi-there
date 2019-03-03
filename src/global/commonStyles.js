@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  margin: 0 auto ${props => props.margin};
+  margin: 0 auto ${props => props.margin ? `${props.margin}px` : '12px'};
   color: ${props => props.color};
   text-align: ${props => props.align || 'center'};
   
