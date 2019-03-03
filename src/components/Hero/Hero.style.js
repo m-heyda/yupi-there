@@ -10,3 +10,8 @@ export const HeroHeader = styled.header`
   ${containerStyles}
   
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
