@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import cn from 'classnames';
 
@@ -9,17 +9,19 @@ const Button = ({
   children,
   ...props
 }) => {
-  const buttonClasses = cn('button', {'is-secondary': secondary});
+  const buttonClasses = cn('button', { 'is-secondary': secondary });
 
   return (
     <Component
       className={buttonClasses}
-      onClick={e => {onClick(e)}}
+      onClick={e => {
+        if (onClick) {
+          onClick(e);
+        }
+      }}
       {...props}
     >
-      <span className='button-inner-text'>
-        {children}
-      </span>
+      <span className='button-inner-text'>{children}</span>
     </Component>
   );
 };

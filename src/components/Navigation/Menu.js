@@ -5,7 +5,7 @@ import Button from '../Button';
 import { MainMenu, MainMenuItem } from './Navigation.style';
 
 const Menu = ({ isActive }) => {
-  const menuClasses = cn({'isActive': isActive});
+  const menuClasses = cn({ isActive: isActive });
 
   return (
     <MainMenu className={menuClasses}>
@@ -14,9 +14,7 @@ const Menu = ({ isActive }) => {
       <MenuItem link='#' label='Blog' />
 
       <MainMenuItem>
-        <Button>
-          Button
-        </Button>
+        <Button>Button</Button>
       </MainMenuItem>
     </MainMenu>
   );
