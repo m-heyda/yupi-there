@@ -23,16 +23,18 @@ const Button = ({
     justify-content: center;
     margin: 0 auto;
     padding: 0 ${rem('36px')};
-    width: ${props => props.isFluid ? '100%' : 'auto'};
+    width: ${props => (props.isFluid ? '100%' : 'auto')};
     height: ${rem(globalSize.inputHeight)};
-    color: ${props => props.isSecondary ? colors.lightGreen : colors.white};
+    color: ${props => (props.isSecondary ? colors.lightGreen : colors.white)};
     font-size: ${rem(fontSize.menu)};
     font-weight: 500;
-    background: ${props => props.isSecondary ? 'transparent' : colors.lightGreen};
-    border: 2px solid ${props => props.isSecondary ? colors.lightGreen : 'transparent'};
+    background: ${props =>
+      props.isSecondary ? 'transparent' : colors.lightGreen};
+    border: 2px solid
+      ${props => (props.isSecondary ? colors.lightGreen : 'transparent')};
     border-radius: ${rem('24px')};
-    box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, .2)};
-    
+    box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
+
     ${media.greaterThan('landscape')`
       width: auto;
     `}
@@ -54,9 +56,7 @@ const Button = ({
       }}
       {...props}
     >
-      <InnerButton>
-        {children}
-      </InnerButton>
+      <InnerButton>{children}</InnerButton>
     </YupiButton>
   );
 };
