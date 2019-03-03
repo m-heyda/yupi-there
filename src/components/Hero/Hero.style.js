@@ -15,4 +15,11 @@ export const HeroHeader = styled.header`
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: ${rem('200px')};
+  margin: 0 auto;
+  
+  &:first-child {
+    background: red;
+    margin: 0 0 ${rem(marginSize.small)};
+  }
 `;
