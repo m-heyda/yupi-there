@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TileCampaign = props => (
+const CampaignIcon = props => (
   <svg viewBox='0 0 120 90' {...props}>
     <path
       d='M92.7 40.3v12a6 6 0 0 1-6 6h-48a6 6 0 0 1-6-6v-28a6 6 0 0 1 6-6h48a6 6 0 0 1 6 6v3.6m0 6.5v2.8'
@@ -81,4 +81,4 @@ const TileCampaign = props => (
   </svg>
 );
 
-export default TileCampaign;
+export default CampaignIcon;

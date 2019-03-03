@@ -1,8 +1,7 @@
 import React from 'react';
-import { HeroHeader, ButtonWrapper } from "./WhatWeDo.style";
 import Typography from '../Typography';
 import { Paragraph } from '../../global/commonStyles';
-import Button from '../Button';
+import { Wrapper, Container } from "./WhatWeDo.style";
 
 const WhatWeDo = () => {
   return (
@@ -17,11 +16,6 @@ const WhatWeDo = () => {
           Tworzymy i prowadzimy kampanie w Google Ads i w social mediach.
           Oferujemy pełny wachlarz działań SEO, analitykę webową oraz usługi graficzne.
         </Paragraph>
-
-        <ButtonWrapper>
-          <Button fluid>Skontaktuj się</Button>
-          <Button fluid secondary>Learn more</Button>
-        </ButtonWrapper>
       </Container>
     </Wrapper>
   );

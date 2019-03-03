@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TileSeo = props => (
+const SeoIcon = props => (
   <svg width={120} height={90} overflow='scroll' {...props}>
     <circle
       fill='#d7e6f2'
@@ -130,4 +130,4 @@ const TileSeo = props => (
   </svg>
 );
 
-export default TileSeo;
+export default SeoIcon;
