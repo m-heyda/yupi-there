@@ -8,6 +8,7 @@ export const containerStyles = css`
   width: 100%;
   max-width: ${rem(globalSize.container)};
   padding: 0 ${rem(globalSize.gutter)};
+  margin: 0 auto;
 `;
 
 export const Container = styled.div`
