@@ -1,6 +1,7 @@
 import React from 'react';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import cn from 'classnames';
+import { YupiButton, InnerButton } from './Button.style';
 
 const Button = ({
   component: Component,
@@ -12,15 +13,21 @@ const Button = ({
   const buttonClasses = cn('button', { 'is-secondary': secondary });
 
   return (
-    <Component
-      className={buttonClasses}
-      onClick={e => {
-        onClick(e);
-      }}
-      {...props}
-    >
-      <span className='button-inner-text'>{children}</span>
-    </Component>
+    <YupiButton>
+      <Component
+        className={buttonClasses}
+        onClick={e => {
+          if (onClick) {
+            onClick(e);
+          }
+        }}
+        {...props}
+      >
+        <InnerButton>
+          {children}
+        </InnerButton>
+      </Component>
+    </YupiButton>
   );
 };
 
