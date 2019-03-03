@@ -35,7 +35,6 @@ export const globalSize = {
   container: '1080px',
   gutter: '20px',
   inputHeight: '44px',
-  buttonHeight: '48px',
   navigationHeight: '60px',
   paddingSmall: '60px',
   paddingMedium: '90px',
