@@ -16,8 +16,8 @@ const Hero = () => {
       </Paragraph>
 
       <ButtonWrapper>
-        <Button>Skontaktuj się</Button>
-        <Button secondary>Learn more</Button>
+        <Button fluid>Skontaktuj się</Button>
+        <Button fluid secondary>Learn more</Button>
       </ButtonWrapper>
     </HeroHeader>
   );

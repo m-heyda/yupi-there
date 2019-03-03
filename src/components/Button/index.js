@@ -17,7 +17,6 @@ const Button = ({
   ...props
 }) => {
   const YupiButton = styled(Component)`
-    all: unset;
     display: inline-flex;
     align-items: center;
     justify-content: center;
