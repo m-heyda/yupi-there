@@ -2,7 +2,9 @@ import React from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
-import { Wrapper, Container, ButtonWrapper } from '../Clients/Clients.style';
+import { Wrapper, Container, CompaniesWrapper } from '../Clients/Clients.style';
+import BrazzersIcon from '../Icons/BrazzersIcon';
+import PornhubIcon from '../Icons/PornhubIcon';
 
 const Clients = () => {
   return (
@@ -19,6 +21,15 @@ const Clients = () => {
           internetowa. Jesteśmy profesjonalistami, którzy potrafią słuchać
           Klientów i pracować na ich sukces.
         </Paragraph>
+
+        <CompaniesWrapper>
+          <BrazzersIcon/>
+          <PornhubIcon/>
+          <BrazzersIcon/>
+          <PornhubIcon/>
+          <BrazzersIcon/>
+          <PornhubIcon/>
+        </CompaniesWrapper>
 
         <Button isCentered>Skontaktuj się</Button>
       </Container>

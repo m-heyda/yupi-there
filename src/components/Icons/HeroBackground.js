@@ -1,7 +1,8 @@
 import React from 'react';
+import SVGIcon from './';
 
 const HeroBackground = props => (
-  <svg id='prefix__Warstwa_1' viewBox='0 0 883.1 389.6' {...props}>
+  <SVGIcon id='prefix__Warstwa_1' viewBox='0 0 883.1 389.6' {...props}>
     <style>
       {
         '.prefix__st0,.prefix__st1{fill:#d7e6f2}.prefix__st1{stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st1,.prefix__st2,.prefix__st3{stroke:#19243b}.prefix__st2,.prefix__st3,.prefix__st4{stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st2{fill:none}.prefix__st3{fill:#fff}.prefix__st4{fill:none;stroke:#d7e6f2}.prefix__st5{fill:#19243b}.prefix__st6{fill:#fff}.prefix__st10,.prefix__st8,.prefix__st9{stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st8,.prefix__st9{fill:#fff;stroke:#d7e6f2}.prefix__st9{fill:#d7e6f2}.prefix__st10{fill:none;stroke:#fff}.prefix__st23{fill:#a9c4d3}.prefix__st24{fill:#d7e6f2;stroke:#d7e6f2;stroke-miterlimit:10}'
@@ -1806,7 +1807,7 @@ const HeroBackground = props => (
       />
       <path id='prefix__XMLID_3_' d='M38.1 389.8h16' className='prefix__st2' />
     </g>
-  </svg>
+  </SVGIcon>
 );
 
 export default HeroBackground;
