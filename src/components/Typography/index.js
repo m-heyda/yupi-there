@@ -46,10 +46,9 @@ const Typography = ({
     text-align: center;
     line-height: 1.29;
     
-    ${({ headingVariant }) => headingVariant === 'hero' && isHero}
-    ${({ headingVariant }) => headingVariant === 'heading' && isHeading}
-    ${({ headingVariant }) =>
-      headingVariant === 'staticHeading' && isStaticHeading}
+    ${({headingVariant}) => headingVariant === 'hero' && isHero}
+    ${({headingVariant}) => headingVariant === 'heading' && isHeading}
+    ${({headingVariant}) => headingVariant === 'staticHeading' && isStaticHeading}
   `;
 
   return (

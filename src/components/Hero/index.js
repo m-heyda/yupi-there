@@ -13,9 +13,7 @@ const Hero = () => {
       </Typography>
 
       <Paragraph margin={36} maxWidth={580}>
-        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego.
-        Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm
-        B2B.
+        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
       </Paragraph>
 
       <ButtonWrapper>
