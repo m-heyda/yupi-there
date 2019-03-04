@@ -1,4 +1,3 @@
-import { string, func, oneOfType, oneOf, any } from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { variables, utils } from '../../global/helpers';
@@ -10,12 +9,15 @@ const { media } = utils;
 export const HeroHeader = styled.header`
   ${containerStyles};
 
-  padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingMedium)};
+  padding: ${rem('30px')} ${rem(globalSize.gutter)}
+    ${rem(globalSize.paddingMedium)};
 
   ${media.greaterThan('landscape')`
-    padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingLarge)};
+    padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem(
+    globalSize.paddingLarge
+  )};
   `}
-  
+
   .hero-background {
     width: 100%;
     min-width: ${rem('480px')};
