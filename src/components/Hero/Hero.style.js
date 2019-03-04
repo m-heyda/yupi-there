@@ -4,7 +4,7 @@ import { rem } from 'polished';
 import { variables, utils } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
-const { marginSize, globalSize, breakpoints } = variables;
+const { marginSize, globalSize } = variables;
 const { media } = utils;
 
 export const HeroHeader = styled.header`
@@ -13,11 +13,11 @@ export const HeroHeader = styled.header`
   position: relative;
   padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem('260px')};
 
-  ${media.greaterThan(breakpoints.tablet)`
+  ${media.greaterThan('tablet')`
     padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem('320px')};
   `}
 
-  ${media.greaterThan(breakpoints.landscape)`
+  ${media.greaterThan('landscape')`
     padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem('500px')};
   `}
 `;
@@ -36,11 +36,11 @@ export const BackgroundWrapper = styled.div`
     left: 50%;
     transform: translateX(-50%);
 
-    ${media.greaterThan(breakpoints.tablet)`
+    ${media.greaterThan('tablet')`
       max-width: ${rem('600px')};
     `}
 
-    ${media.greaterThan(breakpoints.landscape)`
+    ${media.greaterThan('landscape')`
       width: 90%;
       max-width: none;
     `}
@@ -53,7 +53,7 @@ export const ButtonWrapper = styled.div`
   max-width: ${rem('200px')};
   margin: 0 auto;
 
-  ${media.greaterThan(breakpoints.tablet)`
+  ${media.greaterThan('tablet')`
     flex-direction: row;
     max-width: ${rem('400px')};
   `}
@@ -62,7 +62,7 @@ export const ButtonWrapper = styled.div`
     &:first-child {
       margin: 0 auto ${rem(marginSize.small)};
 
-      ${media.greaterThan(breakpoints.tablet)`
+      ${media.greaterThan('tablet')`
         margin: 0 ${rem('20px')} 0 auto;
       `}
     }
