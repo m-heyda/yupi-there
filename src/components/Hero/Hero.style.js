@@ -10,40 +10,19 @@ const { media } = utils;
 export const HeroHeader = styled.header`
   ${containerStyles};
 
-  position: relative;
-  padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem('260px')};
-
-  ${media.greaterThan('tablet')`
-    padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem('320px')};
-  `}
+  padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingMedium)};
 
   ${media.greaterThan('landscape')`
-    padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem('500px')};
+    padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingLarge)};
   `}
-`;
-
-export const BackgroundWrapper = styled.div`
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-x: hidden;
-
-  & > svg {
-    position: relative;
-    width: 150%;
-    max-width: ${rem('510px')};
-    left: 50%;
+  
+  .hero-background {
+    width: 100%;
+    min-width: ${rem('480px')};
+    max-width: ${rem('950px')};
+    margin: 0 auto 0 50%;
     transform: translateX(-50%);
-
-    ${media.greaterThan('tablet')`
-      max-width: ${rem('600px')};
-    `}
-
-    ${media.greaterThan('landscape')`
-      width: 90%;
-      max-width: none;
-    `}
+    overflow-x: hidden;
   }
 `;
 
@@ -51,11 +30,12 @@ export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: ${rem('200px')};
-  margin: 0 auto;
+  margin: 0 auto ${rem('48px')};
 
   ${media.greaterThan('tablet')`
     flex-direction: row;
     max-width: ${rem('400px')};
+    margin: 0 auto ${rem('80px')};
   `}
 
   & > button {

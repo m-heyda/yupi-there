@@ -3,7 +3,7 @@ import Typography from '../Typography';
 import Button from '../Button';
 import HeroBackground from '../Icons/HeroBackground';
 import { Paragraph } from '../../global/commonStyles';
-import { HeroHeader, ButtonWrapper, BackgroundWrapper } from './Hero.style';
+import { HeroHeader, ButtonWrapper } from './Hero.style';
 
 const Hero = () => {
   return (
@@ -22,9 +22,8 @@ const Hero = () => {
           Learn more
         </Button>
       </ButtonWrapper>
-      <BackgroundWrapper>
-        <HeroBackground />
-      </BackgroundWrapper>
+
+      <HeroBackground className='hero-background'/>
     </HeroHeader>
   );
 };
