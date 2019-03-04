@@ -80,7 +80,7 @@ const WhatWeDo = () => {
               <TileContent>
                 <TileIcon>{tile.icon}</TileIcon>
 
-                <Typography component='h4' headingVariant='heading'>
+                <Typography component='h4' headingVariant='staticHeading'>
                   {tile.title}
                 </Typography>
 

@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { fontSize, fontFamily, marginSize, breakpoints } = variables;
+const { fontSize, fontFamily, marginSize } = variables;
 const { media } = utils;
 
 const Typography = ({
@@ -15,28 +15,33 @@ const Typography = ({
   ...props
 }) => {
   const mobileHeading = css`
-    font-size: ${fontSize.mediumHeading};
-    margin: 0 auto ${marginSize.regular};
+    font-size: ${rem(fontSize.mediumHeading)};
+    margin: 0 auto ${rem(marginSize.regular)};
   `;
 
   const isHero = css`
     max-width: ${rem('560px')};
     ${mobileHeading}
 
-    ${media.greaterThan(breakpoints.landscape)`
-      font-size: ${fontSize.heroHeading};
+    ${media.greaterThan('landscape')`
+      font-size: ${rem(fontSize.heroHeading)};
       line-height: 1.27;
-      margin: 0 auto ${marginSize.small};
+      margin: 0 auto ${rem(marginSize.small)};
     `}
   `;
 
   const isHeading = css`
     ${mobileHeading}
+    
+    ${media.greaterThan('landscape')`
+      font-size: ${rem(fontSize.largeHeading)};
+      line-height: 1.5;
+    `}
   `;
 
   const isStaticHeading = css`
-    font-size: ${fontSize.smallHeading};
-    margin: 0 0 ${marginSize.small};
+    font-size: ${rem(fontSize.smallHeading)};
+    margin: 0 0 ${rem(marginSize.small)};
   `;
 
   const YupiTypography = styled(Component)`
