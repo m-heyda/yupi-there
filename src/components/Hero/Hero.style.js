@@ -1,4 +1,3 @@
-import { string, func, oneOfType, oneOf, any } from 'prop-types';
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { variables, utils } from '../../global/helpers';
