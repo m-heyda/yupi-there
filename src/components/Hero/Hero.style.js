@@ -10,13 +10,13 @@ const { media } = utils;
 export const HeroHeader = styled.header`
   ${containerStyles};
 
-  padding: ${rem('30px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingMedium)};
+  padding: ${rem('30px')} ${rem(globalSize.gutter)} 0;
 
   ${media.greaterThan('landscape')`
-    padding: ${rem('83px')} ${rem(globalSize.gutter)} ${rem(globalSize.paddingLarge)};
+    padding: ${rem('83px')} ${rem(globalSize.gutter)} 0;
   `}
-  
-  .hero-background {
+
+  .heroBackground {
     width: 100%;
     min-width: ${rem('480px')};
     max-width: ${rem('950px')};
