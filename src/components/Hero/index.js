@@ -1,9 +1,9 @@
 import React from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
-import HeroBackground from '../Icons/HeroBackground';
+import heroBg from '../../assets/heroBackground.svg';
 import { Paragraph } from '../../global/commonStyles';
-import { HeroHeader, ButtonWrapper } from './Hero.style';
+import { HeroHeader, ButtonWrapper, HeroBackground, BackgroundWrapper } from './Hero.style';
 
 const Hero = () => {
   return (
@@ -13,9 +13,7 @@ const Hero = () => {
       </Typography>
 
       <Paragraph margin={36} maxWidth={580}>
-        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego.
-        Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm
-        B2B.
+        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
       </Paragraph>
 
       <ButtonWrapper>
@@ -25,7 +23,12 @@ const Hero = () => {
         </Button>
       </ButtonWrapper>
 
-      <HeroBackground className='hero-background' />
+      <BackgroundWrapper>
+        <HeroBackground
+          src={heroBg}
+          alt='Hero background'
+        />
+      </BackgroundWrapper>
     </HeroHeader>
   );
 };
