@@ -1,9 +1,9 @@
 import React from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
-import HeroBackground from '../../assets/heroBackground.svg';
+import heroBg from '../../assets/heroBackground.svg';
 import { Paragraph } from '../../global/commonStyles';
-import { HeroHeader, ButtonWrapper } from './Hero.style';
+import { HeroHeader, ButtonWrapper, HeroBackground, BackgroundWrapper } from './Hero.style';
 
 const Hero = () => {
   return (
@@ -25,11 +25,12 @@ const Hero = () => {
         </Button>
       </ButtonWrapper>
 
-      <img
-        src={HeroBackground}
-        alt='Hero background'
-        className='heroBackground'
-      />
+      <BackgroundWrapper>
+        <HeroBackground
+          src={heroBg}
+          alt='Hero background'
+        />
+      </BackgroundWrapper>
     </HeroHeader>
   );
 };
