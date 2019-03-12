@@ -18,6 +18,24 @@ const linkButton = css`
   box-shadow: none;
 `;
 
+const afterButton = css`
+  right: -${borderThickness};
+  top: -${borderThickness};
+  bottom: -${borderThickness};
+  left: -${borderThickness};
+  border-radius: ${borderRadius};
+  background: ${({ isSecondary }) =>
+    isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
+`;
+
+const afterLink = css`
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: ${rgba(colors.oxfordBlue, 0.05)};
+`;
+
 const Button = ({
   component: Component,
   secondary,
@@ -56,20 +74,13 @@ const Button = ({
     ${({ isLink }) => isLink && linkButton}
 
     &:after {
-      display: inline-block;
+      display: block;
       content: '';
       position: absolute;
-      right: -${borderThickness};
-      top: -${borderThickness};
-      bottom: -${borderThickness};
-      left: -${borderThickness};
-      background: ${({ isSecondary }) =>
-        isSecondary
-          ? rgba(colors.greenHaze, 0.1)
-          : rgba(colors.oxfordBlue, 0.1)};
-      border-radius: ${borderRadius};
       transform: scale(0);
       transition: transform 0.1s ${transitions.spring};
+
+      ${({ isLink }) => (isLink ? afterLink : afterButton)}
     }
 
     &:hover {
