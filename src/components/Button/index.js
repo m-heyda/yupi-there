@@ -4,8 +4,11 @@ import { rem, rgba } from 'polished';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { globalSize, fontSize } = variables;
+const { globalSize, fontSize, transitions } = variables;
 const { media } = utils;
+
+const borderRadius = rem('24px');
+const borderThickness = `2px`;
 
 const linkButton = css`
   color: ${colors.lightGreen};
@@ -30,6 +33,7 @@ const Button = ({
   const ButtonIcon = withIcon;
 
   const YupiButton = styled(Component)`
+    position: relative;
     display: ${props => (props.isCentered ? 'flex' : 'inline-flex')};
     align-items: center;
     justify-content: center;
@@ -43,13 +47,36 @@ const Button = ({
     font-family: inherit;
     background: ${props =>
       props.isSecondary ? 'transparent' : colors.lightGreen};
-    border: 2px solid
+    border: ${borderThickness} solid
       ${props => (props.isSecondary ? colors.lightGreen : 'transparent')};
-    border-radius: ${rem('24px')};
+    border-radius: ${borderRadius};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
 
     ${({ isLink }) => isLink && linkButton}
+
+    &:after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      right: -${borderThickness};
+      top: -${borderThickness};
+      bottom: -${borderThickness};
+      left: -${borderThickness};
+      background: ${({ isSecondary }) =>
+        isSecondary
+          ? rgba(colors.greenHaze, 0.1)
+          : rgba(colors.oxfordBlue, 0.1)};
+      border-radius: ${borderRadius};
+      transform: scale(0);
+      transition: transform 0.1s ${transitions.spring};
+    }
+
+    &:hover {
+      &:after {
+        transform: scale(1);
+      }
+    }
 
     & > svg {
       margin: 0 0 0 ${rem('8px')};
@@ -64,6 +91,7 @@ const Button = ({
 
   const InnerButton = styled.span`
     line-height: 1;
+    z-index: 10;
   `;
 
   return (
