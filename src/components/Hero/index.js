@@ -1,8 +1,9 @@
 import React from 'react';
-import { HeroHeader, ButtonWrapper } from './Hero.style';
 import Typography from '../Typography';
-import { Paragraph } from '../../global/commonStyles';
 import Button from '../Button';
+import heroBg from '../../assets/heroBackground.svg';
+import { Paragraph } from '../../global/commonStyles';
+import { HeroHeader, ButtonWrapper, HeroBackground, BackgroundWrapper } from './Hero.style';
 
 const Hero = () => {
   return (
@@ -23,6 +24,13 @@ const Hero = () => {
           Learn more
         </Button>
       </ButtonWrapper>
+
+      <BackgroundWrapper>
+        <HeroBackground
+          src={heroBg}
+          alt='Hero background'
+        />
+      </BackgroundWrapper>
     </HeroHeader>
   );
 };
