@@ -52,21 +52,22 @@ const Button = ({
 
   const YupiButton = styled(Component)`
     position: relative;
-    display: ${props => (props.isCentered ? 'flex' : 'inline-flex')};
+    display: ${({ isCentered }) => (isCentered ? 'flex' : 'inline-flex')};
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding: 0 ${rem('36px')};
-    width: ${props => (props.isFluid ? '100%' : 'auto')};
+    width: ${({ isFluid }) => (isFluid ? '100%' : 'auto')};
     height: ${rem(globalSize.inputHeight)};
-    color: ${props => (props.isSecondary ? colors.lightGreen : colors.white)};
+    color: ${({ isSecondary }) =>
+      isSecondary ? colors.lightGreen : colors.white};
     font-size: ${rem(fontSize.menu)};
-    font-weight: ${props => (props.isSecondary ? 500 : 600)};
+    font-weight: ${({ isSecondary }) => (isSecondary ? 500 : 600)};
     font-family: inherit;
-    background: ${props =>
-      props.isSecondary ? 'transparent' : colors.lightGreen};
+    background: ${({ isSecondary }) =>
+      isSecondary ? 'transparent' : colors.lightGreen};
     border: ${borderThickness} solid
-      ${props => (props.isSecondary ? colors.lightGreen : 'transparent')};
+      ${({ isSecondary }) => (isSecondary ? colors.lightGreen : 'transparent')};
     border-radius: ${borderRadius};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
