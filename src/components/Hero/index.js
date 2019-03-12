@@ -3,7 +3,12 @@ import Typography from '../Typography';
 import Button from '../Button';
 import heroBg from '../../assets/heroBackground.svg';
 import { Paragraph } from '../../global/commonStyles';
-import { HeroHeader, ButtonWrapper, HeroBackground, BackgroundWrapper } from './Hero.style';
+import {
+  HeroHeader,
+  ButtonWrapper,
+  HeroBackground,
+  BackgroundWrapper,
+} from './Hero.style';
 
 const Hero = () => {
   return (
@@ -13,7 +18,9 @@ const Hero = () => {
       </Typography>
 
       <Paragraph margin={36} maxWidth={580}>
-        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm B2B.
+        Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego.
+        Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm
+        B2B.
       </Paragraph>
 
       <ButtonWrapper>
@@ -24,10 +31,7 @@ const Hero = () => {
       </ButtonWrapper>
 
       <BackgroundWrapper>
-        <HeroBackground
-          src={heroBg}
-          alt='Hero background'
-        />
+        <HeroBackground src={heroBg} alt='Hero background' />
       </BackgroundWrapper>
     </HeroHeader>
   );

@@ -14,7 +14,7 @@ const Clients = () => {
           Z kim współpracowaliśmy?
         </Typography>
 
-        <Paragraph margin={41} maxWidth={580}>
+        <Paragraph margin={40} maxWidth={580}>
           Zaufali nam klienci niemal ze wszystkich branż. Kilka lat na rynku
           oraz doświadczenie z pracy z wieloma firmami utwierdziło nas w
           przekonaniu jak wiele do każdego biznesu może wnieść reklama
@@ -23,12 +23,12 @@ const Clients = () => {
         </Paragraph>
 
         <CompaniesWrapper>
-          <BrazzersIcon/>
-          <PornhubIcon/>
-          <BrazzersIcon/>
-          <PornhubIcon/>
-          <BrazzersIcon/>
-          <PornhubIcon/>
+          <BrazzersIcon />
+          <PornhubIcon />
+          <BrazzersIcon />
+          <PornhubIcon />
+          <BrazzersIcon />
+          <PornhubIcon />
         </CompaniesWrapper>
 
         <Button isCentered>Skontaktuj się</Button>

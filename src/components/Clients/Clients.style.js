@@ -16,16 +16,16 @@ export const Wrapper = styled.section`
 `;
 
 export const CompaniesWrapper = styled.div`
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   margin: 0 0 ${rem('40px')};
-   
-   & > svg {
-      width: 100%;
-      height: auto;
-      max-width: ${rem('130px')};
-      margin: ${rem('30px')} 1%;
-   }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 ${rem('40px')};
+
+  & > svg {
+    width: 100%;
+    height: auto;
+    max-width: ${rem('130px')};
+    margin: ${rem('30px')} ${rem('10px')};
+  }
 `;
