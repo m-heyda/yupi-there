@@ -3,8 +3,11 @@ import Typography from '../Typography';
 import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
 import { Wrapper, Container, CompaniesWrapper } from '../Clients/Clients.style';
+import { variables } from '../../global/helpers';
 import BrazzersIcon from '../Icons/BrazzersIcon';
 import PornhubIcon from '../Icons/PornhubIcon';
+
+const { marginSize } = variables;
 
 const Clients = () => {
   return (
@@ -14,7 +17,7 @@ const Clients = () => {
           Z kim współpracowaliśmy?
         </Typography>
 
-        <Paragraph margin={40} maxWidth={580}>
+        <Paragraph margin={marginSize.large} maxWidth={580}>
           Zaufali nam klienci niemal ze wszystkich branż. Kilka lat na rynku
           oraz doświadczenie z pracy z wieloma firmami utwierdziło nas w
           przekonaniu jak wiele do każdego biznesu może wnieść reklama

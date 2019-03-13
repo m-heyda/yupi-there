@@ -9,6 +9,9 @@ import {
   HeroBackground,
   BackgroundWrapper,
 } from './Hero.style';
+import { variables } from '../../global/helpers';
+
+const { marginSize } = variables;
 
 const Hero = () => {
   return (
@@ -17,7 +20,7 @@ const Hero = () => {
         Współpracuj z najlepszym zespołem ekspertów
       </Typography>
 
-      <Paragraph margin={36} maxWidth={580}>
+      <Paragraph margin={marginSize.medium} maxWidth={580}>
         Zadbamy o pozycjonowanie i użyteczność twojego serwisu internetowego.
         Budujemy wzrost i zwiększamy sprzedaż dla e-commerce, startupów i firm
         B2B.

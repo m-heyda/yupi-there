@@ -29,11 +29,11 @@ const afterButton = css`
     left: -${borderThickness};
     border-radius: ${borderRadius};
     background: ${({ isSecondary }) =>
-    isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
+      isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
     transform: scale(0);
     transition: transform 0.1s ${transitions.spring};
   }
-  
+
   &:hover {
     &:after {
       transform: scale(1);
