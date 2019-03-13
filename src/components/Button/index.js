@@ -7,8 +7,8 @@ import { variables, colors, utils } from '../../global/helpers';
 const { globalSize, fontSize, transitions } = variables;
 const { media } = utils;
 
-const borderRadius = rem('24px');
-const borderThickness = `2px`;
+const BORDER_RADIUS = `24px`;
+const BORDER_THICKNESS = `2px`;
 
 const linkButton = css`
   color: ${colors.lightGreen};
@@ -23,11 +23,11 @@ const afterButton = css`
     display: block;
     content: '';
     position: absolute;
-    right: -${borderThickness};
-    top: -${borderThickness};
-    bottom: -${borderThickness};
-    left: -${borderThickness};
-    border-radius: ${borderRadius};
+    right: -${BORDER_THICKNESS};
+    top: -${BORDER_THICKNESS};
+    bottom: -${BORDER_THICKNESS};
+    left: -${BORDER_THICKNESS};
+    border-radius: ${rem(BORDER_RADIUS)};
     background: ${({ isSecondary }) =>
       isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
     transform: scale(0);
@@ -71,11 +71,12 @@ const Button = ({
     font-family: inherit;
     background: ${({ isSecondary }) =>
       isSecondary ? 'transparent' : colors.lightGreen};
-    border: ${borderThickness} solid
+    border: ${BORDER_THICKNESS} solid
       ${({ isSecondary }) => (isSecondary ? colors.lightGreen : 'transparent')};
-    border-radius: ${borderRadius};
+    border-radius: ${rem(BORDER_RADIUS)};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
+    backface-visibility: hidden;
 
     ${({ isLink }) => isLink ? linkButton : afterButton}
 

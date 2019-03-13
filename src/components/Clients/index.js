@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
-import { Wrapper, Container, CompaniesWrapper } from '../Clients/Clients.style';
+import { Wrapper, Container, CompaniesWrapper } from './Clients.style';
 import { variables } from '../../global/helpers';
 import BrazzersIcon from '../Icons/BrazzersIcon';
 import PornhubIcon from '../Icons/PornhubIcon';
