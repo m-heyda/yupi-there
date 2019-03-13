@@ -20,7 +20,7 @@ const Typography = ({
   `;
 
   const isHero = css`
-    max-width: ${rem('560px')};
+    max-width: ${rem(560)};
     ${mobileHeading}
 
     ${media.greaterThan('landscape')`

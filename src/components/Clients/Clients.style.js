@@ -4,7 +4,6 @@ import { variables, utils, colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
 const { globalSize } = variables;
-const { media } = utils;
 
 export const Container = styled.div`
   ${containerStyles}
@@ -20,11 +19,11 @@ export const CompaniesWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 0 ${rem('40px')};
+  margin: 0 0 ${rem(40)};
 
   & > svg {
     width: ${rem(110)};
     height: ${rem(110)};
-    margin: 0 ${rem('10px')};
+    margin: 0 ${rem(10)};
   }
 `;

@@ -7,8 +7,8 @@ import { variables, colors, utils } from '../../global/helpers';
 const { globalSize, fontSize, transitions } = variables;
 const { media } = utils;
 
-const BORDER_RADIUS = `24px`;
-const BORDER_THICKNESS = `2px`;
+const BORDER_RADIUS = 24;
+const BORDER_THICKNESS = 2;
 
 const linkButton = css`
   color: ${colors.lightGreen};
@@ -23,10 +23,10 @@ const afterButton = css`
     display: block;
     content: '';
     position: absolute;
-    right: -${BORDER_THICKNESS};
-    top: -${BORDER_THICKNESS};
-    bottom: -${BORDER_THICKNESS};
-    left: -${BORDER_THICKNESS};
+    right: -${rem(BORDER_THICKNESS)};
+    top: -${rem(BORDER_THICKNESS)};
+    bottom: -${rem(BORDER_THICKNESS)};
+    left: -${rem(BORDER_THICKNESS)};
     border-radius: ${rem(BORDER_RADIUS)};
     background: ${({ isSecondary }) =>
       isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
@@ -61,7 +61,7 @@ const Button = ({
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 ${rem('36px')};
+    padding: 0 ${rem(36)};
     width: ${({ isFluid }) => (isFluid ? '100%' : 'auto')};
     height: ${rem(globalSize.inputHeight)};
     color: ${({ isSecondary }) =>
@@ -81,9 +81,9 @@ const Button = ({
     ${({ isLink }) => isLink ? linkButton : afterButton}
 
     & > svg {
-      margin: 0 0 0 ${rem('8px')};
-      width: ${rem('21px')};
-      height: ${rem('21px')};
+      margin: 0 0 0 ${rem(8)};
+      width: ${rem(21)};
+      height: ${rem(21)};
     }
 
     ${media.greaterThan('landscape')`

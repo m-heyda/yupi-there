@@ -27,14 +27,14 @@ export const TilesWrapper = styled.ul`
   `}
 
   ${media.greaterThan('landscape')`
-    margin: 0 0 ${rem('32px')};
+    margin: 0 0 ${rem(32)};
   `}
 `;
 
 export const Tile = styled.li`
   position: relative;
   margin: 0 0 ${rem(marginSize.regular)};
-  padding: ${rem('40px')} ${rem(globalSize.gutter)};
+  padding: ${rem(40)} ${rem(globalSize.gutter)};
   width: 100%;
   z-index: 1;
   user-select: none;
@@ -49,7 +49,7 @@ export const Tile = styled.li`
     left: 0;
     background: ${colors.white};
     box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
-    border-radius: ${rem('6px')};
+    border-radius: ${rem(6)};
     z-index: -1;
 
     ${media.greaterThan('landscape')`
@@ -60,11 +60,11 @@ export const Tile = styled.li`
   }
 
   ${media.greaterThan('tablet')`
-    flex: 0 0 calc(50% - ${rem('16px')});
+    flex: 0 0 calc(50% - ${rem(16)});
   `}
 
   ${media.greaterThan('landscape')`
-    flex: 0 0 calc(33% - ${rem('8px')});
+    flex: 0 0 calc(33% - ${rem(8)});
     
     &:hover {
       &:before {
@@ -89,14 +89,14 @@ export const TileContent = styled.div`
 
 export const TileIcon = styled.div`
   display: block;
-  margin: 0 auto ${rem('16px')};
+  margin: 0 auto ${rem(16)};
   width: 100%;
-  max-width: ${rem('120px')};
+  max-width: ${rem(120)};
 
   & > svg {
     display: block;
     width: 100%;
     height: auto;
-    min-height: ${rem('90px')};
+    min-height: ${rem(90)};
   }
 `;
