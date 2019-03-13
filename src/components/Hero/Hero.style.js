@@ -11,10 +11,10 @@ const HERO_GUTTER = 60;
 export const HeroHeader = styled.header`
   ${containerStyles};
 
-  padding: ${rem('30px')} ${rem(globalSize.gutter)} 0;
+  padding: ${rem(30)} ${rem(globalSize.gutter)} 0;
 
   ${media.greaterThan('landscape')`
-    padding: ${rem('83px')} ${rem(globalSize.gutter)} 0;
+    padding: ${rem(82)} ${rem(globalSize.gutter)} 0;
   `}
 `;
 
@@ -33,13 +33,13 @@ export const HeroBackground = styled.img`
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: ${rem('200px')};
-  margin: 0 auto ${rem('48px')};
+  max-width: ${rem(200)};
+  margin: 0 auto ${rem(48)};
 
   ${media.greaterThan('tablet')`
     flex-direction: row;
-    max-width: ${rem('400px')};
-    margin: 0 auto ${rem('80px')};
+    max-width: ${rem(400)};
+    margin: 0 auto ${rem(80)};
   `}
 
   & > button {
@@ -47,7 +47,7 @@ export const ButtonWrapper = styled.div`
       margin: 0 auto ${rem(marginSize.small)};
 
       ${media.greaterThan('tablet')`
-        margin: 0 ${rem('20px')} 0 auto;
+        margin: 0 ${rem(20)} 0 auto;
       `}
     }
   }

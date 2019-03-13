@@ -47,7 +47,7 @@ export const Navbar = styled.nav`
   z-index: 20;
 
   ${media.greaterThan('landscape')`
-    height: ${rem('80px')};
+    height: ${rem(80)};
   `}
 `;
 
@@ -72,7 +72,7 @@ export const MainMenu = styled.ul`
   left: 0;
   width: 100%;
   margin: 0;
-  padding: ${rem('16px')} 0 ${rem('32px')};
+  padding: ${rem(16)} 0 ${rem(32)};
   height: auto;
   background: ${colors.white};
   box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
@@ -110,20 +110,20 @@ export const SubMenuWrapper = styled.ul`
   justify-content: space-between;
   flex: 0 0 100%;
   margin: 0;
-  padding: ${rem(globalSize.gutter)} ${rem(globalSize.gutter)} ${rem('6px')};
+  padding: ${rem(globalSize.gutter)} ${rem(globalSize.gutter)} ${rem(6)};
   background: ${colors.titanWhite};
 
   ${media.greaterThan('landscape')`
     position: absolute;
-    top: ${rem('36px')};
+    top: ${rem(36)};
     left: 0;
-    width: ${rem('200px')};
+    width: ${rem(200)};
     height: auto;
     max-height: 0;
-    padding: ${rem('24px')};
+    padding: ${rem(24)};
     background: ${colors.white};
-    border-radius: ${rem('32px')};
-    box-shadow: 0 40px 120px 0 ${rgba(colors.blueGrey, 0.2)};
+    border-radius: ${rem(32)};
+    box-shadow: 0 ${rem(40)} ${rem(120)} 0 ${rgba(colors.blueGrey, 0.2)};
     pointer-events: none;
     visibility: hidden;
     transition: max-height .3s ${transitions.spring};
@@ -133,12 +133,12 @@ export const SubMenuWrapper = styled.ul`
 
 export const SubMenuItem = styled.li`
   flex: 1 1 calc(55% - ${globalSize.gutter});
-  margin: 0 0 ${rem('14px')};
+  margin: 0 0 ${rem(14)};
   font-size: ${fontSize.small};
 
   ${media.greaterThan('landscape')`
     flex: 0 0 100%;
-    padding: ${rem('4px')};
+    padding: ${rem(4)};
     margin: 0;
   `}
 `;
@@ -164,12 +164,12 @@ export const MainMenuItem = styled.li`
     position: relative;
     display: inline-flex;
     align-self: center;
-    padding: 0 ${rem('24px')};
+    padding: 0 ${rem(24)};
     height: 100%;
     white-space: nowrap;
     
     &:not(:last-child) {
-      margin: 0 ${rem('32px')} 0 0;
+      margin: 0 ${rem(32)} 0 0;
     }
     
     &:last-child {
@@ -193,7 +193,7 @@ export const MainMenuItem = styled.li`
     
     &:hover {
       ${SubMenuWrapper} {
-        max-height: ${rem('200px')};
+        max-height: ${rem(200)};
         pointer-events: all;
         visibility: visible;
       }
@@ -207,7 +207,7 @@ export const MenuLink = styled(Link)`
   font-size: ${fontSize.menu};
   text-decoration: none;
   background: ${colors.white};
-  padding: ${rem('12px')} ${rem(globalSize.gutter)};
+  padding: ${rem(12)} ${rem(globalSize.gutter)};
   border-bottom: 1px solid ${rgba(colors.blueGrey, 0.2)};
 
   ${media.greaterThan('landscape')`
@@ -225,7 +225,7 @@ export const BurgerIcon = styled.span`
   &:after {
     content: '';
     display: block;
-    width: ${rem('22px')};
+    width: ${rem(22)};
     height: 2px;
     background: ${colors.darkBlue};
     transition: transform 0.5s ${transitions.spring};

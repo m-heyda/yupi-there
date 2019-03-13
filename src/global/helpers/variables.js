@@ -18,6 +18,7 @@ export const marginSize = {
   small: '16px',
   regular: '24px',
   medium: '36px',
+  large: '40px',
 };
 
 export const fontSize = {

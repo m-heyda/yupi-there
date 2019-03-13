@@ -4,8 +4,11 @@ import { rem, rgba } from 'polished';
 import { string, bool, func, oneOfType, any } from 'prop-types';
 import { variables, colors, utils } from '../../global/helpers';
 
-const { globalSize, fontSize } = variables;
+const { globalSize, fontSize, transitions } = variables;
 const { media } = utils;
+
+const BORDER_RADIUS = 24;
+const BORDER_THICKNESS = 2;
 
 const linkButton = css`
   color: ${colors.lightGreen};
@@ -13,6 +16,29 @@ const linkButton = css`
   background: transparent;
   border: 2px solid transparent;
   box-shadow: none;
+`;
+
+const afterButton = css`
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -${rem(BORDER_THICKNESS)};
+    top: -${rem(BORDER_THICKNESS)};
+    bottom: -${rem(BORDER_THICKNESS)};
+    left: -${rem(BORDER_THICKNESS)};
+    border-radius: ${rem(BORDER_RADIUS)};
+    background: ${({ isSecondary }) =>
+      isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
+    transform: scale(0);
+    transition: transform 0.1s ${transitions.spring};
+  }
+
+  &:hover {
+    &:after {
+      transform: scale(1);
+    }
+  }
 `;
 
 const Button = ({
@@ -30,31 +56,34 @@ const Button = ({
   const ButtonIcon = withIcon;
 
   const YupiButton = styled(Component)`
-    display: ${props => (props.isCentered ? 'flex' : 'inline-flex')};
+    position: relative;
+    display: ${({ isCentered }) => (isCentered ? 'flex' : 'inline-flex')};
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 ${rem('36px')};
-    width: ${props => (props.isFluid ? '100%' : 'auto')};
+    padding: 0 ${rem(36)};
+    width: ${({ isFluid }) => (isFluid ? '100%' : 'auto')};
     height: ${rem(globalSize.inputHeight)};
-    color: ${props => (props.isSecondary ? colors.lightGreen : colors.white)};
+    color: ${({ isSecondary }) =>
+      isSecondary ? colors.lightGreen : colors.white};
     font-size: ${rem(fontSize.menu)};
-    font-weight: ${props => (props.isSecondary ? 500 : 600)};
+    font-weight: ${({ isSecondary }) => (isSecondary ? 500 : 600)};
     font-family: inherit;
-    background: ${props =>
-      props.isSecondary ? 'transparent' : colors.lightGreen};
-    border: 2px solid
-      ${props => (props.isSecondary ? colors.lightGreen : 'transparent')};
-    border-radius: ${rem('24px')};
+    background: ${({ isSecondary }) =>
+      isSecondary ? 'transparent' : colors.lightGreen};
+    border: ${rem(BORDER_THICKNESS)} solid
+      ${({ isSecondary }) => (isSecondary ? colors.lightGreen : 'transparent')};
+    border-radius: ${rem(BORDER_RADIUS)};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
+    backface-visibility: hidden;
 
-    ${({ isLink }) => isLink && linkButton}
+    ${({ isLink }) => isLink ? linkButton : afterButton}
 
     & > svg {
-      margin: 0 0 0 ${rem('8px')};
-      width: ${rem('21px')};
-      height: ${rem('21px')};
+      margin: 0 0 0 ${rem(8)};
+      width: ${rem(21)};
+      height: ${rem(21)};
     }
 
     ${media.greaterThan('landscape')`
@@ -64,6 +93,7 @@ const Button = ({
 
   const InnerButton = styled.span`
     line-height: 1;
+    z-index: 10;
   `;
 
   return (
