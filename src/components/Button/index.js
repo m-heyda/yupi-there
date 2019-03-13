@@ -19,21 +19,26 @@ const linkButton = css`
 `;
 
 const afterButton = css`
-  right: -${borderThickness};
-  top: -${borderThickness};
-  bottom: -${borderThickness};
-  left: -${borderThickness};
-  border-radius: ${borderRadius};
-  background: ${({ isSecondary }) =>
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -${borderThickness};
+    top: -${borderThickness};
+    bottom: -${borderThickness};
+    left: -${borderThickness};
+    border-radius: ${borderRadius};
+    background: ${({ isSecondary }) =>
     isSecondary ? rgba(colors.greenHaze, 0.1) : rgba(colors.oxfordBlue, 0.1)};
-`;
-
-const afterLink = css`
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  background: ${rgba(colors.oxfordBlue, 0.05)};
+    transform: scale(0);
+    transition: transform 0.1s ${transitions.spring};
+  }
+  
+  &:hover {
+    &:after {
+      transform: scale(1);
+    }
+  }
 `;
 
 const Button = ({
@@ -73,22 +78,7 @@ const Button = ({
     cursor: pointer;
 
     ${({ isLink }) => isLink && linkButton}
-
-    &:after {
-      display: block;
-      content: '';
-      position: absolute;
-      transform: scale(0);
-      transition: transform 0.1s ${transitions.spring};
-
-      ${({ isLink }) => (isLink ? afterLink : afterButton)}
-    }
-
-    &:hover {
-      &:after {
-        transform: scale(1);
-      }
-    }
+    ${({ isLink }) => !isLink && afterButton}
 
     & > svg {
       margin: 0 0 0 ${rem('8px')};
