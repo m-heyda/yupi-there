@@ -77,8 +77,7 @@ const Button = ({
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
 
-    ${({ isLink }) => isLink && linkButton}
-    ${({ isLink }) => !isLink && afterButton}
+    ${({ isLink }) => isLink ? linkButton : afterButton}
 
     & > svg {
       margin: 0 0 0 ${rem('8px')};
