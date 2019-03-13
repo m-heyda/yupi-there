@@ -71,7 +71,7 @@ const Button = ({
     font-family: inherit;
     background: ${({ isSecondary }) =>
       isSecondary ? 'transparent' : colors.lightGreen};
-    border: ${BORDER_THICKNESS} solid
+    border: ${rem(BORDER_THICKNESS)} solid
       ${({ isSecondary }) => (isSecondary ? colors.lightGreen : 'transparent')};
     border-radius: ${rem(BORDER_RADIUS)};
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
