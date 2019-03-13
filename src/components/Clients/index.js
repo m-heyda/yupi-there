@@ -4,7 +4,6 @@ import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
 import { Wrapper, Container, CompaniesWrapper } from './Clients.style';
 import { variables } from '../../global/helpers';
-import BrazzersIcon from '../Icons/BrazzersIcon';
 import PornhubIcon from '../Icons/PornhubIcon';
 
 const { marginSize } = variables;
@@ -26,11 +25,11 @@ const Clients = () => {
         </Paragraph>
 
         <CompaniesWrapper>
-          <BrazzersIcon />
           <PornhubIcon />
-          <BrazzersIcon />
           <PornhubIcon />
-          <BrazzersIcon />
+          <PornhubIcon />
+          <PornhubIcon />
+          <PornhubIcon />
           <PornhubIcon />
         </CompaniesWrapper>
 

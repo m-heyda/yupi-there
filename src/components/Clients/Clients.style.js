@@ -23,9 +23,8 @@ export const CompaniesWrapper = styled.div`
   margin: 0 0 ${rem('40px')};
 
   & > svg {
-    width: 100%;
-    height: auto;
-    max-width: ${rem('130px')};
-    margin: ${rem('30px')} ${rem('10px')};
+    width: ${rem(110)};
+    height: ${rem(110)};
+    margin: 0 ${rem('10px')};
   }
 `;
