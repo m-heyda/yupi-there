@@ -15,6 +15,7 @@ export const transitions = {
 };
 
 export const marginSize = {
+  tiny: '12px',
   small: '16px',
   regular: '24px',
   medium: '36px',
@@ -37,6 +38,7 @@ export const globalSize = {
   gutter: '20px',
   inputHeight: '44px',
   navigationHeight: '60px',
+  paddingXSmall: '48px',
   paddingSmall: '60px',
   paddingMedium: '90px',
   paddingLarge: '120px',
