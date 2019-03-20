@@ -31,7 +31,7 @@ const Typography = ({
   `;
 
   const isHeading = css`
-    ${mobileHeading}
+    font-size: ${rem(fontSize.mediumHeading)};
 
     ${media.greaterThan('landscape')`
       font-size: ${rem(fontSize.largeHeading)};
@@ -41,15 +41,16 @@ const Typography = ({
 
   const isStaticHeading = css`
     font-size: ${rem(fontSize.smallHeading)};
-    margin: 0 0 ${rem(marginSize.small)};
+    margin-bottom: ${rem(marginSize.small)};
   `;
 
   const YupiTypography = styled(Component)`
     font-family: ${fontFamily.secondaryFont};
     font-weight: 600;
     color: ${colors.darkBlue};
-    text-align: center;
+    text-align: ${({ align }) => align};
     line-height: 1.29;
+    max-width: ${({ maxWidth }) => maxWidth};
     
     ${({ headingVariant }) => headingVariant === 'hero' && isHero}
     ${({ headingVariant }) => headingVariant === 'heading' && isHeading}
@@ -72,6 +73,8 @@ const Typography = ({
 
 Typography.defaultProps = {
   component: 'h5',
+  align: 'center',
+  maxWidth: 'none',
 };
 
 Typography.propTypes = {
@@ -79,6 +82,8 @@ Typography.propTypes = {
   component: oneOfType([string, func]).isRequired,
   children: any.isRequired,
   headingVariant: oneOf(['hero', 'heading', 'staticHeading']).isRequired,
+  align: oneOf(['center', 'left', 'right']),
+  maxWidth: any,
 };
 
 export default Typography;
