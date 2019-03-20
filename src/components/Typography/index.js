@@ -31,6 +31,7 @@ const Typography = ({
   `;
 
   const isHeading = css`
+    margin-bottom: ${rem(marginSize.small)};
     font-size: ${rem(fontSize.mediumHeading)};
 
     ${media.greaterThan('landscape')`
