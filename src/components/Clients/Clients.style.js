@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { variables, utils, colors } from '../../global/helpers';
+import { variables, colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
 const { globalSize } = variables;

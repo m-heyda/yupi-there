@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.section`
-  padding: ${rem(globalSize.paddingSmall)} 0 0;
+  padding: ${rem(globalSize.paddingMedium)} 0 0;
   border-bottom: 1px solid ${colors.athensGray};
 `;
 
