@@ -1,8 +1,4 @@
 import React from 'react';
-import medium from '../../assets/medium.svg';
-import reddit from '../../assets/reddit.svg';
-import telegram from '../../assets/telegram.svg';
-import twitter from '../../assets/twitter.svg';
 import {
   Wrapper,
   Container,

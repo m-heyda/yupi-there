@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { rem, rgba } from 'polished';
+import { rem } from 'polished';
 import { colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 import { variables, utils } from '../../global/helpers';
 
-const { globalSize, marginSize, transitions, fontSize, fontFamily } = variables;
+const { globalSize, marginSize, fontSize, fontFamily } = variables;
 const { media } = utils;
 
 export const Wrapper = styled.section`
