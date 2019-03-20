@@ -2,6 +2,7 @@ export default {
   darkBlue: '#19243b',
   fiord: '#3d4b66',
   oxfordBlue: '#3e475b',
+  riverBed: '#444c5c',
   blueGrey: '#808ba5',
   cadetBlue: '#99a4bd',
   athensGray: '#e7ebee',

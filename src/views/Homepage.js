@@ -3,6 +3,7 @@ import SeoBase from '../components/SeoBase';
 import Hero from '../components/Hero';
 import WhatWeDo from '../components/WhatWeDo';
 import Clients from '../components/Clients';
+import Footer from '../components/Footer';
 
 class Homepage extends Component {
   render() {
@@ -12,6 +13,7 @@ class Homepage extends Component {
           <Hero />
           <WhatWeDo />
           <Clients />
+          <Footer />
         </SeoBase>
       </React.Fragment>
     );
