@@ -1,5 +1,10 @@
 import React from 'react';
-import { TestimonialBox, TestimonialIcon, TestimonialContent, TestimonialAuthor } from './Testimonials.style';
+import {
+  TestimonialBox,
+  TestimonialIcon,
+  TestimonialContent,
+  TestimonialAuthor,
+} from './Testimonials.style';
 
 const SingleTestimonial = ({ author, children }) => {
   return (
