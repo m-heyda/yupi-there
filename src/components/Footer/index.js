@@ -3,7 +3,7 @@ import {
   Wrapper,
   Container,
   ElementsWrapper,
-  Element,
+  LinkElement,
   Heading,
   Copyright,
   Title,
@@ -18,13 +18,13 @@ const Footer = () => {
     <Wrapper>
       <Container>
         <ElementsWrapper>
-          <Element>
+          <LinkElement>
             <Heading>Yupi-There</Heading>
             <Copyright>
               Copyright © 2018 yupi-there All rights reserved.
             </Copyright>
-          </Element>
-          <Element>
+          </LinkElement>
+          <LinkElement>
             <Title>Oferta</Title>
             <List>
               <Item>
@@ -46,8 +46,8 @@ const Footer = () => {
                 <StyledLink to='/'>Content Marketing</StyledLink>
               </Item>
             </List>
-          </Element>
-          <Element>
+          </LinkElement>
+          <LinkElement>
             <Title>O firmie</Title>
             <List>
               <Item>
@@ -57,14 +57,14 @@ const Footer = () => {
                 <StyledLink to='/'>Blog</StyledLink>
               </Item>
             </List>
-          </Element>
-          <Element>
+          </LinkElement>
+          <LinkElement>
             <Title>...</Title>
             <PolicyWrapper>
               <StyledLink to='/'>Privacy Policy</StyledLink>
               <StyledLink to='/'>Terms and Conditions</StyledLink>
             </PolicyWrapper>
-          </Element>
+          </LinkElement>
         </ElementsWrapper>
       </Container>
     </Wrapper>

@@ -26,7 +26,7 @@ export const ElementsWrapper = styled.div`
     `}
 `;
 
-export const Element = styled.div`
+export const LinkElement = styled.div`
   &:not(:last-child) {
     margin: 0 0 ${rem(marginSize.medium)};
   }
@@ -81,7 +81,7 @@ export const PolicyWrapper = styled.div`
       display: block;
       content: '';
       position: absolute;
-      right: calc(${rem(marginSize.medium)} / 2 * -1);
+      right: calc(-${rem(marginSize.medium)} / 2 );
       top: 0;
       bottom: 0;
       height: 100%;
