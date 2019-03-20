@@ -78,7 +78,7 @@ const Button = ({
     cursor: pointer;
     backface-visibility: hidden;
 
-    ${({ isLink }) => isLink ? linkButton : afterButton}
+    ${({ isLink }) => (isLink ? linkButton : afterButton)}
 
     & > svg {
       margin: 0 0 0 ${rem(8)};

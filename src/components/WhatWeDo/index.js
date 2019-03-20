@@ -64,7 +64,7 @@ const WhatWeDo = () => {
   return (
     <Wrapper>
       <Container>
-        <Typography component='h2' headingVariant='hero'>
+        <Typography component='h2' headingVariant='heading'>
           Czym się zajmujemy?
         </Typography>
 
