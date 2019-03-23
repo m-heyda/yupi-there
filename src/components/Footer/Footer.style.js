@@ -75,18 +75,18 @@ export const PolicyWrapper = styled.div`
     &:first-child {
       position: relative;
       margin: 0 ${rem(marginSize.medium)} 0 0;
-    }
-
-    &:after {
-      display: block;
-      content: '';
-      position: absolute;
-      right: calc(-${rem(marginSize.medium)} / 2 );
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      width: 1px;
-      background: ${colors.blueGrey};
+      
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        right: calc(-${rem(marginSize.medium)} / 2 );
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 1px;
+        background: ${colors.blueGrey};
+      }
     }
   }
 `;
