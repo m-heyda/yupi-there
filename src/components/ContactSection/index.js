@@ -17,7 +17,7 @@ import {
   LabelName,
   FormInput,
   FormTextArea,
-  FormError
+  FormError,
 } from './ContactSection.style';
 
 const NAME = 'name';
@@ -32,10 +32,10 @@ class ContactSection extends Component {
       name: '',
       email: '',
       text: '',
-    }
+    };
   }
 
-  onChange = (e) => {
+  onChange = e => {
     this.setState({
       [e.target.id]: e.target.value,
     });
@@ -63,36 +63,49 @@ class ContactSection extends Component {
             <ContactParagraph>Masz pytania?</ContactParagraph>
             <ContactWrapper>
               <PhoneWrapper>
-                <ContactLink href='tel:+48533125600'>+48 533 125 600</ContactLink>
-                <ContactLink href='tel:+48533125600'>+48 22 255 84 27</ContactLink>
+                <ContactLink href='tel:+48533125600'>
+                  +48 533 125 600
+                </ContactLink>
+                <ContactLink href='tel:+48533125600'>
+                  +48 22 255 84 27
+                </ContactLink>
               </PhoneWrapper>
-              <ContactLink href='mailto:biuro@yupi-there.pl'>biuro@yupi-there.pl</ContactLink>
+              <ContactLink href='mailto:biuro@yupi-there.pl'>
+                biuro@yupi-there.pl
+              </ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form name="contact-form" method="POST" data-netlify="true" netlify>
-            <FormLabel htmlFor=''>
+          <Form name='contact-form' method='POST' data-netlify='true' netlify>
+            <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
                 id={NAME}
-                type="text"
+                name={NAME}
+                type='text'
                 value={this.state.name}
                 onChange={this.onChange}
               />
               <FormError>Error</FormError>
             </FormLabel>
-            <FormLabel htmlFor=''>
+            <FormLabel htmlFor={EMAIL}>
               <LabelName>Adres e-mail</LabelName>
               <FormInput
                 id={EMAIL}
-                type="email"
+                name={EMAIL}
+                type='email'
                 value={this.state.email}
                 onChange={this.onChange}
               />
               <FormError>Error</FormError>
             </FormLabel>
-            <FormLabel htmlFor=''>
+            <FormLabel htmlFor={TEXT}>
               <LabelName>Treść wiadomości</LabelName>
-              <FormTextArea type='text' value='' />
+              <FormTextArea
+                id={TEXT}
+                name={TEXT}
+                value={this.state.text}
+                onChange={this.onChange}
+              />
               <FormError>Error</FormError>
             </FormLabel>
             <Button type='submit'>Skontaktuj się z nami</Button>
