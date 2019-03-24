@@ -11,6 +11,7 @@ export default {
   mischka: '#dee0e7',
   titanWhite: '#fafaff',
   white: '#fff',
+  radicalRed: '#ff3e55',
   greenHaze: '#0aad56',
   lightGreen: '#00d664',
 };
