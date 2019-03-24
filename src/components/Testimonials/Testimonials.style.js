@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {rem, rgba} from 'polished';
+import { rem, rgba } from 'polished';
 import QuoteIcon from '../Icons/QuoteIcon';
 import { colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';

@@ -15,14 +15,14 @@ const inputStyles = css`
   font-family: inherit;
   font-size: ${fontSize.menu};
   color: ${colors.white};
-  transition: border .2s ${transitions.spring};
-  
+  transition: border 0.2s ${transitions.spring};
+
   &:focus,
   &:active {
     border: 1px solid ${colors.blueGrey};
     outline: none;
   }
-  
+
   &.error {
     border: 1px solid ${colors.radicalRed};
   }
@@ -58,7 +58,7 @@ export const InfoWrapper = styled.div`
 
 export const HeadingWrapper = styled.div`
   margin: 0 0 ${rem(marginSize.medium)};
-  
+
   ${media.greaterThan('landscape')`
     margin: 0 0 ${rem(50)};
   `}
@@ -67,7 +67,7 @@ export const HeadingWrapper = styled.div`
 export const HeadingParagraph = styled.p`
   font-size: ${rem(fontSize.small)};
   color: ${colors.regentGray};
-  
+
   ${media.greaterThan('landscape')`
     font-size: ${fontSize.regular};
   `}
@@ -77,7 +77,7 @@ export const ContactParagraph = styled.p`
   margin: 0 0 ${rem(marginSize.tiny)};
   font-size: ${rem(fontSize.regular)};
   color: ${colors.heather};
-  
+
   ${media.greaterThan('landscape')`
     color: ${colors.regentGray};
   `}
@@ -85,7 +85,7 @@ export const ContactParagraph = styled.p`
 
 export const QuestionsWrapper = styled.div`
   margin: 0 0 ${rem(marginSize.medium)};
-  
+
   ${media.greaterThan('tablet')`
     margin: 0;
   `}
@@ -101,7 +101,7 @@ export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 ${rem(marginSize.medium)};
-  
+
   ${media.greaterThan('landscape')`
     margin: 0;
   `}
@@ -112,7 +112,7 @@ export const ContactLink = styled.a`
   font-weight: 600;
   color: ${colors.lightGreen};
   text-decoration: none;
-  
+
   &:first-child {
     margin: 0 0 ${rem(marginSize.tiny)};
   }
@@ -121,7 +121,7 @@ export const ContactLink = styled.a`
 export const Form = styled.form`
   width: 100%;
   max-width: ${rem(468)};
-  
+
   ${media.greaterThan('tablet')`
     max-width: ${rem(420)};
   `}
@@ -145,7 +145,7 @@ export const FormTextArea = styled.textarea`
   height: ${rem(112)};
   resize: none;
   ${inputStyles}
-  
+
   ${media.greaterThan('mobile')`
     height: ${rem(160)};
   `}

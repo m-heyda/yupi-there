@@ -19,7 +19,7 @@ import {
   LabelName,
   FormInput,
   FormTextArea,
-  FormError
+  FormError,
 } from './ContactSection.style';
 
 const NAME = 'name';
@@ -34,10 +34,10 @@ class ContactSection extends Component {
       name: '',
       email: '',
       text: '',
-    }
+    };
   }
 
-  onChange = (e) => {
+  onChange = e => {
     this.setState({
       [e.target.id]: e.target.value,
     });
@@ -59,27 +59,33 @@ class ContactSection extends Component {
                   Czekamy na Ciebie
                 </Typography>
                 <HeadingParagraph>
-                  Sprawdź, jaki potencjał kryje Twój biznes. Posłuchaj, jak możemy
-                  Ci pomóc osiągnąć sukces.
+                  Sprawdź, jaki potencjał kryje Twój biznes. Posłuchaj, jak
+                  możemy Ci pomóc osiągnąć sukces.
                 </HeadingParagraph>
               </HeadingWrapper>
               <QuestionsWrapper>
                 <ContactParagraph>Masz pytania?</ContactParagraph>
                 <ContactWrapper>
                   <PhoneWrapper>
-                    <ContactLink href='tel:+48533125600'>+48 533 125 600</ContactLink>
-                    <ContactLink href='tel:+48533125600'>+48 22 255 84 27</ContactLink>
+                    <ContactLink href='tel:+48533125600'>
+                      +48 533 125 600
+                    </ContactLink>
+                    <ContactLink href='tel:+48533125600'>
+                      +48 22 255 84 27
+                    </ContactLink>
                   </PhoneWrapper>
-                  <ContactLink href='mailto:biuro@yupi-there.pl'>biuro@yupi-there.pl</ContactLink>
+                  <ContactLink href='mailto:biuro@yupi-there.pl'>
+                    biuro@yupi-there.pl
+                  </ContactLink>
                 </ContactWrapper>
               </QuestionsWrapper>
             </InfoWrapper>
-            <Form name="contact-form" data-netlify="true" netlify>
+            <Form name='contact-form' data-netlify='true' netlify>
               <FormLabel htmlFor=''>
                 <LabelName>Imię i nazwisko</LabelName>
                 <FormInput
                   id={NAME}
-                  type="text"
+                  type='text'
                   value={this.state.name}
                   onChange={this.onChange}
                 />
@@ -89,7 +95,7 @@ class ContactSection extends Component {
                 <LabelName>Adres e-mail</LabelName>
                 <FormInput
                   id={EMAIL}
-                  type="email"
+                  type='email'
                   value={this.state.email}
                   onChange={this.onChange}
                 />
@@ -97,9 +103,7 @@ class ContactSection extends Component {
               </FormLabel>
               <FormLabel htmlFor=''>
                 <LabelName>Treść wiadomości</LabelName>
-                <FormTextArea id={TEXT} >
-                  {this.state.text}
-                </FormTextArea>
+                <FormTextArea id={TEXT}>{this.state.text}</FormTextArea>
                 <FormError>Error</FormError>
               </FormLabel>
               <Button type='submit'>Skontaktuj się z nami</Button>
