@@ -163,6 +163,7 @@ export const FormTextArea = styled.textarea`
   `}
 `;
 export const FormError = styled.span`
+  display: none;
   padding: ${rem(4)} 0 0;
   color: ${colors.radicalRed};
   font-size: ${fontSize.tiny};
