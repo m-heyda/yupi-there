@@ -63,6 +63,7 @@ const Typography = ({
   return (
     <YupiTypography
       headingVariant={headingVariant}
+      textColor={textColor}
       onClick={e => {
         onClick(e);
       }}
@@ -77,7 +78,7 @@ Typography.defaultProps = {
   component: 'h5',
   align: 'center',
   maxWidth: 'none',
-  textColor: 'colors.darkBlue'
+  textColor: colors.darkBlue,
 };
 
 Typography.propTypes = {
