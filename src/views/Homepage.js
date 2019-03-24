@@ -5,6 +5,7 @@ import WhatWeDo from '../components/WhatWeDo';
 import Clients from '../components/Clients';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
+import ContactSection from '../components/ContactSection';
 
 class Homepage extends Component {
   render() {
@@ -15,6 +16,7 @@ class Homepage extends Component {
           <WhatWeDo />
           <Clients />
           <Testimonials />
+          <ContactSection />
           <Footer />
         </SeoBase>
       </React.Fragment>

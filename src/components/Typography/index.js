@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, func, oneOfType, oneOf, any } from 'prop-types';
+import { string, func, oneOfType, oneOf, any, node } from 'prop-types';
 import styled, { css } from 'styled-components';
 import { rem } from 'polished';
 import { variables, colors, utils } from '../../global/helpers';
@@ -12,6 +12,7 @@ const Typography = ({
   headingVariant,
   onClick,
   children,
+  textColor,
   ...props
 }) => {
   const mobileHeading = css`
@@ -48,7 +49,7 @@ const Typography = ({
   const YupiTypography = styled(Component)`
     font-family: ${fontFamily.secondaryFont};
     font-weight: 600;
-    color: ${colors.darkBlue};
+    color: ${({ textColor }) => textColor };
     text-align: ${({ align }) => align};
     line-height: 1.29;
     max-width: ${({ maxWidth }) => maxWidth};
@@ -76,6 +77,7 @@ Typography.defaultProps = {
   component: 'h5',
   align: 'center',
   maxWidth: 'none',
+  textColor: 'colors.darkBlue'
 };
 
 Typography.propTypes = {
@@ -85,6 +87,7 @@ Typography.propTypes = {
   headingVariant: oneOf(['hero', 'heading', 'staticHeading']).isRequired,
   align: oneOf(['center', 'left', 'right']),
   maxWidth: any,
+  textColor: oneOfType([string, node]),
 };
 
 export default Typography;
