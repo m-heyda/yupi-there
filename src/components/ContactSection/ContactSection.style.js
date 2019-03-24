@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { rem, rgba } from 'polished';
+import { rem } from 'polished';
 import { colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 import { variables, utils } from '../../global/helpers';
