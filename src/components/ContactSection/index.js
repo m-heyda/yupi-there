@@ -26,10 +26,10 @@ class ContactSection extends Component {
           <p>Masz pytania? </p>
           <div>
             <div>
-              <a href="#">+48 533 125 600</a>
-              <a href="#">+48 22 255 84 27</a>
+              <a href="tel:+48533125600">+48 533 125 600</a>
+              <a href="tel:+48533125600">+48 22 255 84 27</a>
             </div>
-            <a href="#">biuro@yupi-there.pl</a>
+            <a href="mailto:biuro@yupi-there.pl">biuro@yupi-there.pl</a>
           </div>
         </div>
         <form name="contact-form" data-netlify="true" netlify>
