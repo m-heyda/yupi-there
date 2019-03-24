@@ -48,6 +48,10 @@ class ContactSection extends Component {
   };
 
   handleSubmit = e => {
+    // https://nodemailer.com/about/
+    // https://blog.elpassion.com/jam-stack-your-old-cms-into-the-closet-12cad2c7b1b3?fbclid=IwAR0_GxXe9iKUu55spACclLMzuwhAs2_cXJmWv_7iqIJtiLo1dIe-n50EPWQ
+    e.preventDefault();
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -55,8 +59,6 @@ class ContactSection extends Component {
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
-
-    e.preventDefault();
   };
 
   render() {
@@ -93,7 +95,13 @@ class ContactSection extends Component {
               </ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form onSubmit={this.handleSubmit}>
+          <Form
+            onSubmit={this.handleSubmit}
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
             <input name='form-name' value='contact' hidden />
             <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
