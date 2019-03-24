@@ -24,7 +24,13 @@ import {
 
 const NAME = 'name';
 const EMAIL = 'email';
-const TEXT = 'text';
+const TEXT = 'message';
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 class ContactSection extends Component {
   constructor(props) {
@@ -33,7 +39,7 @@ class ContactSection extends Component {
     this.state = {
       name: '',
       email: '',
-      text: '',
+      message: '',
     };
   }
 
@@ -41,6 +47,20 @@ class ContactSection extends Component {
     this.setState({
       [e.target.id]: e.target.value,
     });
+  };
+
+  handleSubmit = e => {
+    // https://nodemailer.com/about/
+    // https://blog.elpassion.com/jam-stack-your-old-cms-into-the-closet-12cad2c7b1b3?fbclid=IwAR0_GxXe9iKUu55spACclLMzuwhAs2_cXJmWv_7iqIJtiLo1dIe-n50EPWQ
+    e.preventDefault();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
   };
 
   render() {
@@ -80,30 +100,44 @@ class ContactSection extends Component {
                 </ContactWrapper>
               </QuestionsWrapper>
             </InfoWrapper>
-            <Form name='contact-form' data-netlify='true' netlify>
-              <FormLabel htmlFor=''>
+            <Form
+              onSubmit={this.handleSubmit}
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+            >
+              <input name='form-name' value='contact' hidden />
+              <FormLabel htmlFor={NAME}>
                 <LabelName>Imię i nazwisko</LabelName>
                 <FormInput
                   id={NAME}
+                  name={NAME}
                   type='text'
                   value={this.state.name}
                   onChange={this.onChange}
                 />
                 <FormError>Error</FormError>
               </FormLabel>
-              <FormLabel htmlFor=''>
+              <FormLabel htmlFor={EMAIL}>
                 <LabelName>Adres e-mail</LabelName>
                 <FormInput
                   id={EMAIL}
+                  name={EMAIL}
                   type='email'
                   value={this.state.email}
                   onChange={this.onChange}
                 />
                 <FormError>Error</FormError>
               </FormLabel>
-              <FormLabel htmlFor=''>
+              <FormLabel htmlFor={TEXT}>
                 <LabelName>Treść wiadomości</LabelName>
-                <FormTextArea id={TEXT}>{this.state.text}</FormTextArea>
+                <FormTextArea
+                  id={TEXT}
+                  name={TEXT}
+                  value={this.state.text}
+                  onChange={this.onChange}
+                />
                 <FormError>Error</FormError>
               </FormLabel>
               <Button type='submit'>Skontaktuj się z nami</Button>

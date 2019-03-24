@@ -51,16 +51,22 @@ export const ContentWrapper = styled.div`
 
 export const InfoWrapper = styled.div`
   ${media.greaterThan('tablet')`
-    margin: 0 ${rem(marginSize.tiny)} 0 0;
-    max-width: ${rem(350)};
+    margin: 0 ${rem(marginSize.regular)} 0 0;
+    max-width: ${rem(346)};
+  `}
+  
+  ${media.greaterThan('landscape')`
+    margin: 0;
   `}
 `;
 
 export const HeadingWrapper = styled.div`
   margin: 0 0 ${rem(marginSize.medium)};
+  line-height: 1.4;
 
   ${media.greaterThan('landscape')`
     margin: 0 0 ${rem(50)};
+    line-height: 1.6;
   `}
 `;
 
@@ -100,6 +106,7 @@ export const ContactWrapper = styled.div`
 export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin: 0 0 ${rem(marginSize.medium)};
 
   ${media.greaterThan('landscape')`
@@ -112,6 +119,11 @@ export const ContactLink = styled.a`
   font-weight: 600;
   color: ${colors.lightGreen};
   text-decoration: none;
+  transition: color .3s ${transitions.spring};
+  
+  &:hover {
+    color: ${colors.greenHaze};
+  }
 
   &:first-child {
     margin: 0 0 ${rem(marginSize.tiny)};
