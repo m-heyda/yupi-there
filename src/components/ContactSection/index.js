@@ -3,7 +3,27 @@ import { colors } from '../../global/helpers';
 import Typography from "../Typography";
 import Button from "../Button";
 
+const NAME = 'name';
+const EMAIL = 'email';
+const TEXT = 'text';
+
 class ContactSection extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: '',
+      email: '',
+      text: '',
+    }
+  }
+
+  onChange = (e) => {
+    this.setState({
+      [e.target.id]: e.target.value,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -32,18 +52,28 @@ class ContactSection extends Component {
             <a href="mailto:biuro@yupi-there.pl">biuro@yupi-there.pl</a>
           </div>
         </div>
-        <form name="contact-form" data-netlify="true" netlify>
+        <form name="contact-form" netlify>
           <label htmlFor="">
             <span>Imię i nazwisko</span>
-            <input type="text" value=""/>
+            <input
+              id={NAME}
+              type="text"
+              value={this.state.name}
+              onChange={this.onChange}
+            />
           </label>
           <label htmlFor="">
             <span>Adres e-mail</span>
-            <input type="email" value=""/>
+            <input
+              id={EMAIL}
+              type="email"
+              value={this.state.email}
+              onChange={this.onChange}
+            />
           </label>
           <label htmlFor="">
             <span>Treść wiadomości</span>
-            <input type="text" value=""/>
+            <input type="text" value={this.state.text} onChange={this.onChange} />
           </label>
           <Button type="submit">Skontaktuj się z nami</Button>
         </form>
