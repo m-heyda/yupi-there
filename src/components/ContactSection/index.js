@@ -69,7 +69,7 @@ class ContactSection extends Component {
               <ContactLink href='mailto:biuro@yupi-there.pl'>biuro@yupi-there.pl</ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form name="contact-form" data-netlify="true" netlify>
+          <Form name="contact-form" method="POST" data-netlify="true" netlify>
             <FormLabel htmlFor=''>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
