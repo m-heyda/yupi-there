@@ -42,13 +42,13 @@ class ContactSection extends Component {
             <ContactParagraph>Masz pytania?</ContactParagraph>
             <ContactWrapper>
               <PhoneWrapper>
-                <ContactLink href='#'>+48 533 125 600</ContactLink>
-                <ContactLink href='#'>+48 22 255 84 27</ContactLink>
+                <ContactLink href='tel:+48533125600'>+48 533 125 600</ContactLink>
+                <ContactLink href='tel:+48533125600'>+48 22 255 84 27</ContactLink>
               </PhoneWrapper>
-              <ContactLink href='#'>biuro@yupi-there.pl</ContactLink>
+              <ContactLink href='mailto:biuro@yupi-there.pl'>biuro@yupi-there.pl</ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form>
+          <Form name="contact-form" data-netlify="true" netlify>
             <FormLabel htmlFor=''>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput type='text' value='' />
