@@ -28,7 +28,7 @@ const encode = (data) => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
-}
+};
 
 class ContactSection extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class ContactSection extends Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact-form', ...this.state })
+      body: encode({ 'form-name': 'contact', ...this.state })
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
@@ -93,8 +93,8 @@ class ContactSection extends Component {
               </ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form name='contact-form' onSubmit={this.handleSubmit}>
-            <input type='hidden' name='form-name' value='netlify-contact' />
+          <Form onSubmit={this.handleSubmit}>
+            <input name='form-name' value='contact' hidden />
             <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
