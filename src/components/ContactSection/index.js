@@ -70,29 +70,36 @@ class ContactSection extends Component {
             </ContactWrapper>
           </QuestionsWrapper>
           <Form name="contact-form" method="POST" data-netlify="true" netlify>
-            <FormLabel htmlFor=''>
+            <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
                 id={NAME}
+                name={NAME}
                 type="text"
                 value={this.state.name}
                 onChange={this.onChange}
               />
               <FormError>Error</FormError>
             </FormLabel>
-            <FormLabel htmlFor=''>
+            <FormLabel htmlFor={EMAIL}>
               <LabelName>Adres e-mail</LabelName>
               <FormInput
                 id={EMAIL}
+                name={EMAIL}
                 type="email"
                 value={this.state.email}
                 onChange={this.onChange}
               />
               <FormError>Error</FormError>
             </FormLabel>
-            <FormLabel htmlFor=''>
+            <FormLabel htmlFor={TEXT}>
               <LabelName>Treść wiadomości</LabelName>
-              <FormTextArea type='text' value='' />
+              <FormTextArea
+                id={TEXT}
+                name={TEXT}
+                value={this.state.text}
+                onChange={this.onChange}
+              />
               <FormError>Error</FormError>
             </FormLabel>
             <Button type='submit'>Skontaktuj się z nami</Button>
