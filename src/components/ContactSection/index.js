@@ -22,7 +22,13 @@ import {
 
 const NAME = 'name';
 const EMAIL = 'email';
-const TEXT = 'text';
+const TEXT = 'message';
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
 
 class ContactSection extends Component {
   constructor(props) {
@@ -31,7 +37,7 @@ class ContactSection extends Component {
     this.state = {
       name: '',
       email: '',
-      text: '',
+      message: '',
     };
   }
 
@@ -39,6 +45,18 @@ class ContactSection extends Component {
     this.setState({
       [e.target.id]: e.target.value,
     });
+  };
+
+  handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...this.state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error));
+
+    e.preventDefault();
   };
 
   render() {
@@ -75,7 +93,8 @@ class ContactSection extends Component {
               </ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form name='contact-form' method='POST' data-netlify='true' netlify>
+          <Form name='contact-form' onSubmit={this.handleSubmit}>
+            <input type='hidden' name='form-name' value='netlify-contact' />
             <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
