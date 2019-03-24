@@ -24,7 +24,7 @@ const NAME = 'name';
 const EMAIL = 'email';
 const TEXT = 'message';
 
-const encode = (data) => {
+const encode = data => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
@@ -51,7 +51,7 @@ class ContactSection extends Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact-form', ...this.state })
+      body: encode({ 'form-name': 'contact-form', ...this.state }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
