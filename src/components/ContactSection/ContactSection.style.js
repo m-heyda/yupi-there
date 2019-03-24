@@ -63,4 +63,5 @@ export const Form = styled.form``;
 export const FormLabel = styled.label``;
 export const LabelName = styled.span``;
 export const FormInput = styled.input``;
+export const FormTextArea = styled.textarea``;
 export const FormError = styled.span``;

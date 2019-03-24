@@ -16,6 +16,7 @@ import {
   FormLabel,
   LabelName,
   FormInput,
+  FormTextArea,
   FormError
 } from './ContactSection.style';
 
@@ -61,7 +62,7 @@ class ContactSection extends Component {
             </FormLabel>
             <FormLabel htmlFor=''>
               <LabelName>Treść wiadomości</LabelName>
-              <FormInput type='text' value='' />
+              <FormTextArea type='text' value='' />
               <FormError>Error</FormError>
             </FormLabel>
             <Button type='submit'>Skontaktuj się z nami</Button>
