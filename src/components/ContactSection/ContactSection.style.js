@@ -142,6 +142,10 @@ export const FormLabel = styled.label`
   display: flex;
   flex-direction: column;
   margin: 0 0 ${rem(marginSize.small)};
+  
+  &:last-of-type {
+    margin: 0 0 ${rem(marginSize.regular)};
+  }
 `;
 export const LabelName = styled.span`
   margin: 0 0 ${rem(6)};
