@@ -32,7 +32,7 @@ class ContactSection extends Component {
             <a href="#">biuro@yupi-there.pl</a>
           </div>
         </div>
-        <form data-netlify="true">
+        <form name="contact-form" data-netlify="true">
           <label htmlFor="">
             <span>Imię i nazwisko</span>
             <input type="text" value=""/>
