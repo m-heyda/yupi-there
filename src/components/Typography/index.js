@@ -49,7 +49,7 @@ const Typography = ({
   const YupiTypography = styled(Component)`
     font-family: ${fontFamily.secondaryFont};
     font-weight: 600;
-    color: ${({ textColor }) => textColor };
+    color: ${({ textColor }) => textColor};
     text-align: ${({ align }) => align};
     line-height: 1.29;
     max-width: ${({ maxWidth }) => maxWidth};
