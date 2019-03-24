@@ -39,7 +39,7 @@ class ContactSection extends Component {
           </label>
           <label htmlFor="">
             <span>Adres e-mail</span>
-            <input type="text" value=""/>
+            <input type="email" value=""/>
           </label>
           <label htmlFor="">
             <span>Treść wiadomości</span>
