@@ -39,9 +39,7 @@ export const ContactParagraph = styled.p`
 export const QuestionsWrapper = styled.div`
   margin: 0 0 ${rem(marginSize.medium)};
 `;
-export const ContactWrapper = styled.div`
-  
-`;
+export const ContactWrapper = styled.div``;
 export const PhoneWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,7 +51,7 @@ export const ContactLink = styled.a`
   font-weight: 600;
   color: ${colors.lightGreen};
   text-decoration: none;
-  
+
   &:first-child {
     margin: 0 0 ${rem(6)};
   }

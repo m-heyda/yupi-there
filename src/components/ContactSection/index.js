@@ -17,7 +17,7 @@ import {
   LabelName,
   FormInput,
   FormTextArea,
-  FormError
+  FormError,
 } from './ContactSection.style';
 
 const NAME = 'name';
@@ -32,10 +32,10 @@ class ContactSection extends Component {
       name: '',
       email: '',
       text: '',
-    }
+    };
   }
 
-  onChange = (e) => {
+  onChange = e => {
     this.setState({
       [e.target.id]: e.target.value,
     });
@@ -63,19 +63,25 @@ class ContactSection extends Component {
             <ContactParagraph>Masz pytania?</ContactParagraph>
             <ContactWrapper>
               <PhoneWrapper>
-                <ContactLink href='tel:+48533125600'>+48 533 125 600</ContactLink>
-                <ContactLink href='tel:+48533125600'>+48 22 255 84 27</ContactLink>
+                <ContactLink href='tel:+48533125600'>
+                  +48 533 125 600
+                </ContactLink>
+                <ContactLink href='tel:+48533125600'>
+                  +48 22 255 84 27
+                </ContactLink>
               </PhoneWrapper>
-              <ContactLink href='mailto:biuro@yupi-there.pl'>biuro@yupi-there.pl</ContactLink>
+              <ContactLink href='mailto:biuro@yupi-there.pl'>
+                biuro@yupi-there.pl
+              </ContactLink>
             </ContactWrapper>
           </QuestionsWrapper>
-          <Form name="contact-form" method="POST" data-netlify="true" netlify>
+          <Form name='contact-form' method='POST' data-netlify='true' netlify>
             <FormLabel htmlFor={NAME}>
               <LabelName>Imię i nazwisko</LabelName>
               <FormInput
                 id={NAME}
                 name={NAME}
-                type="text"
+                type='text'
                 value={this.state.name}
                 onChange={this.onChange}
               />
@@ -86,7 +92,7 @@ class ContactSection extends Component {
               <FormInput
                 id={EMAIL}
                 name={EMAIL}
-                type="email"
+                type='email'
                 value={this.state.email}
                 onChange={this.onChange}
               />
