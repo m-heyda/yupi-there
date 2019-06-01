@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 import { rem, rgba } from 'polished';
-import { Link } from 'react-router-dom';
 import { variables, colors, utils } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
 
@@ -11,11 +10,11 @@ export const animateTopLine = keyframes`
   0% {
     transform: translateY(-3px) rotate(0);
   }
-  
+
   40% {
     transform: translateY(1px) rotate(0);
   }
-  
+
   100% {
     transform: translateY(1px) rotate(45deg);
   }
@@ -25,11 +24,11 @@ export const animateBottomLine = keyframes`
   0% {
     transform: translateY(3px) rotate(0);
   }
-  
+
   40% {
     transform: translateY(-1px) rotate(0);
   }
-  
+
   100% {
     transform: translateY(-1px) rotate(-45deg);
   }
@@ -143,7 +142,7 @@ export const SubMenuItem = styled.li`
   `}
 `;
 
-export const SubMenuLink = styled(Link)`
+export const SubMenuLink = styled.a`
   color: ${colors.blueGrey};
   text-decoration: none;
 `;
@@ -167,30 +166,30 @@ export const MainMenuItem = styled.li`
     padding: 0 ${rem(24)};
     height: 100%;
     white-space: nowrap;
-    
+
     &:not(:last-child) {
       margin: 0 ${rem(32)} 0 0;
     }
-    
+
     &:last-child {
       margin: 0;
       padding: 0;
     }
-    
+
     &:before {
       position: absolute;
       top: 50%;
       right: 0;
       display: ${props => (props.hasSubmenu ? 'block' : 'none')};
       content: '';
-      transform: translateY(-50%);  
+      transform: translateY(-50%);
       width: 0;
       height: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
-      border-top: 4px solid ${colors.blueGrey}; 
+      border-top: 4px solid ${colors.blueGrey};
     }
-    
+
     &:hover {
       ${SubMenuWrapper} {
         max-height: ${rem(200)};
@@ -201,7 +200,7 @@ export const MainMenuItem = styled.li`
   `}
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled.a`
   flex: 0 0 100%;
   color: ${colors.blueGrey};
   font-size: ${fontSize.menu};

@@ -1,41 +1,43 @@
 {
   "name": "yupi-there",
-  "version": "0.1.0",
   "private": true,
+  "version": "1.0.0",
+  "author": "ViewSource <the.view.source@gmail.com>",
   "dependencies": {
-    "@babel/polyfill": "^7.2.5",
     "classnames": "^2.2.6",
-    "localforage": "^1.7.3",
-    "polished": "^3.0.2",
-    "prettier": "^1.16.4",
+    "gatsby": "^2.8.2",
+    "gatsby-image": "^2.1.2",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-polyfill-io": "^1.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.3",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-sharp": "^2.1.21",
+    "polished": "^3.4.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5",
-    "styled-components": "^4.1.3",
-    "webfontloader": "^1.6.28",
-    "yarn": "^1.13.0"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "yarn && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --config ./.prettierrc --write 'src/**/**/*.js'"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/insanepl/yupi-there"
   }
 }

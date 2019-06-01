@@ -53,7 +53,7 @@ const Typography = ({
     text-align: ${({ align }) => align};
     line-height: 1.29;
     max-width: ${({ maxWidth }) => maxWidth};
-    
+
     ${({ headingVariant }) => headingVariant === 'hero' && isHero}
     ${({ headingVariant }) => headingVariant === 'heading' && isHeading}
     ${({ headingVariant }) =>
