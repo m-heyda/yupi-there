@@ -3,23 +3,23 @@ import SeoBase from '../components/SeoBase';
 import Hero from '../components/Hero';
 import WhatWeDo from '../components/WhatWeDo';
 import Clients from '../components/Clients';
-import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
 import ContactSection from '../components/ContactSection';
+
+import BaseLayout from '../layouts/BaseLayout';
 
 class Homepage extends Component {
   render() {
     return (
-      <React.Fragment>
+      <BaseLayout>
         <SeoBase title='Homepage' description='Homepage description'>
           <Hero />
           <WhatWeDo />
           <Clients />
           <Testimonials />
           <ContactSection />
-          <Footer />
         </SeoBase>
-      </React.Fragment>
+      </BaseLayout>
     );
   }
 }
