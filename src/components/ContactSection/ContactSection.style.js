@@ -54,7 +54,7 @@ export const InfoWrapper = styled.div`
     margin: 0 ${rem(marginSize.regular)} 0 0;
     max-width: ${rem(346)};
   `}
-  
+
   ${media.greaterThan('landscape')`
     margin: 0;
   `}
@@ -119,8 +119,8 @@ export const ContactLink = styled.a`
   font-weight: 600;
   color: ${colors.lightGreen};
   text-decoration: none;
-  transition: color .3s ${transitions.spring};
-  
+  transition: color 0.3s ${transitions.spring};
+
   &:hover {
     color: ${colors.greenHaze};
   }
@@ -142,7 +142,7 @@ export const FormLabel = styled.label`
   display: flex;
   flex-direction: column;
   margin: 0 0 ${rem(marginSize.small)};
-  
+
   &:last-of-type {
     margin: 0 0 ${rem(marginSize.regular)};
   }

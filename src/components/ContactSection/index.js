@@ -57,7 +57,7 @@ class ContactSection extends Component {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...this.state })
+      body: encode({ 'form-name': 'contact', ...this.state }),
     })
       .then(() => alert('Success!'))
       .catch(error => alert(error));
@@ -102,10 +102,10 @@ class ContactSection extends Component {
             </InfoWrapper>
             <Form
               onSubmit={this.handleSubmit}
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
+              name='contact'
+              method='POST'
+              data-netlify='true'
+              netlify-honeypot='bot-field'
             >
               <input name='form-name' value='contact' hidden />
               <FormLabel htmlFor={NAME}>
