@@ -22,10 +22,10 @@ export const Wrapper = styled.section`
 `;
 
 export const TestimonialsWrapper = styled.div`
-  margin: ${rem('40px')} -${rem(globalSize.gutter)};
+  margin: ${rem(40)} -${rem(globalSize.gutter)};
 
   ${media.greaterThan('tablet')`
-    margin: ${rem('60px')} 0;
+    margin: ${rem(60)} 0;
     padding: 0;
   `}
 
@@ -38,7 +38,7 @@ export const TestimonialsWrapper = styled.div`
 
 export const TestimonialBox = styled.div`
   margin-bottom: ${rem('24px')};
-  padding: ${rem('40px')} ${rem(globalSize.gutter)};
+  padding: ${rem(40)} ${rem(globalSize.gutter)};
   background: ${colors.titanWhite};
   border: 1px solid ${colors.athensGray};
   border-radius: ${rem(6)};
@@ -46,7 +46,7 @@ export const TestimonialBox = styled.div`
   ${media.greaterThan('desktop')`
     flex: 0 0 49%;
     max-width: 49%;
-    padding: ${rem('40px')};
+    padding: ${rem(40)};
     
     &:nth-child(even) {
       transform: translateY(-40%);
@@ -56,15 +56,15 @@ export const TestimonialBox = styled.div`
 
 export const TestimonialIcon = styled(QuoteIcon)`
   display: block;
-  margin: 0 0 ${rem('22px')};
+  margin: 0 0 ${rem(22)};
 
   ${media.greaterThan('desktop')`
-    margin: 0 0 ${rem('32px')};
+    margin: 0 0 ${rem(32)};
   `}
 `;
 
 export const TestimonialContent = styled.p`
-  margin: 0 0 ${rem('24px')};
+  margin: 0 0 ${rem(24)};
   font-style: italic;
   font-weight: 300;
 `;
