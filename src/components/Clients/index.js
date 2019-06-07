@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Typography from '../Typography';
 import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
@@ -8,20 +9,25 @@ import PornhubIcon from '../Icons/PornhubIcon';
 
 const { marginSize } = variables;
 
-const Clients = () => {
+const propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+}
+
+const defaultProps = {
+  title: 'Z kim współpracowaliśmy?',
+};
+
+const Clients = ({ title, content }) => {
   return (
     <Wrapper>
       <Container>
         <Typography component='h2' headingVariant='heading'>
-          Z kim współpracowaliśmy?
+          { title }
         </Typography>
 
         <Paragraph margin={marginSize.large} maxWidth={580}>
-          Zaufali nam klienci niemal ze wszystkich branż. Kilka lat na rynku
-          oraz doświadczenie z pracy z wieloma firmami utwierdziło nas w
-          przekonaniu jak wiele do każdego biznesu może wnieść reklama
-          internetowa. Jesteśmy profesjonalistami, którzy potrafią słuchać
-          Klientów i pracować na ich sukces.
+          { content }
         </Paragraph>
 
         <CompaniesWrapper>
@@ -38,5 +44,8 @@ const Clients = () => {
     </Wrapper>
   );
 };
+
+Clients.propTypes = propTypes;
+Clients.defaultProps = defaultProps;
 
 export default Clients;
