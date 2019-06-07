@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon_3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/desktop" transform="translate(-736.000000, -966.000000)">
+            <g id="how-it-works" transform="translate(130.000000, 779.000000)">
+                <g id="icon_3" transform="translate(600.000000, 181.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                    <rect id="Rectangle" stroke="#00D664" stroke-width="2" fill="#B7F5D4" fill-rule="nonzero" transform="translate(29.949747, 29.949747) rotate(-45.000000) translate(-29.949747, -29.949747) " x="27.9497475" y="24.9497475" width="4" height="10" rx="1"></rect>
+                    <path d="M17,27 C11.4771525,27 7,22.5228475 7,17 C7,11.4771525 11.4771525,7 17,7 C22.5228475,7 27,11.4771525 27,17 C27,22.5228475 22.5228475,27 17,27 Z M17,24 C20.8659932,24 24,20.8659932 24,17 C24,13.1340068 20.8659932,10 17,10 C13.1340068,10 10,13.1340068 10,17 C10,20.8659932 13.1340068,24 17,24 Z" id="Combined-Shape" stroke="#00D664" stroke-width="1.86682891" fill="#B7F5D4" fill-rule="nonzero"></path>
+                    <path d="M24.5192871,24.5192871 L27.3383789,27.3383789" id="Path-6" stroke="#00D664" stroke-width="2" fill="#B7F5D4" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
