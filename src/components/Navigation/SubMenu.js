@@ -5,27 +5,27 @@ const SubMenu = () => {
   return (
     <SubMenuWrapper>
       <SubMenuItem>
-        <SubMenuLink to='#'>Google Ads</SubMenuLink>
+        <SubMenuLink href='#'>Google Ads</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink to='#'>SEO</SubMenuLink>
+        <SubMenuLink href='#'>SEO</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink to='#'>Analityka Web</SubMenuLink>
+        <SubMenuLink href='#'>Analityka Web</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink to='#'>Kampanie social media</SubMenuLink>
+        <SubMenuLink href='/kampanie-sm'>Kampanie social media</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink to='#'>Grafika Online</SubMenuLink>
+        <SubMenuLink href='#'>Grafika Online</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink to='#'>Content Marketing</SubMenuLink>
+        <SubMenuLink href='#'>Content Marketing</SubMenuLink>
       </SubMenuItem>
     </SubMenuWrapper>
   );

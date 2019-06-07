@@ -107,7 +107,7 @@ class ContactSection extends Component {
               data-netlify='true'
               netlify-honeypot='bot-field'
             >
-              <input name='form-name' value='contact' hidden />
+              <input name='form-name' value='contact' hidden onChange={ () => {} }/>
               <FormLabel htmlFor={NAME}>
                 <LabelName>Imię i nazwisko</LabelName>
                 <FormInput
