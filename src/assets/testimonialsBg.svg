@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1331px" height="789px" viewBox="0 0 1331 789" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>shapes</title>
+    <desc>Created with Sketch.</desc>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/home_page/desktop" transform="translate(-19.000000, -2654.000000)">
+            <g id="testimonials" transform="translate(20.000000, 2643.000000)">
+                <g id="shapes">
+                    <circle id="Oval" stroke="#D7E6F2" stroke-linecap="round" stroke-linejoin="round" cx="167" cy="548" r="167"></circle>
+                    <circle id="Oval" fill="#E9F4FE" fill-rule="nonzero" cx="1168" cy="693" r="71"></circle>
+                    <circle id="Oval" stroke="#D7E6F2" stroke-linecap="round" stroke-linejoin="round" cx="1038" cy="104" r="60"></circle>
+                    <rect id="Rectangle" fill="#E9F4FE" fill-rule="nonzero" transform="translate(680.279221, 434.279221) rotate(-45.000000) translate(-680.279221, -434.279221) " x="590.279221" y="344.279221" width="180" height="180"></rect>
+                    <path d="M1027.13269,770.691343 C1027.13269,785.603031 1039.221,797.691343 1054.13269,797.691343 C1069.04437,797.691343 1081.13269,785.603031 1081.13269,770.691343 L1027.13269,770.691343 Z" id="Path" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" transform="translate(1054.132686, 784.191343) scale(-1, 1) rotate(-30.000000) translate(-1054.132686, -784.191343) "></path>
+                    <rect id="Rectangle" fill="#E9F4FE" fill-rule="nonzero" transform="translate(1309.798990, 776.798990) rotate(-45.000000) translate(-1309.798990, -776.798990) " x="1295.79899" y="762.79899" width="28" height="28"></rect>
+                    <polygon id="Triangle" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" transform="translate(1125.466433, 21.911777) rotate(-40.000000) translate(-1125.466433, -21.911777) " points="1125.46643 8.41177696 1143.46643 35.411777 1107.46643 35.411777"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
