@@ -8,11 +8,26 @@ import { variables, utils } from '../../global/helpers';
 const { globalSize } = variables;
 const { media } = utils;
 
+export const Background = styled.img`
+  display: none;
+  position: absolute;
+  left: -110px;
+  top: rem(globalSize.paddingSmall);
+  max-height: 810px;
+  width: 115%;
+
+  ${media.greaterThan('desktop')`
+    display: block;
+  `}
+`;
+
 export const Container = styled.div`
   ${containerStyles};
 `;
 
 export const Wrapper = styled.section`
+  overflow: hidden;
+  position: relative;
   padding: ${rem(globalSize.paddingSmall)} 0;
   border-bottom: 1px solid ${colors.athensGray};
 
@@ -25,7 +40,6 @@ export const TestimonialsWrapper = styled.div`
   margin: ${rem(40)} -${rem(globalSize.gutter)};
 
   ${media.greaterThan('tablet')`
-    margin: ${rem(60)} 0;
     padding: 0;
   `}
 
@@ -42,12 +56,13 @@ export const TestimonialBox = styled.div`
   background: ${colors.titanWhite};
   border: 1px solid ${colors.athensGray};
   border-radius: ${rem(6)};
+  z-index: 1;
 
   ${media.greaterThan('desktop')`
     flex: 0 0 49%;
     max-width: 49%;
     padding: ${rem(40)};
-    
+
     &:nth-child(even) {
       transform: translateY(-40%);
     }

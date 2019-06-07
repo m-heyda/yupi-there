@@ -1,12 +1,16 @@
 import React from 'react';
+
 import Typography from '../Typography';
 import SingleTestimonial from './SingleTestimonial';
-import { Wrapper, Container, TestimonialsWrapper } from './Testimonials.style';
+import { Wrapper, Container, TestimonialsWrapper, Background } from './Testimonials.style';
+
+import shapesImage from '../../assets/testimonialsBg.svg';
 
 const Testimonials = ({ clients }) => {
   return (
     <Wrapper>
       <Container>
+        <Background src={ shapesImage } />
         <Typography
           align='left'
           component='h3'
