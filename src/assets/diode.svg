@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon_10 copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/desktop-copy" transform="translate(-741.000000, -2148.000000)">
+            <g id="icon_8" transform="translate(730.000000, 2137.000000)">
+                <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
+                <g id="player" stroke-width="1" fill-rule="evenodd" transform="translate(12.000000, 12.000000)" stroke="#00D664" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M0,46 L36,46" id="Path" stroke-width="2"></path>
+                    <polygon id="Path" stroke-width="2" fill="#B7F5D4" points="14 0 46 18 14 36"></polygon>
+                    <path d="M36,36 L36,56" id="Path" stroke-width="2"></path>
+                    <path d="M46,46 L56,46" id="Path" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

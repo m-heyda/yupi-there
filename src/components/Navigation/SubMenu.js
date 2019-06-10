@@ -5,7 +5,7 @@ const SubMenu = () => {
   return (
     <SubMenuWrapper>
       <SubMenuItem>
-        <SubMenuLink href='#'>Google Ads</SubMenuLink>
+        <SubMenuLink href='/google-ads'>Google Ads</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>

@@ -24,12 +24,21 @@ const clients = [
   },
 ];
 
+const header = {
+  title: 'Kampanie reklamowe w social mediach',
+  content: `
+    Zadbamy o pozycjonowanie i użyteczność twojego serwisu
+    internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-
+    commerce, startupów i firm B2B.`,
+  ctaLabel: 'Skontaktuj się',
+}
+
 class SMCampaign extends Component {
   render() {
     return (
       <BaseLayout>
         <SeoBase title='Kampanie social media' description='Kampanie social media'>
-          <Header />
+          <Header { ...header } />
           <HowWeWork />
           <Clients />
           <Testimonials clients={ clients } />

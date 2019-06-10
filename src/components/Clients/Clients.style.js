@@ -12,6 +12,7 @@ export const Container = styled.div`
 export const Wrapper = styled.section`
   padding: ${rem(globalSize.paddingSmall)} 0;
   border-bottom: 1px solid ${colors.athensGray};
+  background-color: ${colors.whiteLilca};
 `;
 
 export const CompaniesWrapper = styled.div`

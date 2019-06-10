@@ -3,6 +3,7 @@ import Typography from '../Typography';
 import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
 import {
+  HeaderBackground,
   HeaderContent,
   ContentWrapper,
   ButtonWrapper,
@@ -13,27 +14,27 @@ import megaphoneBg from '../../assets/megaphoneBg.svg';
 
 const { marginSize } = variables;
 
-const Header = () => {
+const Header = ({ title, content, ctaLabel }) => {
   return (
-    <HeaderContent>
-      <ContentWrapper>
-        <Typography component='h1' headingVariant='hero' align='left'>
-          Kampanie reklamowe w social mediach
-        </Typography>
+    <HeaderBackground>
+      <HeaderContent>
+        <ContentWrapper>
+          <Typography component='h1' headingVariant='hero' align='left'>
+            { title }
+          </Typography>
 
-        <Paragraph margin={marginSize.medium} maxWidth={580} align='left'>
-          Zadbamy o pozycjonowanie i użyteczność twojego serwisu
-          internetowego. Budujemy wzrost i zwiększamy sprzedaż dla e-
-          commerce, startupów i firm B2B.
-        </Paragraph>
+          <Paragraph margin={marginSize.medium} maxWidth={580} align='left'>
+            { content }
+          </Paragraph>
 
-        <ButtonWrapper>
-          <Button fluid>Skontaktuj się</Button>
-        </ButtonWrapper>
-      </ContentWrapper>
+          <ButtonWrapper>
+            <Button fluid>{ ctaLabel }</Button>
+          </ButtonWrapper>
+        </ContentWrapper>
 
-      <img src={megaphoneBg} alt='Hero background' />
-    </HeaderContent>
+        <img src={megaphoneBg} alt='Hero background' />
+      </HeaderContent>
+    </HeaderBackground>
   );
 };
 
