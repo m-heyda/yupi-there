@@ -9,10 +9,9 @@ import {
   ParagraphText,
 } from './Subheader.style';
 
-
-const Subheader = ({ title, content }) => {
+const Subheader = ({ title, content, borderless }) => {
   return (
-    <Wrapper>
+    <Wrapper borderless={ borderless }>
       <Container>
           <Header marginBottom={ 60 }>
             { title }

@@ -9,7 +9,7 @@ const { media } = utils;
 
 export const Wrapper = styled.section`
   padding: ${rem(globalSize.paddingMedium)} 0;
-  border-bottom: 1px solid ${colors.athensGray};
+  border-bottom: ${({ borderless }) => !borderless && `1px solid ${colors.athensGray}`};
 
   ${media.greaterThan('landscape')`
     padding: ${rem(globalSize.paddingLarge)} 0;
