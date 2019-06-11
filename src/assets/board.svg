@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon_2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/oferta-seo" transform="translate(-135.000000, -1903.000000)">
+            <g id="icon_20" transform="translate(130.000000, 1896.000000)">
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd"></g>
+                <g id="credit-card" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 10.000000)"></g>
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <g id="slider" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 8.000000)" stroke="#00D664" stroke-linecap="round" stroke-linejoin="round">
+                    <rect id="Rectangle" stroke-width="2" fill="#B7F5D4" x="0" y="0" width="28" height="15"></rect>
+                    <circle id="Oval" stroke-width="2" cx="5" cy="22" r="2"></circle>
+                    <circle id="Oval" stroke-width="2" cx="14" cy="22" r="3"></circle>
+                    <circle id="Oval" stroke-width="2" cx="23" cy="22" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
