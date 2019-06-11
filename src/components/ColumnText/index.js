@@ -22,21 +22,21 @@ import {
 } from './ColumnText.style';
 
 
-const ColumnText = () => {
+const ColumnText = ({ title, leftParagraph, rightParagraph }) => {
   return (
     <Wrapper>
       <Container>
           <Header marginBottom={ 32 }>
-            Dlaczego Google Ads?
+            { title }
           </Header>
 
           <ColumnsWrapper>
             <ParagraphText margin={24} maxWidth={450}>
-              Wyobraź sobie następującą sytuację… Znalazłeś szybki i efektywny sposób na wypromowanie swojej firmy. W przemyślany sposób kierujesz swoje reklamy na wybranych użytkowników i sam decydujesz, ile chcesz poświęcić budżetu na to. Płacisz tylko kiedy Twoja reklama przyniesie zamierzony rezultat.  
+              { leftParagraph }
             </ParagraphText>
 
             <ParagraphText maxWidth={450}>
-              Docierasz do użytkowników w domu, w drodze do pracy, na wakacjach - wszędzie tam gdzie korzystają z komputera, smartfonu lub tabletu. Dodatkowo znasz dokładne dane i wpływ każdego pojedynczego działania na ostateczny wynik. Brzmi dobrze…? Tak właśnie wygląda skutecznie prowadzona kampania AdWords!
+              { rightParagraph }
             </ParagraphText>
           </ColumnsWrapper>
       </Container>
