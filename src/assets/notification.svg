@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="30px" viewBox="0 0 28 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon_12 copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/oferta-seo" transform="translate(-736.000000, -1901.000000)">
+            <g id="icon_22" transform="translate(730.000000, 1896.000000)">
+                <g id="Group-2" stroke-width="1" fill-rule="evenodd"></g>
+                <g id="credit-card" stroke-width="1" fill-rule="evenodd" transform="translate(6.000000, 10.000000)"></g>
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <g id="mobile-chat" stroke-width="1" fill-rule="evenodd" transform="translate(7.000000, 6.000000)" stroke="#00D664" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M24.1052632,13.1764706 L12.7368421,13.1764706 L8,16 L8,1.88235294 C8,0.842758118 8.84830258,2.08983158e-16 9.89473684,0 L24.1052632,0 C25.1516974,0 26,0.842758118 26,1.88235294 L26,11.2941176 C26,12.3337125 25.1516974,13.1764706 24.1052632,13.1764706 Z" id="Path" stroke-width="2" fill="#B7F5D4"></path>
+                    <path d="M13,8.5 L17,8.5" id="Path" stroke-width="2"></path>
+                    <path d="M13,4.5 L21,4.5" id="Path" stroke-width="2"></path>
+                    <path d="M4.73684211,2 L2.84210526,2 C1.27245387,2 0,3.24720677 0,4.78571429 L0,25.2142857 C0,26.7527932 1.27245387,28 2.84210526,28 L15.1578947,28 C16.7275461,28 18,26.7527932 18,25.2142857 L18,16.8571429" id="Path" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

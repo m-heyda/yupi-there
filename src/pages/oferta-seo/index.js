@@ -5,12 +5,11 @@ import Subheader from '../../components/Subheader';
 import ContactSection from '../../components/ContactSection';
 import Clients from '../../components/Clients';
 import ColumnText from '../../components/ColumnText';
-import TwoColumnsLayout from '../../components/TwoColumnsLayout';
-import Depiction from '../../components/Depiction';
 import Tripartite from '../../components/Tripartite';
 import Banner from '../../components/Banner';
+import ColumnsNote from '../../components/ColumnsNote';
+import Depiction from '../../components/Depiction';
 
-import { Paragraph } from '../../global/commonStyles';
 import BaseLayout from '../../layouts/BaseLayout';
 
 import chartIcon from '../../assets/chart.svg';
@@ -71,32 +70,35 @@ const subheader = {
     dlaczego nie szukać sposobów, aby tak wartościowy kanał przynosił jak najwięcej ruchu?`,
 };
 
-const features = [
-  {
-    icon: chartIcon,
-    content: `Każde podejście do działań pozycjonerskich powinno rozpocząć się od analizy Twojego serwisu pod kątem technicznym. Specjaliści są w stanie ocenić czy zastosowane na niej mechanizmy spełniają wytyczne Google oraz wskazać sposoby na naprawę potencjalnych błędów. Ten etap jest zazwyczaj realizowany poprzez stworzenie SEO audytu technicznego, w którym przedstawiane są gotowe rekomendacje modyfikacji serwisu. `,
-  },
-  {
-    icon: toolsIcon,
-    content: `Drugi etap to wdrożenie zmian wynikających z analizy. Jest to zazwyczaj najtrudniejszy moment zarówno dla klienta jak i agencji. Niestety wiele stron jest budowanych wyłącznie pod kątem estetyki z pominięciem aspektów wymaganych przez wyszukiwarki. Uwzględnienie tych aspektów kosztuje czas, zaangażowanie oraz pieniądze, przez co SEO jest często traktowane powierzchownie lub całkowicie pomijane na etapie budowy nowej strony. W skrajnych wypadkach uniemożliwia to modyfikacje i prowadzi nawet do konieczności stworzenia wszystkiego od podstaw jeżeli myślimy na poważnie o podboju Google. Dobra wiadomość jest jednak taka, że przypadki te występują niezwykle rzadko oraz nie trzeba mieć serwisu zbudowanego idealnie pod każdym kątem, aby pojawiać się wysoko. Strona musi być jednak możliwa do odczytu przez wyszukiwarki, aby w ogóle można było myśleć o zdobywaniu wysokich pozycji. `,
-  },
-  {
-    icon: thumbIcon,
-    content: `Skoro posiadasz już stronę, która jest fantastyczna pod kątem technicznym, świetnie działa na urządzeniach mobilnych i ładuje się w mgnieniu oka, pora pomyśleć o wartości jaką chcesz dostarczyć swoim odbiorcom. Jest to zatem etap planowania treści, które zamierzasz umieszczać na swojej stronie, aby dostarczyć to, czego oczekują użytkownicy korzystając z Google czyli odpowiedzi na swoje pytania. W trakcie tego proces specjaliści SEO korzystając z różnego rodzaju narzędzi tworzą bardzo rozbudowane listy słów kluczowych wpisywanych przez Internautów w danej kategorii. Słowa te łączy się w powiązane tematycznie obszary dając zaczątek do formułowania tematów, na których należałoby się skupić w artykułach zamieszczonych na serwisie. Treści to bardzo potężne narzędzie w pozycjonowaniu. Rozbudowując je dajesz znać Google, że jesteś ekspertem w danej dziedzinie i potrafisz o niej mówić językiem trafiającym do odbiorcy.`,
-  },
-  {
-    icon: documentIcon,
-    content: `Treści to bardzo potężne narzędzie w pozycjonowaniu. Rozbudowując je dajesz znać Google, że jesteś ekspertem w danej dziedzinie i potrafisz o niej mówić językiem trafiającym do odbiorcy. Twój content musi mieć jednak zawsze coś wyróżniającego się na tle konkurencji. Może to być wiedza fachowa, może to być Twoje unikalne doświadczenie z danej dziedziny, a czasem po prostu zebranie wiedzy rozsypanej w różnych miejscach. Myśl problemami swojego klienta, a tworzenie treści z dużym prawdopodobieństwem przełoży się na ruch na stronie. `,
-  },
-  {
-    icon: arrowIcon,
-    content: `Posiadając lub rozbudowując treści warto myśleć o ich dodatkowym rozpromowaniu i wskazaniu Google, że to właśnie Twoja strona jest najlepszą odpowiedzią na dane słowo kluczowe. Twoją konkurencją nie jest np. wyłącznie sklep sprzedający te same produkty. Twoim potencjalnym konkurentem jest każdy kto tworzy zbliżone artykuły - sklepy, blogerzy, duże portale, porównywarki cenowe, Wikipedia i inne. Jak wyróżnić się w tym gąszczu skoro miejsc na pierwszej stronie wynikowej jest tak niewiele a konkurencja ogromna? Tutaj jako wsparcie dla Twoich najlepszych treści w internecie przychodzą serwisy zewnętrzne, które odsyłając ze swoich artykułów do Twojej strony wskazują Google kto według nich jest autorytetem w danej dziedzinie. Jak uzyskać takie odesłanie? Oczywiście dostarczając treści czyli stosując content marketing! Specjaliści SEO są w stanie dobrać najlepsze źródła i serwisy do współpracy, tak aby potencjalny wpływ na pozycje był jak najsilniejszy. Poprzez zdobywanie publikacji na serwisach zewnętrznych i linkowaniu do Twojej strony Twój autorytet w oczach Google będzie systematycznie wzrastał, a Ty uzyskasz wyższe pozycje i więcej ruchu. `,
-  },
-  {
-    icon: repeatIcon,
-    content: `Tym sposobem docieramy do etapu, w którym historia zatacza koło i wracamy do punktu startowego. SEO to niekończący się proces obserwacji wyników, monitorowania poczynań Google oraz adaptacji do zmieniającej się rzeczywistości. Nie ma sprawdzonej, uniwersalnej recepty na sukces - gdyby została opracowana to istnienie wyszukiwarki straciłby sens, gdyż wyniki stałyby się polem wielu nadużyć i trików zatracając możliwość realizacji swojego podstawowego celu jakim jest dostarczenie najlepszej odpowiedzi na zapytanie użytkownika.`,
-  },
-];
+const features = {
+    title: 'Jak wygląda projekt SEO?',
+    content: [
+      {
+        icon: chartIcon,
+        content: `Każde podejście do działań pozycjonerskich powinno rozpocząć się od analizy Twojego serwisu pod kątem technicznym. Specjaliści są w stanie ocenić czy zastosowane na niej mechanizmy spełniają wytyczne Google oraz wskazać sposoby na naprawę potencjalnych błędów. Ten etap jest zazwyczaj realizowany poprzez stworzenie SEO audytu technicznego, w którym przedstawiane są gotowe rekomendacje modyfikacji serwisu. `,
+      },
+      {
+        icon: toolsIcon,
+        content: `Drugi etap to wdrożenie zmian wynikających z analizy. Jest to zazwyczaj najtrudniejszy moment zarówno dla klienta jak i agencji. Niestety wiele stron jest budowanych wyłącznie pod kątem estetyki z pominięciem aspektów wymaganych przez wyszukiwarki. Uwzględnienie tych aspektów kosztuje czas, zaangażowanie oraz pieniądze, przez co SEO jest często traktowane powierzchownie lub całkowicie pomijane na etapie budowy nowej strony. W skrajnych wypadkach uniemożliwia to modyfikacje i prowadzi nawet do konieczności stworzenia wszystkiego od podstaw jeżeli myślimy na poważnie o podboju Google. Dobra wiadomość jest jednak taka, że przypadki te występują niezwykle rzadko oraz nie trzeba mieć serwisu zbudowanego idealnie pod każdym kątem, aby pojawiać się wysoko. Strona musi być jednak możliwa do odczytu przez wyszukiwarki, aby w ogóle można było myśleć o zdobywaniu wysokich pozycji. `,
+      },
+      {
+        icon: thumbIcon,
+        content: `Skoro posiadasz już stronę, która jest fantastyczna pod kątem technicznym, świetnie działa na urządzeniach mobilnych i ładuje się w mgnieniu oka, pora pomyśleć o wartości jaką chcesz dostarczyć swoim odbiorcom. Jest to zatem etap planowania treści, które zamierzasz umieszczać na swojej stronie, aby dostarczyć to, czego oczekują użytkownicy korzystając z Google czyli odpowiedzi na swoje pytania. W trakcie tego proces specjaliści SEO korzystając z różnego rodzaju narzędzi tworzą bardzo rozbudowane listy słów kluczowych wpisywanych przez Internautów w danej kategorii. Słowa te łączy się w powiązane tematycznie obszary dając zaczątek do formułowania tematów, na których należałoby się skupić w artykułach zamieszczonych na serwisie. Treści to bardzo potężne narzędzie w pozycjonowaniu. Rozbudowując je dajesz znać Google, że jesteś ekspertem w danej dziedzinie i potrafisz o niej mówić językiem trafiającym do odbiorcy.`,
+      },
+      {
+        icon: documentIcon,
+        content: `Treści to bardzo potężne narzędzie w pozycjonowaniu. Rozbudowując je dajesz znać Google, że jesteś ekspertem w danej dziedzinie i potrafisz o niej mówić językiem trafiającym do odbiorcy. Twój content musi mieć jednak zawsze coś wyróżniającego się na tle konkurencji. Może to być wiedza fachowa, może to być Twoje unikalne doświadczenie z danej dziedziny, a czasem po prostu zebranie wiedzy rozsypanej w różnych miejscach. Myśl problemami swojego klienta, a tworzenie treści z dużym prawdopodobieństwem przełoży się na ruch na stronie. `,
+      },
+      {
+        icon: arrowIcon,
+        content: `Posiadając lub rozbudowując treści warto myśleć o ich dodatkowym rozpromowaniu i wskazaniu Google, że to właśnie Twoja strona jest najlepszą odpowiedzią na dane słowo kluczowe. Twoją konkurencją nie jest np. wyłącznie sklep sprzedający te same produkty. Twoim potencjalnym konkurentem jest każdy kto tworzy zbliżone artykuły - sklepy, blogerzy, duże portale, porównywarki cenowe, Wikipedia i inne. Jak wyróżnić się w tym gąszczu skoro miejsc na pierwszej stronie wynikowej jest tak niewiele a konkurencja ogromna? Tutaj jako wsparcie dla Twoich najlepszych treści w internecie przychodzą serwisy zewnętrzne, które odsyłając ze swoich artykułów do Twojej strony wskazują Google kto według nich jest autorytetem w danej dziedzinie. Jak uzyskać takie odesłanie? Oczywiście dostarczając treści czyli stosując content marketing! Specjaliści SEO są w stanie dobrać najlepsze źródła i serwisy do współpracy, tak aby potencjalny wpływ na pozycje był jak najsilniejszy. Poprzez zdobywanie publikacji na serwisach zewnętrznych i linkowaniu do Twojej strony Twój autorytet w oczach Google będzie systematycznie wzrastał, a Ty uzyskasz wyższe pozycje i więcej ruchu. `,
+      },
+      {
+        icon: repeatIcon,
+        content: `Tym sposobem docieramy do etapu, w którym historia zatacza koło i wracamy do punktu startowego. SEO to niekończący się proces obserwacji wyników, monitorowania poczynań Google oraz adaptacji do zmieniającej się rzeczywistości. Nie ma sprawdzonej, uniwersalnej recepty na sukces - gdyby została opracowana to istnienie wyszukiwarki straciłby sens, gdyż wyniki stałyby się polem wielu nadużyć i trików zatracając możliwość realizacji swojego podstawowego celu jakim jest dostarczenie najlepszej odpowiedzi na zapytanie użytkownika.`,
+      },
+    ]
+};
 
 const tripartite = [
   {
@@ -123,10 +125,10 @@ const banner = {
 
 class SMCampaign extends Component {
   render() {
-    const halfLength = Math.ceil(features.length / 2);
+    const halfLength = Math.ceil(features.content.length / 2);
 
-    const leftSide = features.slice(0, halfLength);
-    const rightSide = features.slice(halfLength, features.length);
+    const leftSide = features.content.slice(0, halfLength);
+    const rightSide = features.content.slice(halfLength, features.content.length);
 
     return (
       <BaseLayout>
@@ -135,12 +137,11 @@ class SMCampaign extends Component {
           <ColumnText { ...columnText } />
           <Clients />
           <Subheader { ...subheader } />
-          <section>
-            <TwoColumnsLayout
-              leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
-              rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
-            />
-          </section>
+          <ColumnsNote
+            header={ features.title }
+            leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
+            rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
+          />
           <Tripartite content={ tripartite } />
           <Banner { ...banner } />
           <ContactSection />

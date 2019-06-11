@@ -17,7 +17,7 @@ const SubMenu = () => {
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink href='/kampanie-sm'>Kampanie social media</SubMenuLink>
+        <SubMenuLink href='/sm-campaign'>Kampanie social media</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
