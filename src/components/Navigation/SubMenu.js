@@ -13,7 +13,7 @@ const SubMenu = () => {
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink href='#'>Analityka Web</SubMenuLink>
+        <SubMenuLink href='/analityka'>Analityka Web</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
