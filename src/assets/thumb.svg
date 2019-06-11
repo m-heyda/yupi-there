@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>icon_12 copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/oferta-seo" transform="translate(-136.000000, -2919.000000)">
+            <g id="Group-3" transform="translate(0.000000, 2053.000000)">
+                <g id="icon_14" transform="translate(130.000000, 861.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                    </g>
+                    <g id="thumb-up" transform="translate(7.000000, 6.000000)" stroke="#00D664" stroke-linecap="round" stroke-linejoin="round">
+                        <rect id="Rectangle" stroke-width="2" fill="#B7F5D4" x="0" y="12" width="5" height="15"></rect>
+                        <path d="M10,27 L21.7174909,27 C23.309058,26.9997105 24.686982,25.8279895 25.0323521,24.1812 L26.9190379,15.1812 C27.1428362,14.1140965 26.8970737,12.9970144 26.2510423,12.1449109 C25.6050109,11.2928075 24.6287026,10.7980009 23.597384,10.8 L16.7927483,10.8 L16.7927483,3.6 C16.7927483,1.6117749 15.2721398,1.99840144e-16 13.3963742,0 L10,10.8" id="Path" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
