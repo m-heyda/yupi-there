@@ -25,6 +25,7 @@ export const Wrapper = styled.section`
 export const ParagraphText = styled(Paragraph)`
   text-align: center;
   margin: 0;
+  white-space: pre-line;
 
   &:not(:last-child) {
     margin-bottom: ${marginSize.medium};
@@ -47,6 +48,7 @@ export const ColumnsWrapper = styled.div`
 
   ${media.greaterThan('landscape')`
     flex-direction: row;
+    align-items: flex-start;
   `}
 `;
 
