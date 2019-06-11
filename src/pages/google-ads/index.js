@@ -15,22 +15,6 @@ import signIcon from '../../assets/sign.svg';
 import boxIcon from '../../assets/box.svg';
 import diodeIcon from '../../assets/diode.svg';
 
-const clients = [
-  {
-    author: 'Toyota Bielany',
-    content: `Współpracę z Yupi-There oceniam na 5+. Nasze kampanie notują wzrost
-    wyników każdego kolejnego miesiąca. Duży plus za zaangażowanie,
-    super podejście i kreatywność w działaniach.`,
-  },
-  {
-    author: 'Centrum Terapii UK',
-    content: `Zdecydowanie polecam Yupi-There. Duża odległość i kontakt jedynie
-    telefoniczny nie stanowi żadnego problemu. W razie wątpliwości mogę
-    liczyć na błyskawiczną odpowiedź i pomoc. Doceniam za terminowość,
-    solidność i mnóstwo pomysłów.`,
-  },
-];
-
 const header = {
   title: 'Nie zostawaj w tyle, zacznij od Google Ads',
   content: `
@@ -73,7 +57,13 @@ const features = [
     howItWorksTitle: `Jak to działa?`,
     howItWorksContent: `Twój film może być wyświetlany zarówno w YouTube jak i we wspomnianej wcześniej sieci reklamowej. Kierowanie odbywa się podobnie jak w sieci GDN – wybieramy użytkowników, którzy mają zobaczyć Twój film na podstawie ich wieku, lokalizacji, tego czym się interesują i co lubią`,
   },
-]
+];
+
+const columnText = {
+  title: 'Dlaczego Google Ads?',
+  leftParagraph: 'Wyobraź sobie następującą sytuację… Znalazłeś szybki i efektywny sposób na wypromowanie swojej firmy. W przemyślany sposób kierujesz swoje reklamy na wybranych użytkowników i sam decydujesz, ile chcesz poświęcić budżetu na to. Płacisz tylko kiedy Twoja reklama przyniesie zamierzony rezultat.  ',
+  rightParagraph: 'Docierasz do użytkowników w domu, w drodze do pracy, na wakacjach - wszędzie tam gdzie korzystają z komputera, smartfonu lub tabletu. Dodatkowo znasz dokładne dane i wpływ każdego pojedynczego działania na ostateczny wynik. Brzmi dobrze…? Tak właśnie wygląda skutecznie prowadzona kampania AdWords!',
+}
 
 class SMCampaign extends Component {
   render() {
@@ -86,9 +76,9 @@ class SMCampaign extends Component {
       <BaseLayout>
         <SeoBase title='Kampanie social media' description='Kampanie social media'>
           <Header { ...header } />
-          <ColumnText />
+          <ColumnText { ...columnText } />
 
-          <Clients { ...clients } />
+          <Clients />
           <section>
             <TwoColumnsLayout
               leftChildren={ leftSide.map(item => <FeatureItem key={item.title} { ...item }/> ) }
