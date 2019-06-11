@@ -21,12 +21,19 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   ${containerStyles};
-  /* border-bottom: 1px solid ${colors.athensGray}; */
   display: flex;
   flex-direction: column;
 
   ${media.greaterThan('landscape')`
     flex-direction: row;
+  `}
+`;
+
+export const WrapperColumn = styled(Wrapper)`
+  margin-top: ${rem(84)};
+
+  ${media.greaterThan('landscape')`
+    flex-direction: column;
   `}
 `;
 
@@ -54,6 +61,14 @@ export const Column = styled.div`
   flex-basis: 50%;
 
   & > * {
+    margin-bottom: ${rem(60)};
+  }
+
+  &:last-child > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) > *:only-child {
     margin-bottom: ${rem(60)};
   }
 
