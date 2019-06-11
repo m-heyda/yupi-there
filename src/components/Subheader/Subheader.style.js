@@ -20,6 +20,7 @@ export const Container = styled.div`
   ${containerStyles};
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const ParagraphText = styled(Paragraph)`

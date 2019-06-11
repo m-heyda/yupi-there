@@ -9,7 +9,7 @@ const SubMenu = () => {
       </SubMenuItem>
 
       <SubMenuItem>
-        <SubMenuLink href='#'>SEO</SubMenuLink>
+        <SubMenuLink href='/oferta-seo'>SEO</SubMenuLink>
       </SubMenuItem>
 
       <SubMenuItem>
