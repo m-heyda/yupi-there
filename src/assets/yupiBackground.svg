@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="533px" height="459px" viewBox="0 0 533 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.0012563,140.456695 C-10.3072206,178.540627 -2.40671008,229.284432 33.6539097,253.791797 L33.6539097,253.791797 L178.294761,44.4408052 L113.003208,0.0632882549 L16.0012563,140.456695 Z" id="path-1"></path>
+        <linearGradient x1="49.9997586%" y1="86.8802368%" x2="49.9997586%" y2="13.0289372%" id="linearGradient-3">
+            <stop stop-color="#01D466" offset="0%"></stop>
+            <stop stop-color="#00A850" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="0 0.483647674 332.822606 0.483647674 332.822606 239.021293 0 239.021293"></polygon>
+    </defs>
+    <g id="Ready" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yupi_there/subpage/o-nas" transform="translate(-722.000000, -173.000000)">
+            <g id="header">
+                <g id="Group-5" transform="translate(711.678308, 173.899495)">
+                    <g id="background_shapes">
+                        <polygon id="Triangle" stroke="#19243B" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" transform="translate(18.500000, 392.847414) rotate(-40.000000) translate(-18.500000, -392.847414) " points="18.5 381.847414 33 403.847414 4 403.847414"></polygon>
+                        <path d="M359.874251,372.626785 C359.874251,384.777049 369.723986,394.626785 381.874251,394.626785 C394.024515,394.626785 403.874251,384.777049 403.874251,372.626785 L359.874251,372.626785 Z" id="Path" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" transform="translate(381.874251, 383.626785) rotate(-30.000000) translate(-381.874251, -383.626785) "></path>
+                        <path d="M501.321692,86.5836687 C501.321692,94.3156552 507.589705,100.583669 515.321692,100.583669 C523.053678,100.583669 529.321692,94.3156552 529.321692,86.5836687 L501.321692,86.5836687 Z" id="Path" fill="#E9F4FE" fill-rule="nonzero" transform="translate(515.321692, 93.583669) rotate(55.000000) translate(-515.321692, -93.583669) "></path>
+                        <rect id="Rectangle" fill="#E9F4FE" fill-rule="nonzero" transform="translate(115.949109, 58.473088) rotate(-45.000000) translate(-115.949109, -58.473088) " x="99.9491089" y="42.4730881" width="32" height="32"></rect>
+                        <rect id="Rectangle" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" transform="translate(104.221187, 10.000000) rotate(-45.000000) translate(-104.221187, -10.000000) " x="97.2211868" y="3" width="14" height="14"></rect>
+                        <circle id="Oval" fill="#E9F4FE" fill-rule="nonzero" cx="528.321692" cy="416.100505" r="14"></circle>
+                        <circle id="Oval" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" cx="536.321692" cy="451.100505" r="6"></circle>
+                        <circle id="Oval" stroke="#19243B" stroke-linecap="round" stroke-linejoin="round" cx="529.321692" cy="54.1005051" r="6"></circle>
+                        <circle id="Oval" stroke="#D7E6F2" stroke-linecap="round" stroke-linejoin="round" cx="102.321692" cy="376.100505" r="26"></circle>
+                        <circle id="Oval" stroke="#D7E6F2" stroke-linecap="round" stroke-linejoin="round" cx="517.321692" cy="289.100505" r="20"></circle>
+                    </g>
+                    <g id="Group-12" transform="translate(98.321692, 31.100505)">
+                        <g id="Group-3">
+                            <g id="Group-2">
+                                <g id="Group">
+                                    <g id="Group-8" transform="translate(125.481303, 118.020305)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-7"></g>
+                                        <path d="M16.0012563,140.456695 C-10.3072206,178.540627 -2.40671008,229.284432 33.6539097,253.791797 L33.6539097,253.791797 L178.294761,44.4408052 L113.003208,0.0632882549 L16.0012563,140.456695 Z" id="Fill-6" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                                    </g>
+                                    <g id="Group-11">
+                                        <mask id="mask-5" fill="white">
+                                            <use xlink:href="#path-4"></use>
+                                        </mask>
+                                        <g id="Clip-10"></g>
+                                        <path d="M326.978514,23.8087917 C324.811371,15.7292324 322.067386,7.95313072 318.854916,0.483647674 L271.878907,19.76269 C257.932705,25.4841307 249.761302,39.8667578 251.909323,54.6856053 C252.549905,59.0794189 252.878163,63.59019 252.871789,68.1957917 C252.817611,111.666097 221.186886,149.680487 178.165913,157.981317 C141.400972,165.0778 106.38568,149.901758 85.941237,122.754944 C76.9220983,110.77469 60.8948021,106.349266 46.9677223,112.067546 L-0.00191218487,131.343427 C31.8837706,210.722885 119.251497,255.745249 204.579561,233.226165 C296.683132,208.924266 351.483163,115.162182 326.978514,23.8087917" id="Fill-9" fill="#01D466" mask="url(#mask-5)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <path d="M224.438238,76.3461578 C220.636177,108.89831 190.94632,132.229776 158.126853,128.458683 C125.307387,124.684429 101.784326,95.2395561 105.586387,62.6874036 C109.388448,30.13209 139.078305,6.80378496 171.897771,10.5748782 C204.720425,14.3459714 228.240299,43.7940053 224.438238,76.3461578" id="Fill-3" fill="#00D665"></path>
+                            <path d="M144.550659,82.0894095 C142.753206,82.5888502 141.927779,84.6340282 142.83288,86.2556299 C150.666464,100.27474 167.723153,107.159435 183.54967,101.79835 C198.117332,96.8703248 207.110975,83.110418 206.556441,68.6013502 C206.486328,66.7458333 204.71437,65.4118841 202.910542,65.9113248 L144.550659,82.0894095 Z" id="Fill-4" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
