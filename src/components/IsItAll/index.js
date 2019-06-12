@@ -14,10 +14,12 @@ import {
 const LeftComponent = () => (
   <div>
     <ParagraphText>
-      <ParagraphHighlight style={{ color: 'black' }}>AdWords to znacznie więcej. Ale to już pozostaw nam.</ParagraphHighlight>
+      <ParagraphHighlight>AdWords to znacznie więcej. Ale to już pozostaw nam.</ParagraphHighlight>
       Nie jesteś pewien co będzie najkorzystniejsze dla Twojej firmy? Zadzwoń, pomożemy!
     </ParagraphText>
-    <TitleHighlight>Tel: 000 000 000</TitleHighlight>
+    <TitleHighlight>
+      <a href="Tel: 000 000 000">Tel: 000 000 000</a>
+    </TitleHighlight>
   </div>
 )
 

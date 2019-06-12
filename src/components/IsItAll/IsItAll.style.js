@@ -16,7 +16,8 @@ export const ParagraphText = styled(Paragraph)`
   `}
 `;
 
-export const ParagraphHighlight = styled.p`
+export const ParagraphHighlight = styled.span`
+  display: block;
   color: ${colors.darkBlue};
 `;
 
@@ -29,12 +30,16 @@ export const Header = styled.h2`
 `;
 
 export const TitleHighlight = styled.h3`
-  color: ${colors.lightGreen};
-  font-size: ${rem(32)};
   margin-top: ${rem(20)};
   text-align: center;
+  font-size: ${rem(32)};
+
+  a {
+    color: ${colors.lightGreen};
+    text-decoration: none;
+  }
 
   ${media.greaterThan('landscape')`
-    text-align: left;
+  text-align: left;
   `}
 `;
