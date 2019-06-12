@@ -1,12 +1,13 @@
 import React from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
-import { Paragraph } from '../../global/commonStyles';
 import {
   HeaderBackground,
   HeaderContent,
   ContentWrapper,
   ButtonWrapper,
+  ParagraphText,
+  Title,
 } from './Header.style';
 import { variables } from '../../global/helpers';
 
@@ -14,25 +15,25 @@ import megaphoneBg from '../../assets/megaphoneBg.svg';
 
 const { marginSize } = variables;
 
-const Header = ({ title, content, ctaLabel }) => {
+const Header = ({ title, content, ctaLabel, image }) => {
   return (
     <HeaderBackground>
       <HeaderContent>
         <ContentWrapper>
-          <Typography component='h1' headingVariant='hero' align='left'>
+          <Title>
             { title }
-          </Typography>
+          </Title>
 
-          <Paragraph margin={marginSize.medium} maxWidth={580} align='left'>
+          <ParagraphText margin={marginSize.medium} maxWidth={580} align='left'>
             { content }
-          </Paragraph>
+          </ParagraphText>
 
           <ButtonWrapper>
             <Button fluid>{ ctaLabel }</Button>
           </ButtonWrapper>
         </ContentWrapper>
 
-        <img src={megaphoneBg} alt='Hero background' />
+        <img src={image || megaphoneBg} alt='Hero background' />
       </HeaderContent>
     </HeaderBackground>
   );

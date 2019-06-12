@@ -16,30 +16,42 @@ export const ParagraphText = styled(Paragraph)`
   `}
 `;
 
-export const ParagraphHighlight = styled.span`
-  display: block;
+export const ParagraphHighlight = styled.p`
   color: ${colors.darkBlue};
+  text-align: center;
+
+  ${media.greaterThan('landscape')`
+    text-align: left;
+  `}
+`;
+
+export const ContactPhone = styled.div`
+  margin-top: ${rem(60)};
+  text-align: center;
+
+  ${media.greaterThan('landscape')`
+    text-align: left;
+  `}
 `;
 
 export const Header = styled.h2`
   width: 100%;
-  margin-bottom: ${rem(60)};
+  margin-bottom: ${rem(30)};
   font-size: ${rem(32)};
   color: ${colors.darkBlue};
   text-align: center;
+
+  ${media.greaterThan('landscape')`
+    text-align: left;
+  `}
 `;
 
 export const TitleHighlight = styled.h3`
   margin-top: ${rem(20)};
-  text-align: center;
-  font-size: ${rem(32)};
 
   a {
     color: ${colors.lightGreen};
+    font-size: ${rem(32)};
     text-decoration: none;
   }
-
-  ${media.greaterThan('landscape')`
-  text-align: left;
-  `}
 `;

@@ -80,5 +80,9 @@ export const Column = styled.div`
     &:not(:last-child) {
       margin-right: ${rem(120)};
     }
+
+    &:not(:last-child) > *:only-child {
+      margin-bottom: 0;
+    }
   `}
 `;

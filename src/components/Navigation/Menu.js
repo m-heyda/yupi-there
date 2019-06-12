@@ -10,7 +10,7 @@ const Menu = ({ isActive }) => {
   return (
     <MainMenu className={menuClasses}>
       <MenuItem link='#' label='Oferta' hasSubmenu />
-      <MenuItem link='#' label='O nas' />
+      <MenuItem link='/o-nas' label='O nas' />
       <MenuItem link='#' label='Blog' />
 
       <MainMenuItem>

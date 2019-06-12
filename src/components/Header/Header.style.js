@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { rem } from 'polished';
 import { variables, utils, colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
+import { Paragraph } from '../../global/commonStyles';
 
 const { globalSize } = variables;
 const { media } = utils;
@@ -15,7 +16,7 @@ export const HeaderContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: ${rem(30)} ${rem(globalSize.gutter)} 0;
+  padding: ${rem(30)} ${rem(globalSize.gutter)} ${rem(32)};
 
   ${media.greaterThan('landscape')`
     flex-direction: row;
@@ -27,11 +28,38 @@ export const HeaderContent = styled.div`
 
 export const ContentWrapper = styled.div`
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   ${media.greaterThan('landscape')`
     max-width: ${rem(480)};
   `}
 `;
+
+export const Title = styled.h1`
+  color: ${colors.darkBlue};
+  text-align: center;
+  font-size: ${rem(28)};
+
+  ${media.greaterThan('landscape')`
+  font-size: ${rem(44)};
+    text-align: left;
+  `}
+`;
+
+export const ParagraphText = styled(Paragraph)`
+  text-align: center;
+  margin: 0;
+  max-width: ${rem(580)};
+  margin-bottom: ${({ margin }) => margin};
+
+  ${media.greaterThan('landscape')`
+    font-size: ${rem(18)};
+    text-align: left;
+  `}
+`;
+
 
 export const ButtonWrapper = styled.div`
   max-width: ${rem(200)};
