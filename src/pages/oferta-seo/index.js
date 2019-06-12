@@ -123,7 +123,7 @@ const banner = {
   content: `	Mamy nadzieję, że tym krótkim artykułem przybliżyliśmy Tobie nieco specyfikę naszej pracy. Jeżeli trafiłeś na tę stronę z Google to już wiesz że SEO działa :) Zapraszamy do kontaktu, na pewno znajdziemy rozwiązanie dopasowane do Twoich potrzeb i możliwości.`,
 };
 
-class SMCampaign extends Component {
+class SEOOffert extends Component {
   render() {
     const halfLength = Math.ceil(features.content.length / 2);
 
@@ -151,4 +151,4 @@ class SMCampaign extends Component {
   }
 }
 
-export default SMCampaign;
+export default SEOOffert;

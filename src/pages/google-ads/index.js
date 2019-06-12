@@ -65,7 +65,7 @@ const columnText = {
   rightParagraph: 'Docierasz do użytkowników w domu, w drodze do pracy, na wakacjach - wszędzie tam gdzie korzystają z komputera, smartfonu lub tabletu. Dodatkowo znasz dokładne dane i wpływ każdego pojedynczego działania na ostateczny wynik. Brzmi dobrze…? Tak właśnie wygląda skutecznie prowadzona kampania AdWords!',
 }
 
-class SMCampaign extends Component {
+class GoogleAds extends Component {
   render() {
     const halfLength = Math.ceil(features.length / 2);
 
@@ -93,4 +93,4 @@ class SMCampaign extends Component {
   }
 }
 
-export default SMCampaign;
+export default GoogleAds;
