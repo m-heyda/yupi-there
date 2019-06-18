@@ -10,7 +10,7 @@ const Depiction = ({ icon, content }) => {
   return (
     <Container>
       <Image src={ icon } />
-      <ParagraphText>{ content }</ParagraphText>
+      <ParagraphText dangerouslySetInnerHTML={ { __html: content } } />
     </Container>
   );
 };
