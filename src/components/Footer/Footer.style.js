@@ -89,3 +89,9 @@ export const PolicyWrapper = styled.div`
     }
   }
 `;
+
+export const LinkImage = styled.a`
+  &:not(:last-child) {
+    margin-right: ${rem(16)};
+  }
+`;

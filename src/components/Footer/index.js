@@ -10,8 +10,14 @@ import {
   List,
   Item,
   StyledLink,
-  PolicyWrapper,
+  // PolicyWrapper,
+  LinkImage,
 } from './Footer.style';
+
+import telegramIcon from '../../assets/telegram.svg';
+import twitterIcon from '../../assets/twitter.svg';
+import redditIcon from '../../assets/reddit.svg';
+import mediumIcon from '../../assets/medium.svg';
 
 const Footer = () => {
   return (
@@ -21,29 +27,23 @@ const Footer = () => {
           <LinkElement>
             <Heading>Yupi-There</Heading>
             <Copyright>
-              Copyright © { new Date().getFullYear() } yupi-there All rights reserved.
+              Copyright © { new Date().getFullYear() } yupi-there<br />All rights reserved.
             </Copyright>
           </LinkElement>
           <LinkElement>
             <Title>Oferta</Title>
             <List>
               <Item>
-                <StyledLink to='/'>Google Ads</StyledLink>
+                <StyledLink href='/reklamy-google/'>Google Ads</StyledLink>
               </Item>
               <Item>
-                <StyledLink to='/'>SEO</StyledLink>
+                <StyledLink href='/oferta-seo/'>SEO</StyledLink>
               </Item>
               <Item>
-                <StyledLink to='/'>Analityka Web</StyledLink>
+                <StyledLink href='/analityka/'>Analityka Web</StyledLink>
               </Item>
               <Item>
-                <StyledLink to='/'>Kampanie Social Media</StyledLink>
-              </Item>
-              <Item>
-                <StyledLink to='/'>Grafika Online</StyledLink>
-              </Item>
-              <Item>
-                <StyledLink to='/'>Content Marketing</StyledLink>
+                <StyledLink href='/kampanie-sm/'>Kampanie Social Media</StyledLink>
               </Item>
             </List>
           </LinkElement>
@@ -51,17 +51,32 @@ const Footer = () => {
             <Title>O firmie</Title>
             <List>
               <Item>
-                <StyledLink to='/'>O nas</StyledLink>
+                <StyledLink href='/o-nas/'>O nas</StyledLink>
               </Item>
             </List>
           </LinkElement>
           <LinkElement>
+            <Title>Social Media</Title>
+            <LinkImage href="#">
+              <img src={ telegramIcon } alt="Telegram" />
+            </LinkImage>
+            <LinkImage href="#">
+              <img src={ twitterIcon } alt="Twitter" />
+            </LinkImage>
+            <LinkImage href="#">
+              <img src={ redditIcon } alt="Reddit" />
+            </LinkImage>
+            <LinkImage href="#">
+              <img src={ mediumIcon } alt="Medium" />
+            </LinkImage>
+          </LinkElement>
+          {/* <LinkElement>
             <Title>...</Title>
             <PolicyWrapper>
-              <StyledLink to='/'>Privacy Policy</StyledLink>
-              <StyledLink to='/'>Terms and Conditions</StyledLink>
+              <StyledLink href='/'>Privacy Policy</StyledLink>
+              <StyledLink href='/'>Terms and Conditions</StyledLink>
             </PolicyWrapper>
-          </LinkElement>
+          </LinkElement> */}
         </ElementsWrapper>
       </Container>
     </Wrapper>
