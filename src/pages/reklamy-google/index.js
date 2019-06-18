@@ -14,6 +14,7 @@ import magnifyHouseIcon from '../../assets/magnify-house.svg';
 import signIcon from '../../assets/sign.svg';
 import boxIcon from '../../assets/box.svg';
 import diodeIcon from '../../assets/diode.svg';
+import adsBg from '../../assets/google.svg';
 
 const header = {
   title: 'Nie zostawaj w tyle, zacznij od Google Ads',
@@ -22,6 +23,7 @@ const header = {
     nie pozwól, żeby konkurencja uniemożliwiła Ci docieranie
     do potencjalnych klientów, z Ads to możliwe`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: adsBg,
 }
 
 const features = [

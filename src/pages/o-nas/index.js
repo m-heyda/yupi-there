@@ -9,7 +9,7 @@ import AboutUs from '../../components/AboutUs';
 
 import BaseLayout from '../../layouts/BaseLayout';
 
-import yupiBg from '../../assets/yupiBackground.svg';
+import yupiBg from '../../assets/about.svg';
 
 const header = {
   title: 'Lorem Ipsum is simply dummy text…',

@@ -15,13 +15,15 @@ import BaseLayout from '../../layouts/BaseLayout';
 
 import filterIcon from '../../assets/filter.svg';
 import fileIcon from '../../assets/file.svg';
-import heroBg from '../../assets/heroBackground.svg';
+import heroBg from '../../assets/filterBackground.svg';
+import analyticBg from '../../assets/analytic.svg';
 
 const header = {
   title: 'Lorem Ipsum is simply dummy text…',
   content: `
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: analyticBg,
 };
 
 const subheader = {

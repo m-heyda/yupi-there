@@ -15,12 +15,14 @@ import BaseLayout from '../../layouts/BaseLayout';
 import boardIcon from '../../assets/board.svg';
 import gridIcon from '../../assets/grid.svg';
 import notificationIcon from '../../assets/notification.svg';
+import smBg from '../../assets/monitor.svg';
 
 const header = {
   title: 'Twoja firma „na ustach” internautów',
   content: `
     Social media pozwolą dotrzeć Twojej reklamie i budować świadomość marki w obszarach, do których nie trafi inna reklama, nie ograniczaj się.`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: smBg,
 };
 
 const columnText = {

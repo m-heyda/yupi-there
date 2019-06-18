@@ -22,6 +22,7 @@ import repeatIcon from '../../assets/repeat.svg';
 import calendarIcon from '../../assets/calendar.svg';
 import podiumIcon from '../../assets/podium.svg';
 import cardIcon from '../../assets/card.svg';
+import seoBg from '../../assets/seo.svg';
 
 const header = {
   title: 'Dlaczego SEO jest dla Ciebie takie ważne?',
@@ -31,6 +32,7 @@ const header = {
     swojego potencjału. Rynek internetowy
     jest już największym potencjalnym źródłem klientów i wciąż rośnie`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: seoBg,
 };
 
 const columnText = {
