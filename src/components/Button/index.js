@@ -77,6 +77,7 @@ const Button = ({
     box-shadow: 0 10px 20px 0 ${rgba(colors.lightGreen, 0.2)};
     cursor: pointer;
     backface-visibility: hidden;
+    text-decoration: none;
 
     ${({ isLink }) => (isLink ? linkButton : afterButton)}
 

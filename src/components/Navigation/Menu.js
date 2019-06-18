@@ -11,10 +11,9 @@ const Menu = ({ isActive }) => {
     <MainMenu className={menuClasses}>
       <MenuItem link='#' label='Oferta' hasSubmenu />
       <MenuItem link='/o-nas' label='O nas' />
-      <MenuItem link='#' label='Blog' />
 
       <MainMenuItem>
-        <Button fluid>Skontaktuj się</Button>
+        <Button fluid component="a" href="#contact">Skontaktuj się</Button>
       </MainMenuItem>
     </MainMenu>
   );
