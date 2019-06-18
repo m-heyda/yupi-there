@@ -21,7 +21,7 @@ const Footer = () => {
           <LinkElement>
             <Heading>Yupi-There</Heading>
             <Copyright>
-              Copyright © 2018 yupi-there All rights reserved.
+              Copyright © { new Date().getFullYear() } yupi-there All rights reserved.
             </Copyright>
           </LinkElement>
           <LinkElement>
@@ -52,9 +52,6 @@ const Footer = () => {
             <List>
               <Item>
                 <StyledLink to='/'>O nas</StyledLink>
-              </Item>
-              <Item>
-                <StyledLink to='/'>Blog</StyledLink>
               </Item>
             </List>
           </LinkElement>

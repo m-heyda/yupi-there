@@ -3,6 +3,8 @@ import Menu from './Menu';
 import MenuTrigger from './MenuTrigger';
 import { Navbar, NavWrapper, LogoWrapper } from './Navigation.style';
 
+import logoImage from '../../assets/logo.svg';
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,11 @@ class Navigation extends Component {
     return (
       <Navbar>
         <NavWrapper>
-          <LogoWrapper>Yupi-There</LogoWrapper>
+          <LogoWrapper>
+            <a href="/">
+              <img src={ logoImage } alt="Yupi-There" />
+            </a>
+          </LogoWrapper>
           <Menu isActive={isMenuOpen} />
           <MenuTrigger isActive={isMenuOpen} onClick={this.triggerMenu} />
         </NavWrapper>
