@@ -63,7 +63,7 @@ class SMCampaign extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='Analityka Web' description='Opis strony o analityce web'>
           <Header { ...header } />
           <Subheader { ...subheader } />
           <ColumnText { ...columnText } />

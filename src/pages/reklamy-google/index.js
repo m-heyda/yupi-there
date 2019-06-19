@@ -76,7 +76,7 @@ class GoogleAds extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='Google Ads' description='Opis strong Google Ads'>
           <Header { ...header } />
           <ColumnText { ...columnText } />
 

@@ -134,7 +134,7 @@ class SEOOffert extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='SEO' description='Opis strony SEO'>
           <Header { ...header } />
           <ColumnText { ...columnText } />
           <Clients />

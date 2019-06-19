@@ -23,7 +23,7 @@ class About extends Component {
   render() {
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='O nas' description='Opis strony o nas'>
           <Header { ...header } />
           <AboutUs />
           <Clients />
