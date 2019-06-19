@@ -26,19 +26,19 @@ const tilesData = [
     icon: <SeoIcon />,
     title: 'Pozycjonowanie i optymalizacja SEO',
     content: 'Odkryj wzrost liczby transakcji z Google o 1030 % w ciągu roku',
-    href: '/',
+    href: '/oferta-seo/',
   },
   {
     icon: <CampaignIcon />,
     title: 'Kampanie reklamowe',
     content: 'Odkryj jak zdobyć klientów z Google, YouTube, Facebook, Mobile.',
-    href: '/',
+    href: '/kampanie-sm/',
   },
   {
     icon: <AnalysisIcon />,
     title: 'Analityka internetowa',
     content: 'Dowiedz się jak skutecznie pozyskać nowego klienta.',
-    href: '/',
+    href: '/analityka/',
   },
   {
     icon: <ConsultingIcon />,
@@ -88,7 +88,7 @@ const WhatWeDo = () => {
                   {tile.content}
                 </Paragraph>
 
-                <Button centered link withIcon={RightArrow}>
+                <Button centered link withIcon={RightArrow} component="a" href={ tile.href }>
                   Dowiedz się więcej
                 </Button>
               </TileContent>

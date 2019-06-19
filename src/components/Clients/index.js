@@ -39,7 +39,7 @@ const Clients = ({ title, content }) => {
           <PornhubIcon />
         </CompaniesWrapper>
 
-        <Button isCentered>Skontaktuj się</Button>
+        <Button component="a" href="#contact" centered>Skontaktuj się</Button>
       </Container>
     </Wrapper>
   );
