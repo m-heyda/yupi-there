@@ -8,7 +8,6 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${variables.fontFamily.primaryFont};
     font-weight: 400;
-    font-display: swap;
     background: ${colors.white};
     color: ${colors.blueGrey};
   }

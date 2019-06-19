@@ -44,11 +44,11 @@ export const FeatureItemTitle = styled.h3`
   font-size: ${rem(24)};
   color: ${colors.darkBlue};
 `;
-export const FeatureItemSubtitle = styled.h5`
+export const FeatureItemSubtitle = styled.p`
   font-size: ${rem(18)};
   color: ${colors.darkBlue};
 `;
-export const FeatureItemHeading = styled.h4`
+export const FeatureItemHeading = styled.p`
   font-size: ${rem(20)};
   color: ${colors.darkBlue};
   text-align: center;

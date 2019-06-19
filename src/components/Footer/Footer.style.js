@@ -31,7 +31,7 @@ export const LinkElement = styled.div`
   }
 `;
 
-export const Heading = styled.h2`
+export const Heading = styled.p`
   margin: 0 0 ${rem(marginSize.tiny)};
   font-family: ${fontFamily.secondaryFont};
   font-size: ${rem(fontSize.smallHeading)};
@@ -45,7 +45,7 @@ export const Copyright = styled.p`
   color: ${colors.blueGrey};
 `;
 
-export const Title = styled.h3`
+export const Title = styled.p`
   margin: 0 0 ${marginSize.small};
   font-size: ${fontSize.tiny};
   font-weight: 600;

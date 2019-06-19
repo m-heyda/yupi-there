@@ -22,7 +22,7 @@ const Clients = ({ title, content }) => {
   return (
     <Wrapper>
       <Container>
-        <Typography component='h2' headingVariant='heading'>
+        <Typography component='p' headingVariant='heading'>
           { title }
         </Typography>
 

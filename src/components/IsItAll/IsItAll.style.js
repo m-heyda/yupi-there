@@ -21,18 +21,22 @@ export const ParagraphHighlight = styled.span`
   color: ${colors.darkBlue};
 `;
 
-export const Header = styled.h2`
+export const Header = styled.p`
   width: 100%;
   margin-bottom: ${rem(60)};
   font-size: ${rem(32)};
   color: ${colors.darkBlue};
   text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: ${variables.fontFamily.secondaryFont};
 `;
 
-export const TitleHighlight = styled.h3`
+export const TitleHighlight = styled.p`
   margin-top: ${rem(20)};
   text-align: center;
   font-size: ${rem(32)};
+  font-weight: 600;
 
   a {
     color: ${colors.lightGreen};

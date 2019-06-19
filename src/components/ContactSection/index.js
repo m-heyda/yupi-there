@@ -72,7 +72,7 @@ class ContactSection extends Component {
               <HeadingWrapper>
                 <Typography
                   align='left'
-                  component='h3'
+                  component='p'
                   headingVariant='heading'
                   textColor={colors.white}
                 >

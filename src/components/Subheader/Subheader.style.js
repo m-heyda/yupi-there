@@ -39,7 +39,7 @@ export const ColumnsWrapper = styled.div`
   `}
 `;
 
-export const Header = styled.h3`
+export const Header = styled.h2`
   font-size: ${rem(32)};
   color: ${colors.darkBlue};
   margin-bottom: ${props => (props.marginBottom && rem(props.marginBottom))};
