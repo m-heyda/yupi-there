@@ -141,8 +141,8 @@ class SEOOffert extends Component {
           <Subheader { ...subheader } />
           <ColumnsNote
             header={ features.title }
-            leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
-            rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
+            leftChildren={ leftSide.map((item, i) => <Depiction key={ i } { ...item } />) }
+            rightChildren={ rightSide.map((item, i) => <Depiction key={ i } { ...item } />) }
           />
           <Tripartite content={ tripartite } />
           <Banner { ...banner } />

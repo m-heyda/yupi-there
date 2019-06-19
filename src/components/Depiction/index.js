@@ -6,9 +6,9 @@ import {
   Image,
 } from './Depiction.style';
 
-const Depiction = ({ icon, content }) => {
+const Depiction = ({ icon, content, ...props }) => {
   return (
-    <Container>
+    <Container { ...props } >
       <Image src={ icon } />
       <ParagraphText dangerouslySetInnerHTML={ { __html: content } } />
     </Container>

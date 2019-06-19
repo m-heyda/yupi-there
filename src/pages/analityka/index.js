@@ -70,8 +70,8 @@ class SMCampaign extends Component {
           <Subheader { ...subheaderDetailed } borderless />
           <FullImage src={ heroBg } />
           <ColumnsNote
-            leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
-            rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
+            leftChildren={ leftSide.map((item, i) => <Depiction key={ i } { ...item } />) }
+            rightChildren={ rightSide.map((item, i) => <Depiction key={ i } { ...item } />) }
             />
           <ContactSection />
         </SeoBase>
