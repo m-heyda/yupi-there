@@ -31,13 +31,9 @@ const ColumnText = ({ title, leftParagraph, rightParagraph }) => {
           </Header>
 
           <ColumnsWrapper>
-            <ParagraphText margin={24} maxWidth={450}>
-              { leftParagraph }
-            </ParagraphText>
+            <ParagraphText margin={24} maxWidth={450} dangerouslySetInnerHTML={ { __html: leftParagraph } } />
 
-            <ParagraphText maxWidth={450}>
-              { rightParagraph }
-            </ParagraphText>
+            <ParagraphText maxWidth={450} dangerouslySetInnerHTML={ { __html: rightParagraph } } />
           </ColumnsWrapper>
       </Container>
     </Wrapper>

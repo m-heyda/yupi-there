@@ -6,7 +6,7 @@ const ColumnsNote = ({ header, ...props }) => {
   return (
     <section>
       <TwoColumnsLayout
-        header={ <Header>{ header }</Header> }
+        header={ header && <Header>{ header }</Header> }
         { ...props }
       />
     </section>

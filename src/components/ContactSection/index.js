@@ -65,14 +65,14 @@ class ContactSection extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper name="contact">
         <Container>
           <ContentWrapper>
             <InfoWrapper>
               <HeadingWrapper>
                 <Typography
                   align='left'
-                  component='h3'
+                  component='p'
                   headingVariant='heading'
                   textColor={colors.white}
                 >

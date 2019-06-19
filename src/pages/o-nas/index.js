@@ -9,7 +9,7 @@ import AboutUs from '../../components/AboutUs';
 
 import BaseLayout from '../../layouts/BaseLayout';
 
-import yupiBg from '../../assets/yupiBackground.svg';
+import yupiBg from '../../assets/about.svg';
 
 const header = {
   title: 'Lorem Ipsum is simply dummy text…',
@@ -23,7 +23,7 @@ class About extends Component {
   render() {
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='O nas' description='Opis strony o nas'>
           <Header { ...header } />
           <AboutUs />
           <Clients />

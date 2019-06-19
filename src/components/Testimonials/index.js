@@ -13,7 +13,7 @@ const Testimonials = ({ clients }) => {
         <Background src={ shapesImage } />
         <Typography
           align='left'
-          component='h3'
+          component='p'
           headingVariant='heading'
           maxWidth='380px'
         >

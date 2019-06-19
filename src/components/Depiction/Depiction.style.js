@@ -20,7 +20,6 @@ export const Container = styled.div`
 export const ParagraphText = styled(Paragraph)`
   text-align: center;
   margin: 0;
-  white-space: pre-line;
 
   &:not(:last-child) {
     margin-bottom: ${marginSize.medium};

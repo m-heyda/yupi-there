@@ -29,7 +29,7 @@ const Tripartite = ({ content }) => {
       <TwoColumnsLayout
         leftChildren={ <Item { ...columnsItems[0] }/> }
         rightChildren={ <Item { ...columnsItems[1] }/> }
-        centerBottomChildren={ restItems.map(item => <Item { ...item } />)}
+        centerBottomChildren={ restItems.map((item, i) => <Item key={ i } { ...item } />)}
       />
     </section>
   );

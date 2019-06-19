@@ -15,13 +15,15 @@ import BaseLayout from '../../layouts/BaseLayout';
 
 import filterIcon from '../../assets/filter.svg';
 import fileIcon from '../../assets/file.svg';
-import heroBg from '../../assets/heroBackground.svg';
+import heroBg from '../../assets/filterBackground.svg';
+import analyticBg from '../../assets/analytic.svg';
 
 const header = {
   title: 'Lorem Ipsum is simply dummy text…',
   content: `
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: analyticBg,
 };
 
 const subheader = {
@@ -61,15 +63,15 @@ class SMCampaign extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='Analityka Web' description='Opis strony o analityce web'>
           <Header { ...header } />
           <Subheader { ...subheader } />
           <ColumnText { ...columnText } />
           <Subheader { ...subheaderDetailed } borderless />
           <FullImage src={ heroBg } />
           <ColumnsNote
-            leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
-            rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
+            leftChildren={ leftSide.map((item, i) => <Depiction key={ i } { ...item } />) }
+            rightChildren={ rightSide.map((item, i) => <Depiction key={ i } { ...item } />) }
             />
           <ContactSection />
         </SeoBase>

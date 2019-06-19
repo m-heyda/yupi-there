@@ -15,13 +15,12 @@ export const HeaderContent = styled.div`
   ${containerStyles};
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   padding: ${rem(30)} ${rem(globalSize.gutter)} ${rem(32)};
 
   ${media.greaterThan('landscape')`
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: ${rem(82)} ${rem(globalSize.gutter)} ${rem(32)};
   `}
 `;
@@ -33,6 +32,7 @@ export const ContentWrapper = styled.div`
   align-items: center;
 
   ${media.greaterThan('landscape')`
+    align-items: flex-start;
     max-width: ${rem(480)};
   `}
 `;
@@ -41,6 +41,7 @@ export const Title = styled.h1`
   color: ${colors.darkBlue};
   text-align: center;
   font-size: ${rem(28)};
+  margin-bottom: ${rem(16)};
 
   ${media.greaterThan('landscape')`
   font-size: ${rem(44)};
@@ -69,4 +70,10 @@ export const ButtonWrapper = styled.div`
   ${media.greaterThan('landscape')`
     margin: 0;
   `}
+`;
+
+export const Image = styled.img`
+  height: auto;
+  width: 100%;
+  max-width: ${rem(540)};
 `;

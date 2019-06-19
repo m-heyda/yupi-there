@@ -22,7 +22,7 @@ const Clients = ({ title, content }) => {
   return (
     <Wrapper>
       <Container>
-        <Typography component='h2' headingVariant='heading'>
+        <Typography component='p' headingVariant='heading'>
           { title }
         </Typography>
 
@@ -39,7 +39,7 @@ const Clients = ({ title, content }) => {
           <PornhubIcon />
         </CompaniesWrapper>
 
-        <Button isCentered>Skontaktuj się</Button>
+        <Button component="a" href="#contact" centered>Skontaktuj się</Button>
       </Container>
     </Wrapper>
   );

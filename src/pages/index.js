@@ -52,7 +52,7 @@ class Homepage extends Component {
   render() {
     return (
       <BaseLayout>
-        <SeoBase title='Homepage' description='Homepage description'>
+        <SeoBase title='Strona główna' description='Opis strony głównej'>
           <Hero />
           <WhatWeDo />
           <Clients { ...clients } />

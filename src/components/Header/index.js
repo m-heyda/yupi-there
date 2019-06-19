@@ -8,6 +8,7 @@ import {
   ButtonWrapper,
   ParagraphText,
   Title,
+  Image,
 } from './Header.style';
 import { variables } from '../../global/helpers';
 
@@ -29,11 +30,11 @@ const Header = ({ title, content, ctaLabel, image }) => {
           </ParagraphText>
 
           <ButtonWrapper>
-            <Button fluid>{ ctaLabel }</Button>
+            <Button component="a" href="#contact" fluid>{ ctaLabel }</Button>
           </ButtonWrapper>
         </ContentWrapper>
 
-        <img src={image || megaphoneBg} alt='Hero background' />
+        <Image src={image || megaphoneBg} alt='Hero background' />
       </HeaderContent>
     </HeaderBackground>
   );

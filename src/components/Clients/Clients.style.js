@@ -7,6 +7,9 @@ const { globalSize } = variables;
 
 export const Container = styled.div`
   ${containerStyles}
+
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Wrapper = styled.section`

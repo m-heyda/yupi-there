@@ -9,6 +9,15 @@ const SeoBase = ({ children, title, description }) => {
       <Helmet>
         <title>{title}</title>
         <meta name='description' content={description} />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebSite",
+              "name": "${title}"
+            }
+          `}
+        </script>
       </Helmet>
 
       <Wrapper>{children}</Wrapper>

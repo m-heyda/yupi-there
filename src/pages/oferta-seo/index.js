@@ -22,6 +22,7 @@ import repeatIcon from '../../assets/repeat.svg';
 import calendarIcon from '../../assets/calendar.svg';
 import podiumIcon from '../../assets/podium.svg';
 import cardIcon from '../../assets/card.svg';
+import seoBg from '../../assets/seo.svg';
 
 const header = {
   title: 'Dlaczego SEO jest dla Ciebie takie ważne?',
@@ -31,11 +32,12 @@ const header = {
     swojego potencjału. Rynek internetowy
     jest już największym potencjalnym źródłem klientów i wciąż rośnie`,
   ctaLabel: 'Jesteś zainteresowany?',
+  image: seoBg,
 };
 
 const columnText = {
   title: 'Czym jest SEO?',
-  leftParagraph: `
+  content: `
     SEO czyli Search Engine Optimization, lub potocznie pozycjonowanie,
     to działania sprawiający by Twoja strona internetowa była możliwie
     jak najbardziej przyjaznej wyszukiwarkom. Zwyczajowo jako SEO
@@ -43,8 +45,8 @@ const columnText = {
     pozycjonowanie proces pozyskiwania linków do niej prowadzących.
     Przez lata istnienia Google oraz innych wyszukiwarek specjaliści SEO
     znajdywali i stosowali metody mogące poprawić pozycję w rankingu.
-    Wraz z ewolucją Google ewoluowały techniki.`,
-  rightParagraph: `
+    Wraz z ewolucją Google ewoluowały techniki.
+    <br /><br />
     Dawniej stosowano słowa kluczowe w jak największej liczbie oraz
     pozyskiwano tysiące odnośników z witryn zewnętrznych. Dzisiaj
     działania polegają bardziej na m.in. optymalizacji pod kątem urządzeń
@@ -52,7 +54,8 @@ const columnText = {
     pozostaje w gruncie rzeczy jednak taka sama, jest to praca nad serwisem,
     aby Google mógł poprawnie odczytać całą jego zawartość i skojarzyć
     z wybranymi przez nas słowami oraz budowanie autorytetu poprzez
-    zdobywanie wartościowych linków na stronach zewnętrznych.`,
+    zdobywanie wartościowych linków na stronach zewnętrznych.
+  `,
 };
 
 const subheader = {
@@ -132,18 +135,18 @@ class SEOOffert extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Kampanie social media'>
+        <SeoBase title='SEO' description='Opis strony SEO'>
           <Header { ...header } />
-          <ColumnText { ...columnText } />
-          <Clients />
+          <Subheader { ...columnText } />
           <Subheader { ...subheader } />
           <ColumnsNote
             header={ features.title }
-            leftChildren={ leftSide.map(item => <Depiction { ...item } />) }
-            rightChildren={ rightSide.map(item => <Depiction { ...item } />) }
+            leftChildren={ leftSide.map((item, i) => <Depiction key={ i } { ...item } />) }
+            rightChildren={ rightSide.map((item, i) => <Depiction key={ i } { ...item } />) }
           />
           <Tripartite content={ tripartite } />
           <Banner { ...banner } />
+          <Clients />
           <ContactSection />
         </SeoBase>
       </BaseLayout>
