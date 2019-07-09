@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { rem } from 'polished';
 import { colors } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
@@ -62,7 +63,7 @@ export const Item = styled.li`
   }
 `;
 
-export const StyledLink = styled.a`
+export const StyledLink = styled.Link`
   color: inherit;
   text-decoration: none;
 `;

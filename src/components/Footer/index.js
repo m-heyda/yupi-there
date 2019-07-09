@@ -34,16 +34,16 @@ const Footer = () => {
             <Title>Oferta</Title>
             <List>
               <Item>
-                <StyledLink href='/google-ads/'>Google Ads</StyledLink>
+                <StyledLink to='/google-ads/'>Google Ads</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/seo/'>SEO</StyledLink>
+                <StyledLink to='/seo/'>SEO</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/analityka/'>Analityka Web</StyledLink>
+                <StyledLink to='/analityka/'>Analityka Web</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/kampanie-sm/'>Kampanie Social Media</StyledLink>
+                <StyledLink to='/kampanie-sm/'>Kampanie Social Media</StyledLink>
               </Item>
             </List>
           </LinkElement>
@@ -51,7 +51,7 @@ const Footer = () => {
             <Title>O firmie</Title>
             <List>
               <Item>
-                <StyledLink href='/o-nas/'>O nas</StyledLink>
+                <StyledLink to='/o-nas/'>O nas</StyledLink>
               </Item>
             </List>
           </LinkElement>

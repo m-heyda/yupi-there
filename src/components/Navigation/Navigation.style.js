@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'gatsby';
 import { rem, rgba } from 'polished';
 import { variables, colors, utils } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
@@ -144,7 +145,7 @@ export const SubMenuItem = styled.li`
   `}
 `;
 
-export const SubMenuLink = styled.a`
+export const SubMenuLink = styled.Link`
   color: ${colors.blueGrey};
   text-decoration: none;
   display: block;
