@@ -64,7 +64,7 @@ const tilesData = [
 
 const WhatWeDo = () => {
   return (
-    <Wrapper>
+    <Wrapper name="offer">
       <Container>
         <Typography component="h2" headingVariant="heading">
           Czym się zajmujemy?
