@@ -28,7 +28,7 @@ const Hero = () => {
 
       <ButtonWrapper>
         <Button fluid component="a" href="#contact">Skontaktuj się</Button>
-        <Button fluid secondary>
+        <Button fluid secondary href="#offer">
           Learn more
         </Button>
       </ButtonWrapper>

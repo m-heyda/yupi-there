@@ -18,7 +18,7 @@ const LeftComponent = () => (
       Nie jesteś pewien co będzie najkorzystniejsze dla Twojej firmy? Zadzwoń, pomożemy!
     </ParagraphText>
     <TitleHighlight>
-      <a href="Tel: 000 000 000">Tel: 000 000 000</a>
+      <a href="tel:+48505950321">Tel: 505 950 321</a>
     </TitleHighlight>
   </div>
 )

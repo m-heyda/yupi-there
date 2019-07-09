@@ -5,20 +5,22 @@ import Button from '../Button';
 import { Paragraph } from '../../global/commonStyles';
 import { Wrapper, Container, CompaniesWrapper } from './Clients.style';
 import { variables } from '../../global/helpers';
-import PornhubIcon from '../Icons/PornhubIcon';
+import NikeIcon from '../Icons/NikeIcon';
 
 const { marginSize } = variables;
 
 const propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
+  withoutButton: PropTypes.bool,
 }
 
 const defaultProps = {
   title: 'Z kim współpracowaliśmy?',
+  withoutButton: false,
 };
 
-const Clients = ({ title, content }) => {
+const Clients = ({ title, content, withoutButton }) => {
   return (
     <Wrapper>
       <Container>
@@ -31,15 +33,15 @@ const Clients = ({ title, content }) => {
         </Paragraph>
 
         <CompaniesWrapper>
-          <PornhubIcon />
-          <PornhubIcon />
-          <PornhubIcon />
-          <PornhubIcon />
-          <PornhubIcon />
-          <PornhubIcon />
+          <NikeIcon />
+          <NikeIcon />
+          <NikeIcon />
+          <NikeIcon />
+          <NikeIcon />
+          <NikeIcon />
         </CompaniesWrapper>
 
-        <Button component="a" href="#contact" centered>Skontaktuj się</Button>
+        { !withoutButton && <Button component="a" href="#contact" centered>Skontaktuj się</Button> }
       </Container>
     </Wrapper>
   );

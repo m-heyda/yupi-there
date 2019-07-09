@@ -34,16 +34,16 @@ const Footer = () => {
             <Title>Oferta</Title>
             <List>
               <Item>
-                <StyledLink href='/reklamy-google/'>Google Ads</StyledLink>
+                <StyledLink to='/reklamy-google/'>Google Ads</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/oferta-seo/'>SEO</StyledLink>
+                <StyledLink to='/seo/'>SEO</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/analityka/'>Analityka Web</StyledLink>
+                <StyledLink to='/analityka/'>Analityka Web</StyledLink>
               </Item>
               <Item>
-                <StyledLink href='/kampanie-sm/'>Kampanie Social Media</StyledLink>
+                <StyledLink to='/kampanie-sm/'>Kampanie Social Media</StyledLink>
               </Item>
             </List>
           </LinkElement>
@@ -51,11 +51,11 @@ const Footer = () => {
             <Title>O firmie</Title>
             <List>
               <Item>
-                <StyledLink href='/o-nas/'>O nas</StyledLink>
+                <StyledLink to='/o-nas/'>O nas</StyledLink>
               </Item>
             </List>
           </LinkElement>
-          <LinkElement>
+          {/* <LinkElement>
             <Title>Social Media</Title>
             <LinkImage href="#">
               <img src={ telegramIcon } alt="Telegram" />
@@ -69,7 +69,7 @@ const Footer = () => {
             <LinkImage href="#">
               <img src={ mediumIcon } alt="Medium" />
             </LinkImage>
-          </LinkElement>
+          </LinkElement> */}
           {/* <LinkElement>
             <Title>...</Title>
             <PolicyWrapper>

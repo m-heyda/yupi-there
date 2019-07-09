@@ -1,15 +1,17 @@
-import React from 'react';
-import Typography from '../Typography';
-import SeoIcon from '../Icons/SeoIcon';
-import CampaignIcon from '../Icons/CampaignIcon';
-import AnalysisIcon from '../Icons/AnalysisIcon';
-import ConsultingIcon from '../Icons/ConsultingIcon';
-import GraphicsIcon from '../Icons/GraphicsIcon';
-import ContentIcon from '../Icons/ContentIcon';
-import RightArrow from '../Icons/RightArrow';
-import Button from '../../components/Button';
-import { Paragraph } from '../../global/commonStyles';
-import { variables } from '../../global/helpers';
+import React from "react"
+import Typography from "../Typography"
+import SeoIcon from "../Icons/SeoIcon"
+import CampaignIcon from "../Icons/CampaignIcon"
+import SocialMediaCampaignsIcon from "../Icons/SocialMediaCampaignsIcon"
+import AnalysisIcon from "../Icons/AnalysisIcon"
+import ConsultingIcon from "../Icons/ConsultingIcon"
+import SeoContentIcon from "../Icons/SeoContentIcon"
+import GraphicsIcon from "../Icons/GraphicsIcon"
+import ContentIcon from "../Icons/ContentIcon"
+import RightArrow from "../Icons/RightArrow"
+import Button from "../../components/Button"
+import { Paragraph } from "../../global/commonStyles"
+import { variables } from "../../global/helpers"
 import {
   Wrapper,
   Container,
@@ -17,54 +19,54 @@ import {
   Tile,
   TileContent,
   TileIcon,
-} from './WhatWeDo.style';
+} from "./WhatWeDo.style"
 
-const { fontSize } = variables;
+const { fontSize } = variables
 
 const tilesData = [
+  // {
+  //   icon: <SeoIcon />,
+  //   title: 'Pozycjonowanie i optymalizacja SEO',
+  //   content: 'Odkryj wzrost liczby transakcji z Google o 1030 % w ciągu roku',
+  //   href: '/seo/',
+  // },
   {
-    icon: <SeoIcon />,
-    title: 'Pozycjonowanie i optymalizacja SEO',
-    content: 'Odkryj wzrost liczby transakcji z Google o 1030 % w ciągu roku',
-    href: '/oferta-seo/',
-  },
-  {
-    icon: <CampaignIcon />,
-    title: 'Kampanie reklamowe',
-    content: 'Odkryj jak zdobyć klientów z Google, YouTube, Facebook, Mobile.',
-    href: '/kampanie-sm/',
+    icon: <SocialMediaCampaignsIcon />,
+    title: "Kampanie reklamowe",
+    content: "Odkryj jak zdobyć klientów z Google, YouTube, Facebook, Mobile.",
+    href: "/kampanie-sm/",
   },
   {
     icon: <AnalysisIcon />,
-    title: 'Analityka internetowa',
-    content: 'Dowiedz się jak skutecznie pozyskać nowego klienta.',
-    href: '/analityka/',
+    title: "Analityka internetowa",
+    content: "Dowiedz się jak skutecznie pozyskać nowego klienta.",
+    href: "/analityka/",
   },
   {
     icon: <ConsultingIcon />,
-    title: 'Konsultacje i szkolenia',
-    content: 'Skup się na biznesie. Doradzimy ci, jak osiągnąć sukces.',
-    href: '/',
+    title: "Konsultacje i szkolenia",
+    content: "Skup się na biznesie. Doradzimy ci, jak osiągnąć sukces.",
+    href: "#contact",
   },
+  // {
+  //   icon: <GraphicsIcon />,
+  //   title: 'Grafika online',
+  //   content: 'Zaproponujemy Ci grafikę nowoczesną i skuteczną',
+  //   href: '/',
+  // },
   {
-    icon: <GraphicsIcon />,
-    title: 'Grafika online',
-    content: 'Zaproponujemy Ci grafikę nowoczesną i skuteczną',
-    href: '/',
+    icon: <SeoContentIcon />,
+    title: "SEO i Content marketing",
+    content: "My wiemy, jakie treści czytają Twoi klienci",
+    href: "/seo/",
   },
-  {
-    icon: <ContentIcon />,
-    title: 'Content marketing',
-    content: 'My wiemy, jakie treści czytają Twoi klienci',
-    href: '/',
-  },
-];
+]
 
 const WhatWeDo = () => {
   return (
-    <Wrapper>
+    <Wrapper name="offer">
       <Container>
-        <Typography component='h2' headingVariant='heading'>
+        <Typography component="h2" headingVariant="heading">
           Czym się zajmujemy?
         </Typography>
 
@@ -80,7 +82,7 @@ const WhatWeDo = () => {
               <TileContent>
                 <TileIcon>{tile.icon}</TileIcon>
 
-                <Typography component='h3' headingVariant='staticHeading'>
+                <Typography component="h3" headingVariant="staticHeading">
                   {tile.title}
                 </Typography>
 
@@ -88,7 +90,13 @@ const WhatWeDo = () => {
                   {tile.content}
                 </Paragraph>
 
-                <Button centered link withIcon={RightArrow} component="a" href={ tile.href }>
+                <Button
+                  centered
+                  link
+                  withIcon={RightArrow}
+                  component="a"
+                  href={tile.href}
+                >
                   Dowiedz się więcej
                 </Button>
               </TileContent>
@@ -97,7 +105,7 @@ const WhatWeDo = () => {
         </TilesWrapper>
       </Container>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default WhatWeDo;
+export default WhatWeDo

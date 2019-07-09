@@ -74,6 +74,5 @@ export const ButtonWrapper = styled.div`
 
 export const Image = styled.img`
   height: auto;
-  width: 100%;
   max-width: ${rem(540)};
 `;

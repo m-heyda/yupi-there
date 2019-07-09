@@ -11,7 +11,22 @@ class Navigation extends Component {
 
     this.state = {
       isMenuOpen: false,
+      isSticky: false,
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.stickNavigation);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.stickNavigation);
+  }
+
+  stickNavigation = () => {
+    this.setState({
+      isSticky: window.pageYOffset > 0,
+    });
   }
 
   triggerMenu = () => {
@@ -21,10 +36,10 @@ class Navigation extends Component {
   };
 
   render() {
-    const { isMenuOpen } = this.state;
+    const { isMenuOpen, isSticky } = this.state;
 
     return (
-      <Navbar>
+      <Navbar isSticky={ isSticky }>
         <NavWrapper>
           <LogoWrapper>
             <a href="/">

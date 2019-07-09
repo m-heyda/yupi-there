@@ -55,6 +55,11 @@ const features = {
     ]
 };
 
+const websiteSchema = {
+  name: "Kampanie social media",
+  url: "https://yupi-there.netlify.com/kampanie-sm/",
+}
+
 class SMCampaign extends Component {
   render() {
     const halfLength = Math.ceil(features.content.length / 2);
@@ -64,7 +69,11 @@ class SMCampaign extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Kampanie social media' description='Opis strony o kampaniach social media'>
+        <SeoBase
+          title='Kampanie social media'
+          description='Opis strony o kampaniach social media'
+          websiteSchema={ websiteSchema }
+        >
           <Header { ...header } />
           <ColumnText { ...columnText } />
           <Subheader { ...subheader } />

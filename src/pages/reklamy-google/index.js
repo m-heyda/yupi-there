@@ -67,6 +67,11 @@ const columnText = {
   rightParagraph: 'Docierasz do użytkowników w domu, w drodze do pracy, na wakacjach - wszędzie tam gdzie korzystają z komputera, smartfonu lub tabletu. Dodatkowo znasz dokładne dane i wpływ każdego pojedynczego działania na ostateczny wynik. Brzmi dobrze…? Tak właśnie wygląda skutecznie prowadzona kampania AdWords!',
 }
 
+const websiteSchema = {
+  name: "Google Ads",
+  url: "https://yupi-there.netlify.com/reklamy-google/",
+}
+
 class GoogleAds extends Component {
   render() {
     const halfLength = Math.ceil(features.length / 2);
@@ -76,7 +81,11 @@ class GoogleAds extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Google Ads' description='Opis strong Google Ads'>
+        <SeoBase
+          title='Google Ads'
+          description='Opis strong Google Ads'
+          websiteSchema={ websiteSchema }
+        >
           <Header { ...header } />
           <ColumnText { ...columnText } />
 

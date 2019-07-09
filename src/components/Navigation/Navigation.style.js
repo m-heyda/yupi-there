@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Link } from 'gatsby';
 import { rem, rgba } from 'polished';
 import { variables, colors, utils } from '../../global/helpers';
 import { containerStyles } from '../../global/commonStyles';
@@ -44,6 +45,8 @@ export const Navbar = styled.nav`
   height: ${rem(globalSize.navigationHeight)};
   background: ${colors.white};
   z-index: 20;
+  box-shadow: ${props => (props.isSticky ? `0 10px 20px 0 ${rgba(colors.cadetBlue, 0.2)}` : 'none')};
+  transition: box-shadow  0.4s ${transitions.spring};
 
   ${media.greaterThan('landscape')`
     height: ${rem(80)};
@@ -142,7 +145,7 @@ export const SubMenuItem = styled.li`
   `}
 `;
 
-export const SubMenuLink = styled.a`
+export const SubMenuLink = styled(Link)`
   color: ${colors.blueGrey};
   text-decoration: none;
   display: block;
