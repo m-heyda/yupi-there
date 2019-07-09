@@ -20,7 +20,7 @@ const LeftComponent = () => (
     <ContactPhone>
       <ParagraphHighlight>Skontaktuj się z nami:</ParagraphHighlight>
       <TitleHighlight>
-        <a href="Tel: 000 000 000">Tel: 000 000 000</a>
+        <a href="tel:+48505950321">Tel: 505 950 321</a>
       </TitleHighlight>
     </ContactPhone>
   </div>
