@@ -126,6 +126,11 @@ const banner = {
   content: `	Mamy nadzieję, że tym krótkim artykułem przybliżyliśmy Tobie nieco specyfikę naszej pracy. Jeżeli trafiłeś na tę stronę z Google to już wiesz że SEO działa :) Zapraszamy do kontaktu, na pewno znajdziemy rozwiązanie dopasowane do Twoich potrzeb i możliwości.`,
 };
 
+const websiteSchema = {
+  name: "SEO",
+  url: "https://yupi-there.netlify.com/seo/",
+}
+
 class SEOOffert extends Component {
   render() {
     const halfLength = Math.ceil(features.content.length / 2);
@@ -135,7 +140,11 @@ class SEOOffert extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='SEO' description='Opis strony SEO'>
+        <SeoBase
+          title='SEO'
+          description='Opis strony SEO'
+          websiteSchema={ websiteSchema }
+        >
           <Header { ...header } />
           <Subheader { ...columnText } />
           <Subheader { ...subheader } />
@@ -146,7 +155,7 @@ class SEOOffert extends Component {
           />
           <Tripartite content={ tripartite } />
           <Banner { ...banner } />
-          <Clients />
+          <Clients withoutButton />
           <ContactSection />
         </SeoBase>
       </BaseLayout>

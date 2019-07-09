@@ -42,7 +42,6 @@ const subheaderDetailed = {
   content: `Jednym z najbardziej skutecznych sposobów na poprawę wyników naszych kampanii jest tzw. lejek konwersji (ang. Conversion's Funnel Model). Najogólniej mówiąc jest to poznanie całej drogi jaką przebył użytkownik od momentu, gdy trafił na naszą witrynę i poznał ją, aż do momentu gdy został naszym klientem.`,
 };
 
-
 const features = [
   {
     icon: filterIcon,
@@ -54,6 +53,11 @@ const features = [
   },
 ];
 
+const websiteSchema = {
+  name: "Analityka Web",
+  url: "https://yupi-there.netlify.com/analityka/",
+}
+
 class SMCampaign extends Component {
   render() {
     const halfLength = Math.ceil(features.length / 2);
@@ -63,7 +67,11 @@ class SMCampaign extends Component {
 
     return (
       <BaseLayout>
-        <SeoBase title='Analityka Web' description='Opis strony o analityce web'>
+        <SeoBase
+          title='Analityka Web'
+          description='Opis strony o analityce web'
+          websiteSchema={ websiteSchema }
+        >
           <Header { ...header } />
           <Subheader { ...subheader } />
           <ColumnText { ...columnText } />

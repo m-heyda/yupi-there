@@ -19,14 +19,23 @@ const header = {
   image: yupiBg,
 };
 
+const websiteSchema = {
+  name: "O nas",
+  url: "https://yupi-there.netlify.com/o-nas/",
+}
+
 class About extends Component {
   render() {
     return (
       <BaseLayout>
-        <SeoBase title='O nas' description='Opis strony o nas'>
+        <SeoBase
+          title='O nas'
+          description='Opis strony o nas'
+          websiteSchema={ websiteSchema }
+        >
           <Header { ...header } />
           <AboutUs />
-          <Clients />
+          <Clients withoutButton />
           <ContactSection />
         </SeoBase>
       </BaseLayout>
