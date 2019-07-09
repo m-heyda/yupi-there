@@ -63,7 +63,7 @@ export const Item = styled.li`
   }
 `;
 
-export const StyledLink = styled.Link`
+export const StyledLink = styled(Link)`
   color: inherit;
   text-decoration: none;
 `;

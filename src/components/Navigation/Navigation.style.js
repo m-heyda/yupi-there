@@ -145,7 +145,7 @@ export const SubMenuItem = styled.li`
   `}
 `;
 
-export const SubMenuLink = styled.Link`
+export const SubMenuLink = styled(Link)`
   color: ${colors.blueGrey};
   text-decoration: none;
   display: block;
