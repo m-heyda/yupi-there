@@ -69,7 +69,7 @@ const SeoBase = ({
                   "@type": "ListItem",
                   "position": 1,
                   "item": {
-                    "@id": "https://yupi-there.netlify.com/google-ads/",
+                    "@id": "https://yupi-there.netlify.com/reklamy-google/",
                     "name": "Google Ads"
                   }
                 },

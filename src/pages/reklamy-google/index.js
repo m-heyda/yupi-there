@@ -69,7 +69,7 @@ const columnText = {
 
 const websiteSchema = {
   name: "Google Ads",
-  url: "https://yupi-there.netlify.com/google-ads/",
+  url: "https://yupi-there.netlify.com/reklamy-google/",
 }
 
 class GoogleAds extends Component {

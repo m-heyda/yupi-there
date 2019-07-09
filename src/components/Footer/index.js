@@ -34,7 +34,7 @@ const Footer = () => {
             <Title>Oferta</Title>
             <List>
               <Item>
-                <StyledLink to='/google-ads/'>Google Ads</StyledLink>
+                <StyledLink to='/reklamy-google/'>Google Ads</StyledLink>
               </Item>
               <Item>
                 <StyledLink to='/seo/'>SEO</StyledLink>
