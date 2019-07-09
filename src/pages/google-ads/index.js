@@ -84,6 +84,7 @@ class GoogleAds extends Component {
         <SeoBase
           title='Google Ads'
           description='Opis strong Google Ads'
+          websiteSchema={ websiteSchema }
         >
           <Header { ...header } />
           <ColumnText { ...columnText } />
