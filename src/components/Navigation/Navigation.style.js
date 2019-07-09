@@ -44,6 +44,8 @@ export const Navbar = styled.nav`
   height: ${rem(globalSize.navigationHeight)};
   background: ${colors.white};
   z-index: 20;
+  box-shadow: ${props => (props.isSticky ? `0 10px 20px 0 ${rgba(colors.cadetBlue, 0.2)}` : 'none')};
+  transition: box-shadow  0.4s ${transitions.spring};
 
   ${media.greaterThan('landscape')`
     height: ${rem(80)};
