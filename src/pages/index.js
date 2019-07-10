@@ -11,32 +11,34 @@ import BaseLayout from "../layouts/BaseLayout"
 const testimonials = [
   {
     author: "Toyota Bielany",
-    content: `Współpracę z Yupi-There oceniam na 5+. Nasze kampanie notują wzrost
-    wyników każdego kolejnego miesiąca. Duży plus za zaangażowanie,
-    super podejście i kreatywność w działaniach.`,
+    content: `Yupi-There to profesjonalny i godzien zaufania zespół.
+    Wykonywane dla nas projekty graficzne, projekty mailingów
+    jak i działania SEM - wszystko na wysokim poziomie Jeśli
+    miałabym wskazać największą wartość współpracy,
+    to byłoby to super podejście do klienta.`,
   },
   {
-    author: "Centrum Terapii UK",
-    content: `Zdecydowanie polecam Yupi-There. Duża odległość i kontakt jedynie
-    telefoniczny nie stanowi żadnego problemu. W razie wątpliwości mogę
-    liczyć na błyskawiczną odpowiedź i pomoc. Doceniam za terminowość,
-    solidność i mnóstwo pomysłów.`,
+    author: "Centrum Terapii w UK",
+    content: `Zdecydowanie polecam Yupi-There. Duża odległość i kontakt
+    jedynie telefoniczny nie stanowi żadnego problemu.
+    W razie wątpliwości mogę liczyć na błyskawiczną odpowiedź i pomoc.
+    Doceniam za terminowość, solidność i mnóstwo pomysłów.`,
   },
   {
     author: "PSTQ",
-    content: `Bardzo profesjonalnie świadczone usługi - zarówno SEO jak i SEM.
-    Mimo, że branża medycyny estetycznej nie jest najłatwiejsza do
-    reklamowania, Panowie zawsze znajdywali wyjście z sytuacji.
-    Kreatywni fachowcy od online marketingu z dużą wiedzą i
-    doświadczeniem.`,
+    content: `Bardzo profesjonalnie świadczone usługi - zarówno
+    SEO jak i SEM. Mimo, że branża medycyny estetycznej
+    nie jest najłatwiejsza do reklamowania, Panowie zawsze
+    znajdywali wyjście z sytuacji. Kreatywni fachowcy
+    od online marketingu z dużą wiedzą i doświadczeniem.`,
   },
-  {
-    author: "Mebloo",
-    content: `Yupi-There to profesjonalny i godzien zaufania zespół. Wykonywane
-    dla nas projekty graficzne, projekty mailingów jak i działania SEM -
-    wszystko na wysokim poziomie Jeśli miałbym wskazać największą
-    wartość współpracy, to byłoby to super podejście do klienta.`,
-  },
+  // {
+  //   author: "Mebloo",
+  //   content: `Yupi-There to profesjonalny i godzien zaufania zespół. Wykonywane
+  //   dla nas projekty graficzne, projekty mailingów jak i działania SEM -
+  //   wszystko na wysokim poziomie Jeśli miałbym wskazać największą
+  //   wartość współpracy, to byłoby to super podejście do klienta.`,
+  // },
 ]
 
 const clients = {
@@ -58,7 +60,7 @@ const organizationSchema = {
     "@type": "ContactPoint",
     contactType: "customer support",
     telephone: "[+48505950321]",
-    email: "biuro@yupi-there.pl"
+    email: "biuro@yupi-there.pl",
   },
 }
 
@@ -69,8 +71,8 @@ class Homepage extends Component {
         <SeoBase
           title="Strona główna"
           description="Opis strony głównej"
-          webpageSchema={ webpageSchema }
-          organizationSchema={ organizationSchema }
+          webpageSchema={webpageSchema}
+          organizationSchema={organizationSchema}
         >
           <Hero />
           <WhatWeDo />
