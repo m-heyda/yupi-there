@@ -5,6 +5,8 @@ import { Navbar, NavWrapper, LogoWrapper } from './Navigation.style';
 
 import logoImage from '../../assets/logo.svg';
 
+const NavContext = React.createContext();
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +48,9 @@ class Navigation extends Component {
               <img src={ logoImage } alt="Yupi-There" />
             </a>
           </LogoWrapper>
-          <Menu isActive={isMenuOpen} />
+          <NavContext.Provider value={{ menuTrigger: this.triggerMenu }}>
+            <Menu isActive={isMenuOpen} />
+          </NavContext.Provider>
           <MenuTrigger isActive={isMenuOpen} onClick={this.triggerMenu} />
         </NavWrapper>
       </Navbar>
@@ -54,4 +58,5 @@ class Navigation extends Component {
   }
 }
 
+export { NavContext };
 export default Navigation;
