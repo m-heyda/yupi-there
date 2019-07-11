@@ -1,22 +1,22 @@
-import React from 'react';
-import Typography from '../Typography';
-import Button from '../Button';
-import heroBg from '../../assets/heroBackground.svg';
-import { Paragraph } from '../../global/commonStyles';
+import React from "react"
+import Typography from "../Typography"
+import Button from "../Button"
+import heroBg from "../../assets/heroBackground.svg"
+import { Paragraph } from "../../global/commonStyles"
 import {
   HeroHeader,
   ButtonWrapper,
   HeroBackground,
   BackgroundWrapper,
-} from './Hero.style';
-import { variables } from '../../global/helpers';
+} from "./Hero.style"
+import { variables } from "../../global/helpers"
 
-const { marginSize } = variables;
+const { marginSize } = variables
 
 const Hero = () => {
   return (
     <HeroHeader>
-      <Typography component='h1' headingVariant='hero'>
+      <Typography component="h1" headingVariant="hero">
         Współpracuj z najlepszym zespołem ekspertów
       </Typography>
 
@@ -27,17 +27,19 @@ const Hero = () => {
       </Paragraph>
 
       <ButtonWrapper>
-        <Button fluid component="a" href="#contact">Skontaktuj się</Button>
-        <Button fluid secondary href="#offer">
+        <Button fluid component="a" href="#contact">
+          Skontaktuj się
+        </Button>
+        <Button fluid component="a" href="#offer" secondary>
           Learn more
         </Button>
       </ButtonWrapper>
 
       <BackgroundWrapper>
-        <HeroBackground src={heroBg} alt='Hero background' />
+        <HeroBackground src={heroBg} alt="Hero background" />
       </BackgroundWrapper>
     </HeroHeader>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
