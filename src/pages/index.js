@@ -69,8 +69,8 @@ class Homepage extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title="Strona główna"
-          description="Opis strony głównej"
+          title="Yupi-There - Skuteczny Marketing Internetowy"
+          description="SEM, SEO, Analityka internetowa – Pracujemy na sukces Twojego biznesu!"
           webpageSchema={webpageSchema}
           organizationSchema={organizationSchema}
         >

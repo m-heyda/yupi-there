@@ -82,8 +82,8 @@ class GoogleAds extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title='Google Ads'
-          description='Opis strong Google Ads'
+          title='Kampania Google Ads dla Twojej Firmy – Yupi-There'
+          description='Reklama Google Ads w Yupi-There to szybki i skuteczny sposób na promocje Twojej firmy i pozyskanie nowych klientów.'
           websiteSchema={ websiteSchema }
         >
           <Header { ...header } />

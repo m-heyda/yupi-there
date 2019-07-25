@@ -29,8 +29,8 @@ class About extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title='O nas'
-          description='Opis strony o nas'
+          title='O Nas – Yupi-There – Twoi Specjaliści marketingu online'
+          description='Jesteśmy pasjonatami, każdy projekt traktujemy indywidualnie, każde wyzwanie jest dla nas przygodą.'
           websiteSchema={ websiteSchema }
         >
           <Header { ...header } />

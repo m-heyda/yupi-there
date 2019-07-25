@@ -141,8 +141,8 @@ class SEOOffert extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title='SEO'
-          description='Opis strony SEO'
+          title='SEO i Content Marketing – Zacznij być widoczny z Yupi-There'
+          description='Zwiększ ruch na swojej stronie i zadbaj o wysoką pozycję w wyszukiwarce – postaw na SEO w Yupi-There.'
           websiteSchema={ websiteSchema }
         >
           <Header { ...header } />

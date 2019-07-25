@@ -70,8 +70,8 @@ class SMCampaign extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title='Kampanie social media'
-          description='Opis strony o kampaniach social media'
+          title='Social Media – Skuteczne kampanie reklamowe – Yupi-There'
+          description='Docieraj do potencjalnych klientów w mediach społecznościowych i poznaj moc reklamy w social media.'
           websiteSchema={ websiteSchema }
         >
           <Header { ...header } />

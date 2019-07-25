@@ -68,8 +68,8 @@ class SMCampaign extends Component {
     return (
       <BaseLayout>
         <SeoBase
-          title='Analityka Web'
-          description='Opis strony o analityce web'
+          title='Analityka Web dla Twojej strony – Yupi-There'
+          description='Zdobądź przewagę dzięki analityce i wykorzystuj wiedzę, aby sukcesywnie zwiększać swoje wyniki.'
           websiteSchema={ websiteSchema }
         >
           <Header { ...header } />
