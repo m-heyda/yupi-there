@@ -10,7 +10,7 @@ import {
   Header,
 } from './Tripartite.style';
 
-const Item = ({ icon, title, text }) => (
+export const Item = ({ icon, title, text }) => (
   <div>
     <Header>
       <Image src={ icon } />

@@ -5,10 +5,12 @@ import Subheader from '../../components/Subheader';
 import ContactSection from '../../components/ContactSection';
 import Clients from '../../components/Clients';
 import ColumnText from '../../components/ColumnText';
-import Tripartite from '../../components/Tripartite';
+import Tripartite, { Item }  from '../../components/Tripartite';
 import Banner from '../../components/Banner';
 import ColumnsNote from '../../components/ColumnsNote';
 import Depiction from '../../components/Depiction';
+import ListLayout from '../../components/SeoComponents/ListLayout';
+import LookLayout from '../../components/SeoComponents/LookLayout';
 
 import BaseLayout from '../../layouts/BaseLayout';
 
@@ -133,11 +135,6 @@ const websiteSchema = {
 
 class SEOOffert extends Component {
   render() {
-    const halfLength = Math.ceil(features.content.length / 2);
-
-    const leftSide = features.content.slice(0, halfLength);
-    const rightSide = features.content.slice(halfLength, features.content.length);
-
     return (
       <BaseLayout>
         <SeoBase
@@ -148,12 +145,15 @@ class SEOOffert extends Component {
           <Header { ...header } />
           <Subheader { ...columnText } />
           <Subheader { ...subheader } />
-          <ColumnsNote
-            header={ features.title }
-            leftChildren={ leftSide.map((item, i) => <Depiction key={ i } { ...item } />) }
-            rightChildren={ rightSide.map((item, i) => <Depiction key={ i } { ...item } />) }
-          />
-          <Tripartite content={ tripartite } />
+
+          <LookLayout title={features.title}>
+            {features.content.map((feature, i) => <Depiction key={ i } { ...feature } /> )}
+          </LookLayout>
+
+          <ListLayout>
+            { tripartite.map((item, i) => <Item key={ i } { ...item } />) }
+          </ListLayout>
+
           <Banner { ...banner } />
           <Clients withoutButton />
           <ContactSection />
