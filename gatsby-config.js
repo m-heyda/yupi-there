@@ -42,6 +42,12 @@ module.exports = {
         trackingId: process.env.GA_ID,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WHMNHX",
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-polyfill-io',
