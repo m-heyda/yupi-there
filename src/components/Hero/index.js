@@ -30,9 +30,6 @@ const Hero = () => {
         <Button fluid component="a" href="#contact">
           Skontaktuj się
         </Button>
-        <Button fluid component="a" href="#offer" secondary>
-          Learn more
-        </Button>
       </ButtonWrapper>
 
       <BackgroundWrapper>

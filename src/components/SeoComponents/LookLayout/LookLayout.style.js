@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  & > * {
+  & > *:not(:last-child) {
     margin-bottom: 64px;
   }
 `;
