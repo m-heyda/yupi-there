@@ -65,7 +65,7 @@ class ContactSection extends Component {
 
   render() {
     return (
-      <Wrapper name="contact">
+      <Wrapper id="contact">
         <Container>
           <ContentWrapper>
             <InfoWrapper>
@@ -87,11 +87,8 @@ class ContactSection extends Component {
                 <ContactParagraph>Masz pytania?</ContactParagraph>
                 <ContactWrapper>
                   <PhoneWrapper>
-                    <ContactLink href='tel:+48533125600'>
-                      +48 533 125 600
-                    </ContactLink>
-                    <ContactLink href='tel:+48533125600'>
-                      +48 22 255 84 27
+                    <ContactLink href='tel:+48505950321'>
+                      +48 505 950 321
                     </ContactLink>
                   </PhoneWrapper>
                   <ContactLink href='mailto:biuro@yupi-there.pl'>

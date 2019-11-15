@@ -11,11 +11,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: ${rem(globalSize.paddingMedium)} 0;
+  padding: ${rem(globalSize.paddingXSmall)} 0;
   border-bottom: 1px solid ${colors.athensGray};
 
   ${media.greaterThan('landscape')`
-    padding: ${rem(globalSize.paddingLarge)} 0;
+    padding: ${rem(globalSize.paddingSmall)} 0;
   `}
 `;
 
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  & > * {
+  & > *:not(:last-child) {
     margin-bottom: 64px;
   }
 `;

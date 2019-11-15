@@ -11,11 +11,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: ${rem(globalSize.paddingMedium)} 0;
+  padding: ${rem(globalSize.paddingXSmall)} 0;
   border-bottom: 1px solid ${colors.athensGray};
 
   ${media.greaterThan('landscape')`
-    padding: ${rem(globalSize.paddingLarge)} 0;
+    padding: ${rem(globalSize.paddingSmall)} 0;
   `}
 `;
 

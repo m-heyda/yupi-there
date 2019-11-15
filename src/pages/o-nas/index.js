@@ -12,9 +12,9 @@ import BaseLayout from '../../layouts/BaseLayout';
 import yupiBg from '../../assets/about.svg';
 
 const header = {
-  title: 'Lorem Ipsum is simply dummy text…',
+  title: 'Yupi-there - kim jesteśmy?',
   content: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+    Specjalizujemy się w marketingu internetowym wykorzystując takie kanały dotarcia jak Google Ads, Facebook Ads, SEO, Content Marketing. Oferujemy elastyczne podejście do potrzeb klienta dostosowane do możliwości finansowych.`,
   ctaLabel: 'Jesteś zainteresowany?',
   image: yupiBg,
 };
