@@ -17,13 +17,13 @@ const testimonials = [
     miałabym wskazać największą wartość współpracy,
     to byłoby to super podejście do klienta.`,
   },
-  {
-    author: "Centrum Terapii w UK",
-    content: `Zdecydowanie polecam Yupi-There. Duża odległość i kontakt
-    jedynie telefoniczny nie stanowi żadnego problemu.
-    W razie wątpliwości mogę liczyć na błyskawiczną odpowiedź i pomoc.
-    Doceniam za terminowość, solidność i mnóstwo pomysłów.`,
-  },
+  // {
+  //   author: "Centrum Terapii w UK",
+  //   content: `Zdecydowanie polecam Yupi-There. Duża odległość i kontakt
+  //   jedynie telefoniczny nie stanowi żadnego problemu.
+  //   W razie wątpliwości mogę liczyć na błyskawiczną odpowiedź i pomoc.
+  //   Doceniam za terminowość, solidność i mnóstwo pomysłów.`,
+  // },
   {
     author: "PSTQ",
     content: `Bardzo profesjonalnie świadczone usługi - zarówno
