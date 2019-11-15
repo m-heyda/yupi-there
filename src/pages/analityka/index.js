@@ -19,9 +19,8 @@ import heroBg from '../../assets/filterBackground.svg';
 import analyticBg from '../../assets/analytic.svg';
 
 const header = {
-  title: 'Lorem Ipsum is simply dummy text…',
-  content: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.`,
+  title: 'Analityka Internetowa',
+  content: `Zdobądź wiedzę na temat swoich użytkowników i ich zachowania na Twojej stronie internetowej. Zyskaj przewagę dzięki zrozumieniu swoich klientów.`,
   ctaLabel: 'Jesteś zainteresowany?',
   image: analyticBg,
 };
