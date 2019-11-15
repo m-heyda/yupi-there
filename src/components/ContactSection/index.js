@@ -65,7 +65,7 @@ class ContactSection extends Component {
 
   render() {
     return (
-      <Wrapper name="contact">
+      <Wrapper id="contact">
         <Container>
           <ContentWrapper>
             <InfoWrapper>
