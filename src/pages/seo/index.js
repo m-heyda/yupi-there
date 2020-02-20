@@ -114,7 +114,7 @@ const tripartite = [
   {
     icon: podiumIcon,
     title: 'SEO a gwarancja wyników',
-    text: `Należy powiedzieć to wprost: każdy kto oferuje gwarancję wyników w SEO jest ignorantem lub co gorsza oszustem. Jako agencji bardzo zależy nam abyś był świadom tego, że zmienność mechanizmów działania Google nie pozwala na tworzenie tak śmiałych deklaracji jak gwarancja. Gwarancje, z którymi możesz się spotkać to np. wypozycjonowanie się na 3 z 5 słów kluczowych. Takie zapisy dają zwykle agencji dowolność w wyborze tych fraz i dotyczą słów, na które już jesteś widoczny lub nie są wyszukiwane czyli “proste” do wypozycjonowania ale bez żadnego konkretnego efektu na Twój biznes, poza faktem otrzymania faktury za usługę. Brak pewności uzyskanego efektu to właściwie jedyny mankament SEO i jako potencjalny nabywca tego typu usług musisz mieć tego świadomość. Nie należy się jednak z tego powodu zniechęcać. Zdecydowana większość aktywności przynosi dobre lub bardzo dobre rezultaty - stąd właśnie tak wysoka popularność pozycjonowania.`,
+    text: `Jako agencji bardzo zależy nam abyś był świadom tego, że zmienność mechanizmów działania Google nie pozwala na tworzenie tak śmiałych deklaracji jak gwarancja. Gwarancje, z którymi możesz się spotkać to np. wypozycjonowanie się na 3 z 5 słów kluczowych. Takie zapisy dają zwykle agencji dowolność w wyborze tych fraz i dotyczą słów, na które już jesteś widoczny lub nie są wyszukiwane czyli “proste” do wypozycjonowania ale bez żadnego konkretnego efektu na Twój biznes, poza faktem otrzymania faktury za usługę. Brak pewności uzyskanego efektu to właściwie jedyny mankament SEO i jako potencjalny nabywca tego typu usług musisz mieć tego świadomość. Nie należy się jednak z tego powodu zniechęcać. Zdecydowana większość aktywności przynosi dobre lub bardzo dobre rezultaty - stąd właśnie tak wysoka popularność pozycjonowania.`,
   },
   {
     icon: cardIcon,
@@ -125,7 +125,7 @@ const tripartite = [
 
 const banner = {
   title: 'Możesz nam zaufać.',
-  content: `	Mamy nadzieję, że tym krótkim artykułem przybliżyliśmy Tobie nieco specyfikę naszej pracy. Jeżeli trafiłeś na tę stronę z Google to już wiesz że SEO działa :) Zapraszamy do kontaktu, na pewno znajdziemy rozwiązanie dopasowane do Twoich potrzeb i możliwości.`,
+  content: `	Mamy nadzieję, że tym krótkim artykułem przybliżyliśmy Tobie nieco specyfikę naszej pracy. Zapraszamy do kontaktu, na pewno znajdziemy rozwiązanie dopasowane do Twoich potrzeb i możliwości.`,
 };
 
 const websiteSchema = {
