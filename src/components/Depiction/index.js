@@ -10,7 +10,7 @@ const Depiction = ({ icon, content, ...props }) => {
   return (
     <Container { ...props } >
       <Image src={ icon } />
-      <ParagraphText dangerouslySetInnerHTML={ { __html: content } } />
+      <ParagraphText>{content}</ParagraphText>
     </Container>
   );
 };
