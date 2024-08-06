@@ -17,7 +17,9 @@ const Subheader = ({ title, content, borderless }) => {
             { title }
           </Header>
 
-          <ParagraphText maxWidth={ 980 } dangerouslySetInnerHTML={ { __html: content } } />
+          <ParagraphText maxWidth={ 980 }>
+            { content }
+          </ParagraphText>
       </Container>
     </Wrapper>
   );
